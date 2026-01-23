@@ -106,15 +106,17 @@
                 card.className = 'card';
                 card.style.borderBottomColor = item.cor;
 
-                card.innerHTML = `
-                    <div class="image-container">
-                        <img src="${item.imagem}" alt="${item.nome}" onerror="this.src='https://via.placeholder.com/300x200?text=Sem+Foto'">
-                    </div>
-                    <div class="info">
-                        <p class="nome">${item.nome}</p>
-                        <span class="numero">Nº ${item.numero}</span>
-                    </div>
-                `;
+               card.innerHTML = `
+    <div class="image-container" style="background-color: #eee; display: flex; align-items: center; justify-content: center;">
+        <img src="${item.imagem}" alt="${item.nome}" 
+             style="width: 100%; height: 100%; object-fit: cover;"
+             onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=color:#999>Sem Imagem</span>'">
+    </div>
+    <div class="info">
+        <p class="nome">${item.nome}</p>
+        <span class="numero">Nº ${item.numero}</span>
+    </div>
+`;
                 grid.appendChild(card);
             });
         } catch (erro) {
