@@ -6,7 +6,7 @@
         "numero": "EP0001",
         "nomeCor": "Black",
         "cor": "#211F1E",
-        "nota": "",
+        "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -16,7 +16,7 @@
         "numero": "EP0002",
         "nomeCor": "Blue",
         "cor": "#184D9A",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -26,7 +26,7 @@
         "numero": "EP0003",
         "nomeCor": "Red",
         "cor": "#DC0637",
-        "nota": "",
+        "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -36,7 +36,7 @@
         "numero": "EP0004",
         "nomeCor": "Pink",
         "cor": "#F288BE",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -46,7 +46,7 @@
         "numero": "EP0005",
         "nomeCor": "Black",
         "cor": "#211F1E",
-        "nota": "",
+        "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -56,7 +56,7 @@
         "numero": "EP0006",
         "nomeCor": "Blue",
         "cor": "#184D9A" ,
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
     {
@@ -66,7 +66,7 @@
         "numero": "EP0007",
         "nomeCor": "Green",
         "cor": "#4CA23E",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
        {
@@ -76,7 +76,7 @@
         "numero": "EP0008",
         "nomeCor": "Pink",
         "cor": "#F288BE",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
     {
@@ -86,7 +86,7 @@
         "numero": "EP0009",
         "nomeCor": "Black",
         "cor": "#211F1E",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -96,7 +96,7 @@
         "numero": "EP0010",
         "nomeCor": "Blue",
         "cor": "#184D9A" ,
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -106,7 +106,7 @@
         "numero": "EP0011",
         "nomeCor": "Purple",
         "cor": "#8B3BB3",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
     {
@@ -116,7 +116,7 @@
         "numero": "EP0012",
         "nomeCor": "Turquoise",
         "cor": "#A4E2E0",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -126,7 +126,7 @@
         "numero": "EP0013",
         "nomeCor": "Pink",
         "cor": "#F288BE",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -136,7 +136,7 @@
         "numero": "EP0014",
         "nomeCor": "Blck?",
         "cor": "#211F1E",
-          "nota": "Limited Edition",
+           "edicao_limitada": true,
          "ano": "2022 Christmas Edition"
     },
      {
@@ -146,7 +146,7 @@
         "numero": "EP0015",
         "nomeCor": "Blck",
         "cor": "#211F1E",
-        "nota": "Limited Edition",
+         "edicao_limitada": true,
          "ano": "2022 Christmas Edition"
     },
      {
@@ -156,7 +156,7 @@
         "numero": "EP0016",
         "nomeCor": "Blck",
         "cor": "#F288BE",
-         "nota": "Limited Edition",
+          "edicao_limitada": true,
          "ano": "2022 Christmas Edition"
     },
       
@@ -167,7 +167,7 @@
         "numero": "EP0019",
         "nomeCor": "Black",
         "cor": "#211F1E",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
     {
@@ -177,7 +177,7 @@
         "numero": "EP0020",
         "nomeCor": "Black",
         "cor": "#211F1E",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -187,7 +187,7 @@
         "numero": "EP0024",
         "nomeCor": "Red",
         "cor": "#DC0637",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": "" 
     },
     {
@@ -197,7 +197,7 @@
         "numero": "EP0028",
         "nomeCor": "Blue",
         "cor": "#184D9A",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
     {
@@ -207,7 +207,7 @@
         "numero": "EP0029",
         "nomeCor": "Black",
         "cor": "#211F1E",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
      {
@@ -217,7 +217,7 @@
         "numero": "EP0033",
         "nomeCor": "Turquoise",
         "cor": "#A4E2E0",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
     {
@@ -227,7 +227,7 @@
         "numero": "EP0044",
         "nomeCor": "Orange",
         "cor": "#E96233" ,
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
       {
@@ -237,7 +237,7 @@
         "numero": "EP0045",
         "nomeCor": "Pink",
         "cor": "#F288BE",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },
     {
@@ -247,7 +247,7 @@
         "numero": "EP0045",
         "nomeCor": "Pink",
         "cor": "#F288BE",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     },    
     {
@@ -257,7 +257,7 @@
         "numero": "EP0056",
         "nomeCor": "Blue",
         "cor": "#184D9A",
-        "nota": "",
+         "edicao_limitada": false,
          "ano": ""
     }
 
