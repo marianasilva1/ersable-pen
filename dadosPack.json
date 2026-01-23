@@ -1,17 +1,103 @@
 [
     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0001_1.jpg?sw=1200&sh=1200",
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0001_5.jpg?sw=1200&sh=1200",
+        "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0001_1.jpg?sw=1200&sh=1200"
+        
+    ],
         "numero": "EPSET0001",
-        "cores": "#211F1E, #FF0000, #000000",
+        "cores": "Black, Blue, Red",
         "edicao_limitada": false,
          "ano": ""
     },
      {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_1.jpg?sw=1200&sh=1200",
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_2.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_1.jpg?sw=1200&sh=1200"],
         "numero": "EPSET0002",
-        "cores": "#211F1E, #FF0000, #000000",
+        "cores": "Black, Blue, Red",
         "edicao_limitada": true,
          "ano": "Christmas 2022"
+    },
+    {
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0003_9.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0003_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0003_8.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0003",
+        "cores": "Orange, Blue, Black",
+        "edicao_limitada": false,
+         "ano": "Wild Savannah"
+    },
+     {
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0004_10.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0004_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0004_5.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0004",
+        "cores": "Green, Red, Blue",
+        "edicao_limitada": true,
+         "ano": "Christmas 2023"
+    },{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0005_11.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0005_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0005_5.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0005",
+        "cores": "Green, Black, Orange",
+        "edicao_limitada": true,
+         "ano": "Halloween 2023"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0006_8.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0006_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0006_4.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0006",
+        "cores": "Red, Black",
+        "edicao_limitada": true,
+         "ano": "Better Together 2024"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0007_5.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0007_1.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0007",
+        "cores": "Turquoise, Black, Purple",
+        "edicao_limitada": true,
+         "ano": "Under The Sea 2024"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0008_9.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0008_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0008_2.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0008",
+        "cores": " Black, Purple, Red",
+        "edicao_limitada": true,
+         "ano": "Halloween 2024"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0009_2.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0009_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0009_9.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0009",
+        "cores": " Red, Blue, Green",
+        "edicao_limitada": true,
+         "ano": "Christmas 2024"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0010_1.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0010",
+        "cores": " Pink, Purple",
+        "edicao_limitada": true,
+         "ano": "Easter 2025"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0011_11.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0011_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0011_2.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0011",
+        "cores": " Black, Pink, Green, Red",
+        "edicao_limitada": true,
+         "ano": "Farm Sweet Farm Edition 2025"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0013_12.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0013_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0013_13.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0013",
+        "cores": " Black, Purple, Orange",
+        "edicao_limitada": true,
+         "ano": "HalloWeen 2025"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0014_10.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0014_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0014_2.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0014",
+        "cores": " Blue, Red, Green",
+        "edicao_limitada": true,
+         "ano": "Christmas 2025"
+    }
+    ,{
+        "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw586d6257/images_legami/zoom/EPSET0015_9.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0015_1.jpg?sw=1200&sh=1200"],
+        "numero": "EPSET0015",
+        "cores": "Turquoise, Orange",
+        "edicao_limitada": true,
+         "ano": "Better Together 2026"
     }
 
 ]
