@@ -8,13 +8,29 @@
         "cor": "#211F1E"
     },
      {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0002_2.jpg?sw=1200&sh=1200",
+        "nome": "Bear",
+        "mensagem": "Dream Big",
+        "numero": "EP0002",
+        "nomeCor": "Blue",
+        "cor": "#184D9A"
+    },
+     {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0003_2.jpg?sw=1200&sh=1200",
+        "nome": "Koala",
+        "mensagem": "Take It Easy",
+        "numero": "EP0003",
+        "nomeCor": "Red",
+        "cor": "#DC0637"
+    },
+     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0004_2.jpg?sw=1200&sh=1200",
         "nome": "Unicorn",
         "mensagem": "Believe In Magic",
         "numero": "EP0004",
         "nomeCor": "Pink",
         "cor": "#F288BE"
-    }
+    },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2ac73a15/images_legami/zoom/EP0005_2.jpg?sw=1200&sh=1200",
         "nome": "Kitty",
@@ -39,6 +55,22 @@
         "nomeCor": "Green",
         "cor": "#4CA23E"
     },
+       {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0008_2.jpg?sw=1200&sh=1200",
+        "nome": "Pig",
+        "mensagem": "Think Pink",
+        "numero": "EP0008",
+        "nomeCor": "Pink",
+        "cor": "#F288BE"
+    },
+    {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0009_2.jpg?sw=1200&sh=1200",
+        "nome": "Space",
+         "mensagem": "Space Explorer",
+        "numero": "EP0009",
+        "nomeCor": "Black",
+        "cor": "#211F1E"
+    },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw52398e6b/images_legami/zoom/EP0010_2.jpg?sw=1200&sh=1200",
         "nome": "Llama",
@@ -55,6 +87,53 @@
         "nomeCor": "Purple",
         "cor": "#8B3BB3"
     },
+    {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw18432d58/images_legami/zoom/EP0012_2.jpg?sw=1200&sh=1200",
+        "nome": "Bloom",
+         "mensagem": "Bloom Your Own Way",
+        "numero": "EP0012",
+        "nomeCor": "Turquoise",
+        "cor": "#A4E2E0"
+    },
+     {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0013_2.jpg?sw=1200&sh=1200",
+        "nome": "Unicorn",
+        "mensagem": "Believe In Magic",
+        "numero": "EP0013",
+        "nomeCor": "Pink",
+        "cor": "#F288BE"
+    },
+     {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_3.jpg?sw=1200&sh=1200",
+        "nome": "Koala",
+        "mensagem": "Ho-Ho-Ho",
+        "numero": "EP0014",
+        "nomeCor": "Blck?",
+        "cor": "#211F1E",
+          "nota": "Limited Edition",
+         "ano": "2022 Christmas Edition"
+    },
+     {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_5.jpg?sw=1200&sh=1200",
+        "nome": "Panda",
+        "mensagem": "Warm Wishes",
+        "numero": "EP0015",
+        "nomeCor": "Blck",
+        "cor": "#211F1E",
+        "nota": "Limited Edition",
+         "ano": "2022 Christmas Edition"
+    },
+     {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_3.jpg?sw=1200&sh=1200",
+        "nome": "Bear",
+        "mensagem": "Be Joy Ful",
+        "numero": "EP0016",
+        "nomeCor": "Blck",
+        "cor": "#F288BE",
+         "nota": "Limited Edition",
+         "ano": "2022 Christmas Edition"
+    },
+      
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0019_2.jpg?sw=1200&sh=1200",
         "nome": "Giraffe",
