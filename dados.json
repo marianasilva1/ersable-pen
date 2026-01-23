@@ -1,0 +1,38 @@
+[
+    {
+        "imagem": "https://drive.google.com/uc?export=view&id=ID_1",
+        "nome": "Caneta Azul Luxo",
+        "numero": "001",
+        "cor": "#0000FF"
+    },
+    {
+        "imagem": "https://drive.google.com/uc?export=view&id=ID_2",
+        "nome": "Caneta Vermelha Pro",
+        "numero": "002",
+        "cor": "#FF0000"
+    },
+    {
+        "imagem": "https://drive.google.com/uc?export=view&id=ID_3",
+        "nome": "Caneta Verde Gel",
+        "numero": "003",
+        "cor": "#00FF00"
+    },
+    {
+        "imagem": "https://drive.google.com/uc?export=view&id=ID_4",
+        "nome": "Caneta Rosa Neon",
+        "numero": "004",
+        "cor": "#FF69B4"
+    },
+    {
+        "imagem": "https://drive.google.com/uc?export=view&id=ID_5",
+        "nome": "Caneta Preta Fosca",
+        "numero": "005",
+        "cor": "#000000"
+    },
+    {
+        "imagem": "https://drive.google.com/uc?export=view&id=ID_6",
+        "nome": "Caneta Laranja Pop",
+        "numero": "006",
+        "cor": "#FFA500"
+    }
+]
