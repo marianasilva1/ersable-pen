@@ -1,264 +1,840 @@
 [
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw24997cdd/images_legami/zoom/EP0001_2.jpg?sw=1200&sh=1200",
-        "nome": "Panda",
-         "mensagem": "Hug Me",
-        "numero": "EP0001",
-        "nomeCor": "Black",
-        "cor": "#211F1E",
-        "edicao_limitada": false,
-         "ano": ""
-    },
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw24997cdd/images_legami/zoom/EP0001_2.jpg?sw=1200&sh=1200",
+		"nome": "Panda",
+		"mensagem": "Hug Me",
+		"numero": "EP0001",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
      {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0002_2.jpg?sw=1200&sh=1200",
-        "nome": "Bear",
-        "mensagem": "Dream Big",
-        "numero": "EP0002",
-        "nomeCor": "Blue",
-        "cor": "#184D9A",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0003_2.jpg?sw=1200&sh=1200",
-        "nome": "Koala",
-        "mensagem": "Take It Easy",
-        "numero": "EP0003",
-        "nomeCor": "Red",
-        "cor": "#DC0637",
-        "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0004_2.jpg?sw=1200&sh=1200",
-        "nome": "Unicorn",
-        "mensagem": "Believe In Magic",
-        "numero": "EP0004",
-        "nomeCor": "Pink",
-        "cor": "#F288BE",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2ac73a15/images_legami/zoom/EP0005_2.jpg?sw=1200&sh=1200",
-        "nome": "Kitty",
-         "mensagem": "Be Curious",
-        "numero": "EP0005",
-        "nomeCor": "Black",
-        "cor": "#211F1E",
-        "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2783a364/images_legami/zoom/EP0006_2.jpg?sw=1200&sh=1200",
-        "nome": "Shark",
-         "mensagem": "Shark Attack",
-        "numero": "EP0006",
-        "nomeCor": "Blue",
-        "cor": "#184D9A" ,
-         "edicao_limitada": false,
-         "ano": ""
-    },
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwc8e5fabf/images_legami/zoom/EP0007_2.jpg?sw=1200&sh=1200",
-        "nome": "Dino",
-         "mensagem": "Rooarrr!",
-        "numero": "EP0007",
-        "nomeCor": "Green",
-        "cor": "#4CA23E",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-       {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0008_2.jpg?sw=1200&sh=1200",
-        "nome": "Pig",
-        "mensagem": "Think Pink",
-        "numero": "EP0008",
-        "nomeCor": "Pink",
-        "cor": "#F288BE",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0009_2.jpg?sw=1200&sh=1200",
-        "nome": "Space",
-         "mensagem": "Space Explorer",
-        "numero": "EP0009",
-        "nomeCor": "Black",
-        "cor": "#211F1E",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw52398e6b/images_legami/zoom/EP0010_2.jpg?sw=1200&sh=1200",
-        "nome": "Llama",
-         "mensagem": "No Probllama",
-        "numero": "EP0010",
-        "nomeCor": "Blue",
-        "cor": "#184D9A" ,
-         "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwab62cbf2/images_legami/zoom/EP0011_2.jpg?sw=1200&sh=1200",
-        "nome": "Bunny",
-         "mensagem": "Don't Worry Be Hoppy ",
-        "numero": "EP0011",
-        "nomeCor": "Purple",
-        "cor": "#8B3BB3",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw18432d58/images_legami/zoom/EP0012_2.jpg?sw=1200&sh=1200",
-        "nome": "Bloom",
-         "mensagem": "Bloom Your Own Way",
-        "numero": "EP0012",
-        "nomeCor": "Turquoise",
-        "cor": "#A4E2E0",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0013_2.jpg?sw=1200&sh=1200",
-        "nome": "Unicorn",
-        "mensagem": "Believe In Magic",
-        "numero": "EP0013",
-        "nomeCor": "Pink",
-        "cor": "#F288BE",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_3.jpg?sw=1200&sh=1200",
-        "nome": "Koala",
-        "mensagem": "Ho-Ho-Ho",
-        "numero": "EP0014",
-        "nomeCor": "Blck?",
-        "cor": "#211F1E",
-           "edicao_limitada": true,
-         "ano": "2022 Christmas Edition"
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_5.jpg?sw=1200&sh=1200",
-        "nome": "Panda",
-        "mensagem": "Warm Wishes",
-        "numero": "EP0015",
-        "nomeCor": "Blck",
-        "cor": "#211F1E",
-         "edicao_limitada": true,
-         "ano": "2022 Christmas Edition"
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_3.jpg?sw=1200&sh=1200",
-        "nome": "Bear",
-        "mensagem": "Be Joy Ful",
-        "numero": "EP0016",
-        "nomeCor": "Blck",
-        "cor": "#F288BE",
-          "edicao_limitada": true,
-         "ano": "2022 Christmas Edition"
-    },
-      
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0019_2.jpg?sw=1200&sh=1200",
-        "nome": "Giraffe",
-         "mensagem": "Head In The Clouds",
-        "numero": "EP0019",
-        "nomeCor": "Black",
-        "cor": "#211F1E",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw76ca07b1/images_legami/zoom/EP0020_2.jpg?sw=1200&sh=1200",
-        "nome": "Corgi",
-         "mensagem": "Feelin' Corgeous",
-        "numero": "EP0020",
-        "nomeCor": "Black",
-        "cor": "#211F1E",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw5574c9be/images_legami/zoom/EP0024_2.jpg?sw=1200&sh=1200",
-        "nome": "Teddy Bear",
-         "mensagem": "Dream Big",
-        "numero": "EP0024",
-        "nomeCor": "Red",
-        "cor": "#DC0637",
-         "edicao_limitada": false,
-         "ano": "" 
-    },
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwab697b58/images_legami/zoom/EP0028_2.jpg?sw=1200&sh=1200",
-        "nome": "Hippo",
-         "mensagem": "Hip Hippo Hooray!",
-        "numero": "EP0028",
-        "nomeCor": "Blue",
-        "cor": "#184D9A",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwac555ab7/images_legami/zoom/EP0029_2.jpg?sw=1200&sh=1200",
-        "nome": "Bee",
-        "mensagem": "Bee Different",
-        "numero": "EP0029",
-        "nomeCor": "Black",
-        "cor": "#211F1E",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-     {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw18432d58/images_legami/zoom/EP0033_2.jpg?sw=1200&sh=1200",
-        "nome": "Penguin",
-         "mensagem": "Always Cool",
-        "numero": "EP0033",
-        "nomeCor": "Turquoise",
-        "cor": "#A4E2E0",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwb3659aed/images_legami/zoom/EP0044_2.jpg?sw=1200&sh=1200",
-        "nome": "Tiger",
-         "mensagem": "Grrreat Adventure",
-        "numero": "EP0044",
-        "nomeCor": "Orange",
-        "cor": "#E96233" ,
-         "edicao_limitada": false,
-         "ano": ""
-    },
-      {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0013_2.jpg?sw=1200&sh=1200",
-        "nome": "Unicorn",
-        "mensagem": "Believe In Magic",
-        "numero": "EP0045",
-        "nomeCor": "Pink",
-        "cor": "#F288BE",
-         "edicao_limitada": false,
-         "ano": ""
-    },
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw924e12ad/images_legami/zoom/EP0045_2.jpg?sw=1200&sh=1200",
-        "nome": " - Butterfly",
-        "mensagem": "You Are Beautiful",
-        "numero": "EP0045",
-        "nomeCor": "Pink",
-        "cor": "#F288BE",
-         "edicao_limitada": false,
-         "ano": ""
-    },    
-    {
-        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0056_2.jpg?sw=1200&sh=1200",
-        "nome": "Monster",
-         "mensagem": "Aaargh-dorable",
-        "numero": "EP0056",
-        "nomeCor": "Blue",
-        "cor": "#184D9A",
-         "edicao_limitada": false,
-         "ano": ""
-    }
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0001_2.jpg?sw=1200&sh=1200",
+		"nome": "Panda",
+		"mensagem": "Hug Me",
+		"numero": "EP0001",
+		"cores": "Black",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0002_2.jpg?sw=1200&sh=1200",
+		"nome": "Bear",
+		"mensagem": "Dream Big",
+		"numero": "EP0002",
+		"cores": "Blue",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0003_2.jpg?sw=1200&sh=1200",
+		"nome": "Koala",
+		"mensagem": "Take It Easy",
+		"numero": "EP0003",
+		"cores": "Red",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0004_2.jpg?sw=1200&sh=1200",
+		"nome": "Unicorn",
+		"mensagem": "Believe In Magic",
+		"numero": "EP0004",
+		"cores": "Pink",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2ac73a15/images_legami/zoom/EP0005_2.jpg?sw=1200&sh=1200",
+		"nome": "Kitty",
+		"mensagem": "Be Curious",
+		"numero": "EP0005",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2783a364/images_legami/zoom/EP0006_2.jpg?sw=1200&sh=1200",
+		"nome": "Shark",
+		"mensagem": "Shark Attack",
+		"numero": "EP0006",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwc8e5fabf/images_legami/zoom/EP0007_2.jpg?sw=1200&sh=1200",
+		"nome": "Dino",
+		"mensagem": "Rooarrr!",
+		"numero": "EP0007",
+		"cores": "Green",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0008_2.jpg?sw=1200&sh=1200",
+		"nome": "Pig",
+		"mensagem": "Think Pink",
+		"numero": "EP0008",
+		"cores": "Pink",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0009_2.jpg?sw=1200&sh=1200",
+		"nome": "Space",
+		"mensagem": "Space Explorer",
+		"numero": "EP0009",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw52398e6b/images_legami/zoom/EP0010_2.jpg?sw=1200&sh=1200",
+		"nome": "Llama",
+		"mensagem": "No Probllama",
+		"numero": "EP0010",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwab62cbf2/images_legami/zoom/EP0011_2.jpg?sw=1200&sh=1200",
+		"nome": "Bunny",
+		"mensagem": "Don't Worry Be Hoppy ",
+		"numero": "EP0011",
+		"cores": "Purple",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw18432d58/images_legami/zoom/EP0012_2.jpg?sw=1200&sh=1200",
+		"nome": "Bloom",
+		"mensagem": "Bloom Your Own Way",
+		"numero": "EP0012",
+		"cores": "Turquoise",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0013_2.jpg?sw=1200&sh=1200",
+		"nome": "Unicoresn",
+		"mensagem": "Believe In Magic",
+		"numero": "EP0013",
+		"cores": "Pink",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_3.jpg?sw=1200&sh=1200",
+		"nome": "Koala",
+		"mensagem": "Ho-Ho-Ho",
+		"numero": "EP0014",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2022 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_5.jpg?sw=1200&sh=1200",
+		"nome": "Panda",
+		"mensagem": "Warm Wishes",
+		"numero": "EP0015",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2022 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_7.jpg?sw=1200&sh=1200",
+		"nome": "Bear",
+		"mensagem": "Be Joy Ful",
+		"numero": "EP0016",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2022 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0017_2.jpg?sw=1200&sh=1200",
+		"nome": "Lion",
+		"mensagem": "The King",
+		"numero": "EP0017",
+		"cores": "Orange",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0018_2.jpg?sw=1200&sh=1200",
+		"nome": "Elephant",
+		"mensagem": "Elephantastic",
+		"numero": "EP0018",
+		"cores": "Blue",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
 
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0019_2.jpg?sw=1200&sh=1200",
+		"nome": "Giraffe",
+		"mensagem": "Head In The Clouds",
+		"numero": "EP0019",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw76ca07b1/images_legami/zoom/EP0020_2.jpg?sw=1200&sh=1200",
+		"nome": "Corgi",
+		"mensagem": "Feelin' coresgeous",
+		"numero": "EP0020",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0004_2.jpg?sw=1200&sh=1200",
+		"nome": "Fox",
+		"mensagem": "Foxtastic Holiday",
+		"numero": "EP0021",
+		"cores": "Green",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2023 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0004_3.jpg?sw=1200&sh=1200",
+		"nome": "Polar Bear",
+		"mensagem": "",
+		"numero": "EP0022",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2023 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0004_4.jpg?sw=1200&sh=1200",
+		"nome": "Penguin",
+		"mensagem": "Merry & Brigth",
+		"numero": "EP0023",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2023 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw5574c9be/images_legami/zoom/EP0024_2.jpg?sw=1200&sh=1200",
+		"nome": "Teddy Bear",
+		"mensagem": "Dream Big",
+		"numero": "EP0024",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0005_2.jpg?sw=1200&sh=1200",
+		"nome": "Franck",
+		"mensagem": "Peek-A-Boo",
+		"numero": "EP0025",
+		"cores": "Green",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2023 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0005_3.jpg?sw=1200&sh=1200",
+
+		"nome": "Pumpkin",
+		"mensagem": "Trick Or Treat",
+		"numero": "EP0026",
+		"cores": "Orange",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2023 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0005_4.jpg?sw=1200&sh=1200",
+
+		"nome": "Mumia",
+		"mensagem": "Groowrr!",
+		"numero": "EP0027",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2023 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0006_2.jpg?sw=1200&sh=1200",
+
+		"nome": "Kitty",
+		"mensagem": "I Love You",
+		"numero": "-",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Better Together Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0006_3.jpg?sw=1200&sh=1200",
+
+		"nome": "Dog",
+		"mensagem": "Forever Together",
+		"numero": "-",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Better Together Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwab697b58/images_legami/zoom/EP0028_2.jpg?sw=1200&sh=1200",
+		"nome": "Hippo",
+		"mensagem": "Hip Hippo Hooray!",
+		"numero": "EP0028",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwac555ab7/images_legami/zoom/EP0029_2.jpg?sw=1200&sh=1200",
+		"nome": "Bee",
+		"mensagem": "Bee Different",
+		"numero": "EP0029",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0007_2.jpg?sw=1200&sh=1200",
+
+		"nome": "Turtle",
+		"mensagem": "Free As The Ocean",
+		"numero": "EP0030",
+		"cores": "Turquoise",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Under The Sea Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0007_4.jpg?sw=1200&sh=1200",
+
+		"nome": "Clownfish",
+		"mensagem": "Never Stop Exploring",
+		"numero": "EP0031",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Under The Sea Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0007_3.jpg?sw=1200&sh=1200",
+
+		"nome": "Seahorse",
+		"mensagem": "Ride The Waves",
+		"numero": "EP0032",
+		"cores": "Purple",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Under The Sea Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw18432d58/images_legami/zoom/EP0033_2.jpg?sw=1200&sh=1200",
+		"nome": "Penguin",
+		"mensagem": "Always Cool",
+		"numero": "EP0033",
+		"cores": "Turquoise",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0008_8.jpg?sw=1200&sh=1200",
+
+		"nome": "Bat",
+		"mensagem": "Too Cute To Spook",
+		"numero": "EP0034",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0008_7.jpg?sw=1200&sh=1200",
+
+		"nome": "Witch",
+		"mensagem": "Hocus Pocus",
+		"numero": "EP0035",
+		"cores": "Purple",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0008_6.jpg?sw=1200&sh=1200",
+
+		"nome": "Vampire",
+		"mensagem": "Faa-Boo-Lous",
+		"numero": "EP0036",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0009_6.jpg?sw=1200&sh=1200",
+
+		"nome": "Santa Claus",
+		"mensagem": "Ho-Ho-Ho!",
+		"numero": "EP0037",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0009_7.jpg?sw=1200&sh=1200",
+
+		"nome": "Reindeer",
+		"mensagem": "Make A Wish",
+		"numero": "EP0038",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0009_8.jpg?sw=1200&sh=1200",
+
+		"nome": "Elf",
+		"mensagem": "Naughty or Nice?",
+		"numero": "EP0039",
+		"cores": "Green",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Christmas Edition"
+	},
+	{
+		"imagem": "",
+
+		"nome": "Bat",
+		"mensagem": "Too Cute To Spook",
+		"numero": "EP0040",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Halloween Edition Solo"
+	},
+	{
+		"imagem": "",
+
+		"nome": "Santa Claus",
+		"mensagem": "Ho-Ho-Ho!",
+		"numero": "EP0041",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Christmas Edition Solo"
+	},
+	{
+		"imagem": "",
+
+		"nome": "Yeti",
+		"mensagem": "Are You Yeti For Christmas?",
+		"numero": "EP0042",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2024 Advent Edition"
+	},
+	{
+		"imagem": "",
+		"nome": "Koala",
+		"mensagem": "Take It Easy 🇦🇺",
+		"numero": "EP0043_SPEC",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwb3659aed/images_legami/zoom/EP0044_2.jpg?sw=1200&sh=1200",
+		"nome": "Tiger",
+		"mensagem": "Grrreat Adventure",
+		"numero": "EP0044",
+		"cores": "Orange",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw924e12ad/images_legami/zoom/EP0045_2.jpg?sw=1200&sh=1200",
+		"nome": " - Butterfly",
+		"mensagem": "You Are Beautiful",
+		"numero": "EP0045",
+		"cores": "Pink",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0010_2.jpg?sw=1200&sh=1200",
+
+		"nome": "Bunny",
+		"mensagem": "No-Bunny Like You",
+		"numero": "EP0046",
+		"cores": "Pink",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Easter Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0010_3.jpg?sw=1200&sh=1200",
+
+		"nome": "Chick",
+		"mensagem": "Chick To Chick",
+		"numero": "EP0047",
+		"cores": "Purple",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Easter Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0011_3.jpg?sw=1200&sh=1200",
+
+		"nome": "Cow",
+		"mensagem": "Always In The Moood",
+		"numero": "EP0048",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": "2025 Farm Sweet Farm Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0011_4.jpg?sw=1200&sh=1200",
+
+		"nome": "Pig",
+		"mensagem": "Rock'N'Rolling",
+		"numero": "EP0049",
+		"cores": "Pink",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": "2025 Farm Sweet Farm Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0011_5.jpg?sw=1200&sh=1200",
+
+		"nome": "Donkey",
+		"mensagem": "Better Than A Unicorn",
+		"numero": "EP0050",
+		"cores": "Green",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": "2025 Farm Sweet Farm Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0011_6.jpg?sw=1200&sh=1200",
+
+		"nome": "Rooster",
+		"mensagem": "Rise And Shine",
+		"numero": "EP0051",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": "2025 Farm Sweet Farm Edition"
+	},
+	{
+		"imagem": "",
+		"nome": "Bear",
+		"mensagem": "May Your Dreams Come True",
+		"numero": "EP0052",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Advent Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0013_9.jpg?sw=1200&sh=1200",
+
+		"nome": "Zombie",
+		"mensagem": "All You Can Eat",
+		"numero": "EP0053",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0013_8.jpg?sw=1200&sh=1200",
+
+		"nome": "Black Cat",
+		"mensagem": "The Dark Side Of The Meow",
+		"numero": "EP0054",
+		"cores": "Purple",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0013_10.jpg?sw=1200&sh=1200",
+
+		"nome": "Skeleton",
+		"mensagem": "Rock'N'Bone",
+		"numero": "EP0055",
+		"cores": "Orange",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Halloween Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0056_2.jpg?sw=1200&sh=1200",
+		"nome": "Monster",
+		"mensagem": "Aaargh-dorable",
+		"numero": "EP0056",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0014_6.jpg?sw=1200&sh=1200",
+
+		"nome": "Nutcracker",
+		"mensagem": "Nuts About Christmas",
+		"numero": "EP0057",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0014_7.jpg?sw=1200&sh=1200",
+
+		"nome": "Ballerina",
+		"mensagem": "Jingle Dance",
+		"numero": "EP0058",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0014_8.jpg?sw=1200&sh=1200",
+
+		"nome": "Mouse",
+		"mensagem": "Merry Squeakmas",
+		"numero": "EP0059",
+		"cores": "Green",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2025 Christmas Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0060_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0060",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0061_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0061",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0062_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0062",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0063_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0063",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0064_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0064",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0065_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0065",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0066_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0066",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0067_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0067",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0068_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0068",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0069_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0069",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0070_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0070",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0071_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0071",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0072_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0072",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0073_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0073",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0074_2.jpg?sw=1200&sh=1200",
+
+		"nome": "???",
+		"mensagem": "",
+		"numero": "EP0074",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0015_2.jpg?sw=1200&sh=1200",
+
+		"nome": "Bird",
+		"mensagem": "Life Is Better With You",
+		"numero": "EP0075",
+		"cores": "Turquoise",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Better Together Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0015_3.jpg?sw=1200&sh=1200",
+
+		"nome": "Bird",
+		"mensagem": "Always By Your Side",
+		"numero": "EP0076",
+		"cores": "Orange",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Better Together Edition"
+	}
 ]
