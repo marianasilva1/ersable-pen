@@ -1,11 +1,17 @@
 [
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0001_1.jpg?sw=1200&sh=1200",
-        "nome": "Panda",
-         "mensagem": "Hug Me",
-        "numero": "EPSET0001_1",
-        "nomeCor": "Black",
-        "cor": "#211F1E",
+        "numero": "EPSET0001",
+        "cores": "#211F1E, #FF0000, #000000",
         "edicao_limitada": false,
          "ano": ""
-    }]
+    },
+     {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_1.jpg?sw=1200&sh=1200",
+        "numero": "EPSET0002",
+        "cores": "#211F1E, #FF0000, #000000",
+        "edicao_limitada": true,
+         "ano": "Christmas 2022"
+    }
+
+]
