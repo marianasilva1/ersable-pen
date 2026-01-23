@@ -23,9 +23,9 @@
         /* Grid de 6 espaços (3 colunas em telas grandes) */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 25px;
-            max-width: 1000px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
@@ -58,7 +58,11 @@
             padding: 20px;
             text-align: center;
         }
-
+ .mensagem {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin: 0;
+        }
         .nome {
             font-size: 1.2rem;
             font-weight: bold;
@@ -113,7 +117,8 @@
                              onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=color:#999>Sem Imagem</span>'">
                     </div>
                     <div class="info">
-                        <p class="nome">${item.nome}</p>
+                        <p class="mensagem">${item.mensagem}</p>
+                         <p class="nome">${item.nome}</p>
                         <span class="numero">Nº ${item.numero}</span>
                     </div>
                 `;
