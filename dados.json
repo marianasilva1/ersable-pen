@@ -198,7 +198,6 @@
         "nomeCor": "Pink",
         "cor": "#F288BE"
     },
-   
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw924e12ad/images_legami/zoom/EP0045_2.jpg?sw=1200&sh=1200",
         "nome": " - Butterfly",
@@ -206,14 +205,7 @@
         "numero": "EP0045",
         "nomeCor": "Pink",
         "cor": "#F288BE"
-    },
-   
-    
-    
-      
-      
-    
-      
+    },    
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0056_2.jpg?sw=1200&sh=1200",
         "nome": "Monster",
@@ -222,12 +214,5 @@
         "nomeCor": "Blue",
         "cor": "#184D9A"
     },
-     
-    
-    
-   
-      
-   
-   
 
 ]
