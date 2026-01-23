@@ -5,7 +5,9 @@
          "mensagem": "Hug Me",
         "numero": "EP0001",
         "nomeCor": "Black",
-        "cor": "#211F1E"
+        "cor": "#211F1E",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0002_2.jpg?sw=1200&sh=1200",
@@ -13,7 +15,9 @@
         "mensagem": "Dream Big",
         "numero": "EP0002",
         "nomeCor": "Blue",
-        "cor": "#184D9A"
+        "cor": "#184D9A",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0003_2.jpg?sw=1200&sh=1200",
@@ -21,7 +25,9 @@
         "mensagem": "Take It Easy",
         "numero": "EP0003",
         "nomeCor": "Red",
-        "cor": "#DC0637"
+        "cor": "#DC0637",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0004_2.jpg?sw=1200&sh=1200",
@@ -29,7 +35,9 @@
         "mensagem": "Believe In Magic",
         "numero": "EP0004",
         "nomeCor": "Pink",
-        "cor": "#F288BE"
+        "cor": "#F288BE",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2ac73a15/images_legami/zoom/EP0005_2.jpg?sw=1200&sh=1200",
@@ -37,7 +45,9 @@
          "mensagem": "Be Curious",
         "numero": "EP0005",
         "nomeCor": "Black",
-        "cor": "#211F1E"
+        "cor": "#211F1E",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2783a364/images_legami/zoom/EP0006_2.jpg?sw=1200&sh=1200",
@@ -45,7 +55,9 @@
          "mensagem": "Shark Attack",
         "numero": "EP0006",
         "nomeCor": "Blue",
-        "cor": "#184D9A" 
+        "cor": "#184D9A" ,
+        "nota": "",
+         "ano": ""
     },
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwc8e5fabf/images_legami/zoom/EP0007_2.jpg?sw=1200&sh=1200",
@@ -53,7 +65,9 @@
          "mensagem": "Rooarrr!",
         "numero": "EP0007",
         "nomeCor": "Green",
-        "cor": "#4CA23E"
+        "cor": "#4CA23E",
+        "nota": "",
+         "ano": ""
     },
        {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0008_2.jpg?sw=1200&sh=1200",
@@ -61,7 +75,9 @@
         "mensagem": "Think Pink",
         "numero": "EP0008",
         "nomeCor": "Pink",
-        "cor": "#F288BE"
+        "cor": "#F288BE",
+        "nota": "",
+         "ano": ""
     },
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw15aea453/images_legami/zoom/EP0009_2.jpg?sw=1200&sh=1200",
@@ -69,7 +85,9 @@
          "mensagem": "Space Explorer",
         "numero": "EP0009",
         "nomeCor": "Black",
-        "cor": "#211F1E"
+        "cor": "#211F1E",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw52398e6b/images_legami/zoom/EP0010_2.jpg?sw=1200&sh=1200",
@@ -77,7 +95,9 @@
          "mensagem": "No Probllama",
         "numero": "EP0010",
         "nomeCor": "Blue",
-        "cor": "#184D9A" 
+        "cor": "#184D9A" ,
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwab62cbf2/images_legami/zoom/EP0011_2.jpg?sw=1200&sh=1200",
@@ -85,7 +105,9 @@
          "mensagem": "Don't Worry Be Hoppy ",
         "numero": "EP0011",
         "nomeCor": "Purple",
-        "cor": "#8B3BB3"
+        "cor": "#8B3BB3",
+        "nota": "",
+         "ano": ""
     },
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw18432d58/images_legami/zoom/EP0012_2.jpg?sw=1200&sh=1200",
@@ -93,7 +115,9 @@
          "mensagem": "Bloom Your Own Way",
         "numero": "EP0012",
         "nomeCor": "Turquoise",
-        "cor": "#A4E2E0"
+        "cor": "#A4E2E0",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0013_2.jpg?sw=1200&sh=1200",
@@ -101,7 +125,9 @@
         "mensagem": "Believe In Magic",
         "numero": "EP0013",
         "nomeCor": "Pink",
-        "cor": "#F288BE"
+        "cor": "#F288BE",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0002_3.jpg?sw=1200&sh=1200",
@@ -140,7 +166,9 @@
          "mensagem": "Head In The Clouds",
         "numero": "EP0019",
         "nomeCor": "Black",
-        "cor": "#211F1E"
+        "cor": "#211F1E",
+        "nota": "",
+         "ano": ""
     },
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw76ca07b1/images_legami/zoom/EP0020_2.jpg?sw=1200&sh=1200",
@@ -148,7 +176,9 @@
          "mensagem": "Feelin' Corgeous",
         "numero": "EP0020",
         "nomeCor": "Black",
-        "cor": "#211F1E"
+        "cor": "#211F1E",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw5574c9be/images_legami/zoom/EP0024_2.jpg?sw=1200&sh=1200",
@@ -156,7 +186,9 @@
          "mensagem": "Dream Big",
         "numero": "EP0024",
         "nomeCor": "Red",
-        "cor": "#DC0637" 
+        "cor": "#DC0637",
+        "nota": "",
+         "ano": "" 
     },
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwab697b58/images_legami/zoom/EP0028_2.jpg?sw=1200&sh=1200",
@@ -164,7 +196,9 @@
          "mensagem": "Hip Hippo Hooray!",
         "numero": "EP0028",
         "nomeCor": "Blue",
-        "cor": "#184D9A"
+        "cor": "#184D9A",
+        "nota": "",
+         "ano": ""
     },
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwac555ab7/images_legami/zoom/EP0029_2.jpg?sw=1200&sh=1200",
@@ -172,7 +206,9 @@
         "mensagem": "Bee Different",
         "numero": "EP0029",
         "nomeCor": "Black",
-        "cor": "#211F1E"
+        "cor": "#211F1E",
+        "nota": "",
+         "ano": ""
     },
      {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw18432d58/images_legami/zoom/EP0033_2.jpg?sw=1200&sh=1200",
@@ -180,7 +216,9 @@
          "mensagem": "Always Cool",
         "numero": "EP0033",
         "nomeCor": "Turquoise",
-        "cor": "#A4E2E0"
+        "cor": "#A4E2E0",
+        "nota": "",
+         "ano": ""
     },
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dwb3659aed/images_legami/zoom/EP0044_2.jpg?sw=1200&sh=1200",
@@ -188,7 +226,9 @@
          "mensagem": "Grrreat Adventure",
         "numero": "EP0044",
         "nomeCor": "Orange",
-        "cor": "#E96233" 
+        "cor": "#E96233" ,
+        "nota": "",
+         "ano": ""
     },
       {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw811932d2/images_legami/zoom/EP0013_2.jpg?sw=1200&sh=1200",
@@ -196,7 +236,9 @@
         "mensagem": "Believe In Magic",
         "numero": "EP0045",
         "nomeCor": "Pink",
-        "cor": "#F288BE"
+        "cor": "#F288BE",
+        "nota": "",
+         "ano": ""
     },
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw924e12ad/images_legami/zoom/EP0045_2.jpg?sw=1200&sh=1200",
@@ -204,7 +246,9 @@
         "mensagem": "You Are Beautiful",
         "numero": "EP0045",
         "nomeCor": "Pink",
-        "cor": "#F288BE"
+        "cor": "#F288BE",
+        "nota": "",
+         "ano": ""
     },    
     {
         "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0056_2.jpg?sw=1200&sh=1200",
@@ -212,7 +256,9 @@
          "mensagem": "Aaargh-dorable",
         "numero": "EP0056",
         "nomeCor": "Blue",
-        "cor": "#184D9A"
+        "cor": "#184D9A",
+        "nota": "",
+         "ano": ""
     }
 
 ]
