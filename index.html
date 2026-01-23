@@ -87,49 +87,44 @@
         </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script>
+    async function carregarDados() {
+        const grid = document.getElementById('grid');
+        const status = document.getElementById('status');
 
-    <script>
-        // Substitua pelo seu link CSV do Google Sheets
-        const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTl9AIBYVnrLk9ac562139ZxpLufif14WlvV[…]uLCn3LrrbhSU_q7L8EAX/pub?gid=608086363&single=true&output=csv';
+        try {
+            // Procura o ficheiro no mesmo repositório
+            const resposta = await fetch('dados.json');
+            const data = await resposta.json();
 
-        function carregarDados() {
-            Papa.parse(SHEET_CSV_URL, {
-                download: true,
-                header: true,
-                complete: function(results) {
-                    const data = results.data;
-                    const grid = document.getElementById('grid');
-                    const status = document.getElementById('status');
-                    
-                    grid.innerHTML = ''; 
-                    status.style.display = 'none';
+            grid.innerHTML = ''; 
+            status.style.display = 'none';
 
-                    data.slice(0, 6).forEach(item => { // Limita a 6 itens
-                        if(item.nome) {
-                            const card = document.createElement('div');
-                            card.className = 'card';
-                            card.style.borderBottomColor = item.cor || '#ccc';
+            data.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.style.borderBottomColor = item.cor;
 
-                            card.innerHTML = `
-                                <div class="image-container">
-                                    <img src="${item.imagem.trim()}" alt="${item.nome}" onerror="this.src='https://via.placeholder.com/300x200?text=Erro+na+Imagem'">
-                                </div>
-                                <div class="info">
-                                    <p class="nome">${item.nome}</p>
-                                    <span class="numero">Nº ${item.numero}</span>
-                                </div>
-                            `;
-                            grid.appendChild(card);
-                        }
-                    });
-                },
-                error: function(err) {
-                    document.getElementById('status').innerText = "Erro ao carregar dados.";
-                }
+                card.innerHTML = `
+                    <div class="image-container">
+                        <img src="${item.imagem}" alt="${item.nome}" onerror="this.src='https://via.placeholder.com/300x200?text=Sem+Foto'">
+                    </div>
+                    <div class="info">
+                        <p class="nome">${item.nome}</p>
+                        <span class="numero">Nº ${item.numero}</span>
+                    </div>
+                `;
+                grid.appendChild(card);
             });
+        } catch (erro) {
+            console.error("Erro ao carregar o JSON:", erro);
+            status.innerText = "Erro ao carregar os dados do ficheiro JSON.";
         }
+    }
 
-        window.onload = carregarDados;
-    </script>
+    window.onload = carregarDados;
+</script>
+    
+
 </body>
 </html>
