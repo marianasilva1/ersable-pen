@@ -79,7 +79,29 @@
             padding: 2px 10px;
             border-radius: 20px;
         }
+.card.limitada {
+    background-color: #fff9e6; /* Fundo amarelado/dourado suave */
+    border: 2px solid #ffd700;
+}
 
+.badge-limitada {
+    background-color: #ffd700;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.ano-lancamento {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
         #status { text-align: center; font-style: italic; color: #666; }
     </style>
 </head>
@@ -119,6 +141,8 @@
                     <div class="info">
                         <p class="mensagem">${item.mensagem}</p>
                          <p class="nome">${item.nome}</p>
+                          ${nota ? '<span class="badge-limitada">⚠️ Edição Limitada</span>' : ''}
+                           <span class="ano-lancamento"> ${item.ano || ''}</span>
                         <span class="numero">Nº ${item.numero}</span>
                     </div>
                 `;
