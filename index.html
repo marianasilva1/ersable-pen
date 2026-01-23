@@ -1,185 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>">
-    <title>Coleção de Canetas</title>
-    <style>
-        :root {
-            --bg-color: #f4f4f9;
-            --card-bg: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 40px 20px;
-        }
-
-        h1 { text-align: center; color: #333; margin-bottom: 40px; }
-
-        /* Grid de 6 espaços (3 colunas em telas grandes) */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 25px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            border-bottom: 8px solid; /* A cor da caneta aqui */
-        }
-
-        .card:hover { transform: translateY(-5px); }
-
-        .image-container {
-            width: 100%;
-            height: 200px;
-            background-color: #eee;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .info {
-            padding: 20px;
-            text-align: center;
-        }
- .mensagem {
-            font-size: 1.2rem;
-            color: #2c3e50;
-            margin: 0;
-        }
-        .nome {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #2c3e50;
-            margin: 0;
-        }
-
-        .numero {
-            font-size: 0.9rem;
-            color: #7f8c8d;
-            margin-top: 8px;
-            background: #f0f0f0;
-            display: inline-block;
-            padding: 2px 10px;
-            border-radius: 20px;
-        }
-.card.limitada {
-    background-color: #fff9e6; /* Fundo amarelado/dourado suave */
-    border: 2px solid #ffd700;
-}
-
-.badge-limitada {
-    background-color: #ffd700;
-    color: #000;
-    font-size: 0.7rem;
-    font-weight: bold;
-    padding: 2px 8px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-        .nav-container {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.btn-coleccao {
-    background-color: #333;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
-    display: inline-block;
-}
-
-.btn-coleccao:hover {
-    background-color: #555;
-    transform: scale(1.05);
-}
-
-.ano-lancamento {
-    font-size: 0.8rem;
-    color: #666;
-    display: block;
-    margin-top: 5px;
-}
-        #status { text-align: center; font-style: italic; color: #666; }
-    </style>
-</head>
-<body>
-
-    <h1>Pen Collection</h1>
-    <div id="status">Loading data...</div>
-    <div class="nav-container">
-    <a href="packs.html" class="btn-coleccao"> Packs</a>
-</div>
-    
-    <div class="grid-container" id="grid">
-        </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-<script>
-    async function carregarDados() {
-        const grid = document.getElementById('grid');
-        const status = document.getElementById('status');
-
-        try {
-            // Procura o ficheiro no mesmo repositório
-            const resposta = await fetch('dados.json');
-            const data = await resposta.json();
-
-            grid.innerHTML = ''; 
-            status.style.display = 'none';
-
-            data.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.style.borderBottomColor = item.cor;
-const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
-               card.innerHTML = `
-                    <div class="image-container" style="background-color: #eee; display: flex; align-items: center; justify-content: center;">
-                        <img src="${item.imagem}" alt="${item.nome}" 
-                             style="width: 100%; height: 100%; object-fit: cover;"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=color:#999>Sem Imagem</span>'">
-                    </div>
-                    <div class="info">
-                        <p class="mensagem">${item.mensagem}</p>
-                         <p class="nome">${item.nome}</p>
-                          ${eLimitada ? '<span class="badge-limitada">⚠️ Edição Limitada</span>' : ''}
-                           <span class="ano-lancamento"> ${item.ano || ''}</span>
-                        <span class="numero">Nº ${item.numero}</span>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-        } catch (erro) {
-            console.error("Erro ao carregar o JSON:", erro);
-            status.innerText = "Erro ao carregar os dados do ficheiro JSON.";
-        }
-    }
-
-    window.onload = carregarDados;
-</script>
-    
-
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>"
+		/>
+		<title>Coleção de Canetas</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Pen Collection</h1>
+			<div id="status">Loading data...</div>
+			<div class="nav-container">
+				<a href="packs.html" class="btn-coleccao"> Packs</a>
+				<div class="search-box">
+					<input
+						type="text"
+						id="inputPesquisa"
+						placeholder="Search for pen by name or number..."
+						onkeyup="filtrarCanetas()"
+					/>
+				</div>
+				<div class="filter-options">
+					<button class="btn-filter active" onclick="setFiltro('all', this)">
+						All
+					</button>
+					<button class="btn-filter" onclick="setFiltro('missing', this)">
+						Missing
+					</button>
+				</div>
+			</div>
+		</header>
+		<main>
+            <div class="grid-container" id="grid"></div>
+        </main>
+		<footer class="creditos">
+			<p>
+				The images and products shown belong to
+				<a
+					href="https://www.legami.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Legami</a
+				>.
+			</p>
+		</footer>
+        <script src="script.js"></script>
+	</body>
 </html>
