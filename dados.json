@@ -1,38 +1,111 @@
 [
     {
         "imagem": "",
-        "nome": "Caneta Azul Luxo",
-        "numero": "001",
-        "cor": "#0000FF"
+        "nome": ""Bee Different" Bee",
+        "numero": "EP001",
+        "cor": "#211F1E"
     },
     {
         "imagem": "",
-        "nome": "Caneta Vermelha Pro",
+        "nome": ""Don't Worry Be Hoppy" Bunny",
         "numero": "002",
-        "cor": "#FF0000"
+        "cor": "#8B3BB3"
     },
     {
         "imagem": "",
-        "nome": "Caneta Verde Gel",
+        "nome": ""You Are Beautiful" Butterfly",
         "numero": "003",
-        "cor": "#00FF00"
+        "cor": "#F288BE"
     },
     {
         "imagem": "",
-        "nome": "Caneta Rosa Neon",
+        "nome": ""Be Curious" Kitty ",
         "numero": "004",
-        "cor": "#FF69B4"
+        "cor": "#211F1E"
     },
     {
         "imagem": "",
-        "nome": "Caneta Preta Fosca",
+        "nome": ""Feelin' Corgeous" Corgi",
         "numero": "005",
-        "cor": "#000000"
+        "cor": "#211F1E"
     },
     {
         "imagem": "",
-        "nome": "Caneta Laranja Pop",
+        "nome": ""Rooarrr!" Dino",
         "numero": "006",
-        "cor": "#FFA500"
+        "cor": "#4CA23E"
     }
+       {
+        "imagem": "",
+        "nome": ""Head In The Clouds" Giraffe",
+        "numero": "006",
+        "cor": "#211F1E"
+    }
+      {
+        "imagem": "",
+        "nome": ""Hip Hippo Hooray!" Hippo",
+        "numero": "006",
+        "cor": "#184D9A"
+    }
+     {
+        "imagem": "",
+        "nome": ""No Probllama" Llama",
+        "numero": "006",
+        "cor": "#184D9A" 
+    }
+        {
+        "imagem": "",
+        "nome": ""No Probllama" Llama",
+        "numero": "006",
+        "cor": "#184D9A" 
+    }
+    {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0056_2.jpg?sw=1200&sh=1200",
+        "nome": "Monster",
+        "numero": "006",
+        "cor": "#184D9A"
+    }
+     {
+        "imagem": "",
+        "nome": ""Hug Me" Panda",
+        "numero": "006",
+        "cor": "#211F1E"
+    }
+     {
+        "imagem": "",
+        "nome": ""Always Cool" Penguin",
+        "numero": "006",
+        "cor": "#A4E2E0"
+    }
+     {
+        "imagem": "",
+        "nome": ""Shark Attack" Shark",
+        "numero": "006",
+        "cor": "#184D9A" 
+    }
+    {
+        "imagem": "",
+        "nome": ""Dream Big" Teddy Bear",
+        "numero": "006",
+        "cor": "#DC0637" 
+    }
+      {
+        "imagem": "",
+        "nome": ""Grrreat Adventure" Tiger",
+        "numero": "006",
+        "cor": "#E96233" 
+    }
+      {
+        "imagem": "",
+        "nome": ""Believe In Magic" Unicorn",
+        "numero": "006",
+        "cor": "#F288BE"
+    }
+   
+   /*   {
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0056_2.jpg?sw=1200&sh=1200",
+        "nome": "Monster",
+        "numero": "006",
+        "cor": Black"#211F1E" Green"#4CA23E" blue"#184D9A" Pink "#F288BE" Turquoise "#A4E2E0" Red "#DC0637" Orange "#E96233"
+    }*/
 ]
