@@ -122,6 +122,24 @@
     display: block;
     margin-top: 5px;
 }
+        .cores-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.bola-cor {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+/* Se for um pack, podemos fazer a borda inferior do card ter um gradiente */
+.card.multi-cor {
+    border-bottom: 8px solid #ccc; /* fallback */
+}
         #status { text-align: center; font-style: italic; color: #666; }
     </style>
 </head>
@@ -150,27 +168,38 @@
             grid.innerHTML = ''; 
             status.style.display = 'none';
 
-            data.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.style.borderBottomColor = item.cor;
-const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
-               card.innerHTML = `
-                    <div class="image-container" style="background-color: #eee; display: flex; align-items: center; justify-content: center;">
-                        <img src="${item.imagem}" alt="${item.nome}" 
-                             style="width: 100%; height: 100%; object-fit: cover;"
-                             onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=color:#999>Sem Imagem</span>'">
-                    </div>
-                    <div class="info">
-                        <p class="mensagem">${item.mensagem}</p>
-                         <p class="nome">${item.nome}</p>
-                          ${eLimitada ? '<span class="badge-limitada">⚠️ Edição Limitada</span>' : ''}
-                           <span class="ano-lancamento"> ${item.ano || ''}</span>
-                        <span class="numero">Nº ${item.numero}</span>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
+           data.forEach(item => {
+    const card = document.createElement('div');
+    const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
+    
+    // Separar as cores (ex: "#000, #fff" vira ["#000", "#fff"])
+    const listaCores = item.cores ? item.cores.split(',') : [item.cor || '#ccc'];
+    
+    card.className = `card ${eLimitada ? 'limitada' : ''}`;
+    
+    // Se tiver mais de uma cor, aplica um fundo neutro na borda ou um gradiente
+    card.style.borderBottomColor = listaCores[0].trim();
+
+    // Criar o HTML das bolinhas de cor
+    let coresHTML = '<div class="cores-container">';
+    listaCores.forEach(c => {
+        coresHTML += `<div class="bola-cor" style="background-color: ${c.trim()}"></div>`;
+    });
+    coresHTML += '</div>';
+
+    card.innerHTML = `
+        <div class="image-container">
+            <img src="${item.imagem}" alt="${item.nome}" onerror="this.src='https://fonts.gstatic.com/s/i/materialicons/image/v12/24px.svg'">
+        </div>
+        <div class="info">
+            ${eLimitada ? '<span class="badge-limitada">⚠️ Edição Limitada</span>' : ''}
+          
+            ${coresHTML}
+            <span class="ano-lancamento">${item.ano || ''}</span>
+        </div>
+    `;
+    grid.appendChild(card);
+});
         } catch (erro) {
             console.error("Erro ao carregar o JSON:", erro);
             status.innerText = "Erro ao carregar os dados do ficheiro JSON.";
