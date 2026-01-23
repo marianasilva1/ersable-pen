@@ -131,7 +131,7 @@
                 const card = document.createElement('div');
                 card.className = 'card';
                 card.style.borderBottomColor = item.cor;
-
+const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
                card.innerHTML = `
                     <div class="image-container" style="background-color: #eee; display: flex; align-items: center; justify-content: center;">
                         <img src="${item.imagem}" alt="${item.nome}" 
@@ -141,7 +141,7 @@
                     <div class="info">
                         <p class="mensagem">${item.mensagem}</p>
                          <p class="nome">${item.nome}</p>
-                          ${edicao_limitada ? '<span class="badge-limitada">⚠️ Edição Limitada</span>' : ''}
+                          ${eLimitada ? '<span class="badge-limitada">⚠️ Edição Limitada</span>' : ''}
                            <span class="ano-lancamento"> ${item.ano || ''}</span>
                         <span class="numero">Nº ${item.numero}</span>
                     </div>
