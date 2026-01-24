@@ -327,6 +327,32 @@ h1 {
 .btn-nav:hover {
 	background: white;
 }
+.social-links {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #666;
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+/* Cor do Instagram no Hover */
+.social-links a[title="Instagram"]:hover {
+    color: #E1306C;
+    transform: translateY(-3px);
+}
+
+/* Cor do TikTok no Hover */
+.social-links a[title="TikTok"]:hover {
+    color: #000;
+    transform: translateY(-3px);
+}
+
 
 @media (max-width: 1200px) {
 	.grid-container {
