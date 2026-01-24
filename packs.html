@@ -1,19 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Coleção de Canetas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<title>Coleção de Canetas</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="logo">🖋️ Legami Collection</div>
+			<nav>
+				<ul class="nav-links">
+					<li>
+						<a href="index.html"><i class="fas fa-home"></i>Home</a>
+					</li>
+					<li>
+						<a href="pens.html"><i class="fas fa-pen-nib"></i>Pens</a>
+					</li>
+					<li>
+						<a href="packs.html"  class="active"><i class="fas fa-pen-nib"></i>Packs</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div>
 			<h1>Packs Collection</h1>
-			<div id="status">Loading data...</div>
 			<div class="nav-container">
-				<a href="index.html" class="btn-coleccao"> Pens</a>
 				<div class="search-box">
 					<input
 						type="text"
@@ -31,12 +51,14 @@
 					</button>
 				</div>
 			</div>
-		</header>
+		</div>
 		<main>
-            <div class="grid-container" id="grid"></div>
-        </main>
+			<div id="status">Loading data...</div>
+			<div class="grid-container" id="grid"></div>
+		</main>
 		<footer class="creditos">
 			<div class="social-links">
+				<p>Criado com ❤️ por uma colecionadora</p>
 				<a
 					href="https://www.instagram.com/f.mariana.silva"
 					target="_blank"
@@ -52,6 +74,7 @@
 					<i class="fab fa-tiktok"></i>
 				</a>
 			</div>
+			
 			<p>
 				The images and products shown belong to
 				<a
@@ -62,9 +85,6 @@
 				>.
 			</p>
 		</footer>
-        <script src="scriptPacks.js"></script>
+		<script src="scriptPacks.js"></script>
 	</body>
-    
-
-</body>
 </html>
