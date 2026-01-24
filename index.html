@@ -3,43 +3,48 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>O Meu Mundo Legami</title>
+		<link rel="icon" href="https://fav.farm/🖋️" />
 		<link
-			rel="icon"
-			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>"
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-		<title>Coleção de Canetas</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header>
-			<h1>Pen Collection</h1>
-			<div id="status">Loading data...</div>
-			<div class="nav-container">
-				<a href="packs.html" class="btn-coleccao"> Packs</a>
-				<div class="search-box">
-					<input
-						type="text"
-						id="inputPesquisa"
-						placeholder="Search for pen by name or number..."
-						onkeyup="filtrarCanetas()"
-					/>
+		<header class="main-header">
+    <div class="logo">🖋️ Legami Collection</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html"  class="active"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="pens.html"><i class="fas fa-pen-nib"></i>Pens</a></li>
+						<li><a href="packs.html"><i class="fas fa-pen-nib"></i>Packs</a></li>
+        </ul>
+    </nav>
+</header>
+		<main class="home-content">
+			<section class="profile-section">
+				<div class="profile-avatar">✨</div>
+				<h1>Hello! Welcome to Legami Erasable Pens collection!</h1>
+
+				<div class="bio-card">
+					<p>
+						I’m a stationery lover who started this adventure of collecting <strong>Legami</strong> pens at the end of <strong>2024</strong>.
+					</p>
+					<p>
+						I created this digital space to organize and visualize all my pens in one place, separating the ones I already own from the ones I’m still missing!"
+					</p>
 				</div>
-				<div class="filter-options">
-					<button class="btn-filter active" onclick="setFiltro('all', this)">
-						All
-					</button>
-					<button class="btn-filter" onclick="setFiltro('missing', this)">
-						Missing
-					</button>
+
+				<div class="home-nav">
+					<a href="pens.html" class="btn-main">Explore the Collection ➔</a>
 				</div>
-			</div>
-		</header>
-		<main>
-            <div class="grid-container" id="grid"></div>
-        </main>
+			</section>
+		</main>
+
 		<footer class="creditos">
 			<div class="social-links">
+				<p>Criado com ❤️ por uma colecionadora</p>
 				<a
 					href="https://www.instagram.com/f.mariana.silva"
 					target="_blank"
@@ -55,6 +60,7 @@
 					<i class="fab fa-tiktok"></i>
 				</a>
 			</div>
+			
 			<p>
 				The images and products shown belong to
 				<a
@@ -65,6 +71,5 @@
 				>.
 			</p>
 		</footer>
-        <script src="script.js"></script>
 	</body>
 </html>
