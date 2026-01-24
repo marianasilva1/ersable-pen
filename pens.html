@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<title>Coleção de Canetas</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="logo">🖋️ Legami Collection</div>
+			<nav>
+				<ul class="nav-links">
+					<li>
+						<a href="index.html"><i class="fas fa-home"></i>Home</a>
+					</li>
+					<li>
+						<a href="pens.html"  class="active"><i class="fas fa-pen-nib"></i>Pens</a>
+					</li>
+					<li>
+						<a href="packs.html"><i class="fas fa-pen-nib"></i>Packs</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div>
+			<h1>Pen Collection</h1>
+			
+			<div class="nav-container">
+				<div class="search-box">
+					<input
+						type="text"
+						id="inputPesquisa"
+						placeholder="Search for pen by name or number..."
+						onkeyup="filtrarCanetas()"
+					/>
+				</div>
+				<div class="filter-options">
+					<button class="btn-filter active" onclick="setFiltro('all', this)">
+						All
+					</button>
+					<button class="btn-filter" onclick="setFiltro('missing', this)">
+						Missing
+					</button>
+				</div>
+			</div>
+		</div>
+		<main>
+			<div id="status">Loading data...</div>
+			<div id="mensagem-vazio" style="display: none;"></div>
+			<div class="grid-container" id="grid"></div>
+		</main>
+		<footer class="creditos">
+			<div class="social-links">
+				<p>Criado com ❤️ por uma colecionadora</p>
+				<a
+					href="https://www.instagram.com/f.mariana.silva"
+					target="_blank"
+					title="Instagram"
+				>
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a
+					href="https://vm.tiktok.com/ZGdm4Tpeg/"
+					target="_blank"
+					title="TikTok"
+				>
+					<i class="fab fa-tiktok"></i>
+				</a>
+			</div>
+			
+			<p>
+				The images and products shown belong to
+				<a
+					href="https://www.legami.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Legami</a
+				>.
+			</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
