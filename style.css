@@ -417,6 +417,11 @@ h1 {
     color: #000;
     transform: translateY(-3px);
 }
+/* Cor do Coffee no Hover */
+.social-links a[title="coffee"]:hover {
+    color: var(--Red);
+    transform: translateY(-3px);
+}
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -441,6 +446,7 @@ h1 {
     gap: 25px;
     margin: 0;
     padding: 0;
+		flex-direction: row;
 }
 
 .nav-links a {
@@ -466,6 +472,35 @@ main, .home-content {
     color: var(--primary-color);
     border-bottom: 2px solid var(--Red);
 }
+.support-section {
+    margin-top: 40px;
+    padding: 25px;
+    background: #fffdf5; /* Um tom creme suave */
+    border: 1px dashed #ffd700;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.support-section p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.support-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px !important;
+}
+
+.bmc-button {
+    display: inline-block;
+    transition: transform 0.3s ease;
+		color: var(--Red);
+}
+
+
+.bmc-button:hover {
+    transform: scale(1.05);
+}
 
 @media (max-width: 1200px) {
 	.grid-container {
@@ -475,5 +510,8 @@ main, .home-content {
 @media (max-width: 600px) {
 	.grid-container {
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.nav-links{
+		flex-direction: column;
 	}
 }
