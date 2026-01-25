@@ -17,6 +17,7 @@ async function carregarDados() {
             const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
             const listaCores = item.cores ? item.cores.split(',') : [item.cores || '#ccc'];
 const eDescontinuado = item.descontinuado === true || item.descontinuado === "true"; 
+const numToShow = item.display_num || item.numero;
 
             const card = document.createElement('div');
             card.className = `card ${eLimitada ? 'limitada' : ''} ${isMissing ? 'missing' : ''} ${eDescontinuado ? 'descontinuado' : ''}`;
@@ -36,7 +37,7 @@ const eDescontinuado = item.descontinuado === true || item.descontinuado === "tr
                     <p class="ano-lancamento">${item.ano}</p>
                     <p class="mensagem">${item.mensagem}</p>
                     <p class="nome">${item.nome}</p>
-                    <span class="numero">Nº ${item.numero}</span>
+                    <span class="numero">Nº ${numToShow}</span>
                     ${coresHTML}
                     <div class="check-container" onclick="toggleMissing('${item.numero}')">
                     <input type="checkbox" ${isMissing ? 'checked' : ''}> Missing?
