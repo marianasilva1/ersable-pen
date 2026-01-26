@@ -288,7 +288,8 @@
 
 		"nome": "Kitty",
 		"mensagem": "I Love You",
-		"numero": "-",
+		"numero": "-_kitty",
+		"display_num": "_",
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": true,
@@ -299,7 +300,8 @@
 
 		"nome": "Dog",
 		"mensagem": "Forever Together",
-		"numero": "-",
+		"numero": "-_dog",
+		"display_num": "-",
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
