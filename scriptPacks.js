@@ -15,9 +15,9 @@ async function carregarDados() {
         data.forEach(item => {
             const isMissing = missingPens.includes(item.numero);
             const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
-             const listaCores = item.cores ? item.cores.split(',') : [item.cores || '#ccc'];
-const imagens = Array.isArray(item.imagem) ? item.imagem : [item.imagem];
-let imgAtual = 0;
+            const listaCores = item.cores ? item.cores.split(',') : [item.cores || '#ccc'];
+            const imagens = Array.isArray(item.imagem) ? item.imagem : [item.imagem];
+            
             const card = document.createElement('div');
             card.className = `card ${eLimitada ? 'limitada' : ''} ${isMissing ? 'missing' : ''}`;
             
