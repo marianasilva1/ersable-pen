@@ -148,13 +148,11 @@ function filtrarVisualmente() {
 	const termo = document.getElementById("inputPesquisa").value.toLowerCase();
 	const cartoes = document.querySelectorAll(".card");
 
-    
-
 	cartoes.forEach((card) => {
 		const nome = card.querySelector(".nome").innerText.toLowerCase();
 		const numero = card.querySelector(".numero").innerText.toLowerCase();
 		const isMissing = card.classList.contains("missing");
-const corDaCaneta = card.getAttribute('data-cores');
+		const corDaCaneta = card.getAttribute('data-cores');
 
 		const batePesquisa = nome.includes(termo) || numero.includes(termo);
 		const bateFiltroStatus = (filtroAtual === 'all') || (filtroAtual === 'missing' && isMissing);
