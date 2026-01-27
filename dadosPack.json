@@ -1,9 +1,7 @@
 [
     {
         "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0001_5.jpg?sw=1200&sh=1200",
-        "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0001_1.jpg?sw=1200&sh=1200"
-        
-    ],
+        "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0001_1.jpg?sw=1200&sh=1200"],
         "numero": "EPSET0001",
         "cores": "Black, Blue, Red",
         "edicao_limitada": false,
