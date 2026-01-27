@@ -15,7 +15,6 @@ async function carregarDados() {
             const btn = document.getElementById("backToTop");
             
             // 1. Verifica se existem mais de 20 canetas no total dos dados carregados
-            // (Assumindo que a tua variável com os dados do JSON se chama 'data')
             const hasManyPens = typeof data !== 'undefined' && data.length > 20;
 
             // 2. Mostra o botão se descer mais de 300px E se tiver mais de 20 pens
