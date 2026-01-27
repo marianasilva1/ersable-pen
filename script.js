@@ -15,6 +15,7 @@ async function carregarDados() {
             const btn = document.getElementById("backToTop");
             
             // 1. Verifica se existem mais de 20 canetas no total dos dados carregados
+            // (Assumindo que a tua variável com os dados do JSON se chama 'data')
             const hasManyPens = typeof data !== 'undefined' && data.length > 20;
 
             // 2. Mostra o botão se descer mais de 300px E se tiver mais de 20 pens
@@ -38,7 +39,7 @@ async function carregarDados() {
 			const eStarPen =  item.numero.endsWith("star") ;
             console.log(eStarPen)
 			const card = document.createElement("div");
-            
+            card.setAttribute('data-cores', item.cores);
            
 			card.className = `card ${eLimitada ? "limitada" : ""} ${eStarPen ? 'star-pen-active' : ''} ${isMissing ? "missing" : ""} ${eDescontinuado ? "descontinuado" : ""}`;
 			card.style.borderBottomColor = "var(--" + listaCores[0].trim() + ")";
@@ -95,6 +96,16 @@ function toggleMissing(id) {
 	carregarDados();
 }
 
+function setFiltroCor(cor) {
+    filtroCorAtual = cor;
+    
+    // Atualiza a bolinha ativa
+    document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    filtrarVisualmente();
+}
+
 function filtrarCanetas() {
 	// 1. Pega o texto escrito e transforma em minúsculas
 	const termo = document.getElementById("inputPesquisa").value.toLowerCase();
@@ -137,16 +148,27 @@ function filtrarVisualmente() {
 	const termo = document.getElementById("inputPesquisa").value.toLowerCase();
 	const cartoes = document.querySelectorAll(".card");
 
+    
+
 	cartoes.forEach((card) => {
 		const nome = card.querySelector(".nome").innerText.toLowerCase();
 		const numero = card.querySelector(".numero").innerText.toLowerCase();
 		const isMissing = card.classList.contains("missing");
+const corDaCaneta = card.getAttribute('data-cores');
 
 		const batePesquisa = nome.includes(termo) || numero.includes(termo);
-		const bateFiltro =
-			filtroAtual === "all" || (filtroAtual === "missing" && isMissing);
+		const bateFiltroStatus = (filtroAtual === 'all') || (filtroAtual === 'missing' && isMissing);
 
-		card.style.display = batePesquisa && bateFiltro ? "flex" : "none";
+		// Filtro de Cor Simples
+        let bateCor = (filtroCorAtual === 'all') || (corDaCaneta === filtroCorAtual);
+
+      
+
+        if (batePesquisa && bateFiltroStatus && bateCor) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
 	});
 }
 
