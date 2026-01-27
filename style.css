@@ -341,6 +341,15 @@ h1 {
 	text-transform: uppercase;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.star-icon {
+    position: absolute;
+		background-color: white;
+		border-radius: 50%;
+    top: 10px;
+    left: 10px; /* Colocamos à esquerda para não bater no badge de descontinuado que está à direita */
+    font-size: 1.2rem;
+    z-index: 15;
+}
 
 /* Opcional: Efeito no card quando descontinuado */
 .card.descontinuado {
@@ -492,6 +501,35 @@ main, .home-content {
 
 .bmc-button:hover {
     transform: scale(1.05);
+}
+#backToTop {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Escondido por padrão */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#backToTop:hover {
+    background-color: #555;
+    transform: translateY(-5px);
+}
+
+/* Para o SVG ficar bem centrado */
+#backToTop svg {
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width: 1200px) {
