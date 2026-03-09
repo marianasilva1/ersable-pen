@@ -96,9 +96,10 @@
         "cores": "Turquoise, Orange",
         "edicao_limitada": true,
          "ano": "Better Together 2026"
-    },{
+    },
+    {
         "imagem": ["https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2481d217/images_legami/zoom/EPSET0016_11.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0016_1.jpg?sw=1200&sh=1200","https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0016_2.jpg?sw=1200&sh=1200"],
-        "numero": "EPSET0061",
+        "numero": "EPSET0016",
         "cores": " Black, Pink, Green, Red",
         "edicao_limitada": false,
          "ano": "Farm Sweet Farm Edition 2026"
