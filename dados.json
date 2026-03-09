@@ -858,10 +858,10 @@
 	{
 		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0063_2.jpg?sw=1200&sh=1200",
 
-		"nome": "???",
-		"mensagem": "",
+		"nome": "Shark",
+		"mensagem": "Shark Attack",
 		"numero": "EP0063",
-		"cores": "",
+		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": false,
 		"ano": ""
@@ -869,10 +869,10 @@
 	{
 		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0064_2.jpg?sw=1200&sh=1200",
 
-		"nome": "???",
-		"mensagem": "",
+		"nome": "Llama",
+		"mensagem": "No Probllama",
 		"numero": "EP0064",
-		"cores": "",
+		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": false,
 		"ano": ""
@@ -880,10 +880,10 @@
 	{
 		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0065_2.jpg?sw=1200&sh=1200",
 
-		"nome": "???",
-		"mensagem": "",
+		"nome": "Dino",
+		"mensagem": "Rooarrr!",
 		"numero": "EP0065",
-		"cores": "",
+		"cores": "Green",
 		"descontinuado": false,
 		"edicao_limitada": false,
 		"ano": ""
@@ -979,10 +979,10 @@
 	{
 		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw44dc73e2/images_legami/zoom/EP0074_2.jpg?sw=1200&sh=1200",
 
-		"nome": "???",
-		"mensagem": "",
+		"nome": "Get Luck!",
+		"mensagem": "Ladybug",
 		"numero": "EP0074",
-		"cores": "",
+		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": false,
 		"ano": ""
@@ -1008,5 +1008,49 @@
 		"descontinuado": false,
 		"edicao_limitada": true,
 		"ano": "2026 Better Together Edition"
-	}
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0016_3.jpg?sw=1200&sh=1200",
+
+		"nome": "Cow",
+		"mensagem": "Always In The Moood",
+		"numero": "EP0077",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": "2026 Farm Sweet Farm Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0016_4.jpg?sw=1200&sh=1200",
+
+		"nome": "Pig",
+		"mensagem": "Rock'N'Rolling",
+		"numero": "EP0078",
+		"cores": "Pink",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": "2026 Farm Sweet Farm Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0016_5.jpg?sw=1200&sh=1200",
+
+		"nome": "Donkey",
+		"mensagem": "Better Than A Unicorn",
+		"numero": "EP0079",
+		"cores": "Green",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": "2026 Farm Sweet Farm Edition"
+	},
+	{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw2cf33702/images_legami/zoom/EPSET0016_6.jpg?sw=1200&sh=1200",
+
+		"nome": "Rooster",
+		"mensagem": "Rise And Shine",
+		"numero": "EP0080",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": "2026 Farm Sweet Farm Edition"
+	},
 ]
