@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<title>Lovely Friends Gel Pens</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="logo">🖋️ Legami Collection</div>
+			<nav>
+				<ul class="nav-links">
+					<li>
+						<a href="index.html"><i class="fas fa-home"></i>Home</a>
+					</li>
+					<li>
+						<a href="pens.html"><i class="fas fa-pen-nib"></i>Pens</a>
+					</li>
+					<li>
+						<a href="lovely-friends.html" class="active"><i class="fas fa-heart"></i>Lovely Friends Gel Pens</a>
+					</li>
+					<li>
+						<a href="packs.html"><i class="fas fa-pen-nib"></i>Packs</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div>
+			<h1>Lovely Friends Gel Pens</h1>
+			
+			<div class="nav-container">
+				<div class="search-box">
+					<input
+						type="text"
+						id="inputPesquisa"
+						placeholder="Search for pen by name or number..."
+						onkeyup="filtrarCanetas()"
+					/>
+				</div>
+				<div class="filter-options">
+					<button class="btn-filter active" onclick="setFiltro('all', this)">
+						All
+					</button>
+					<button class="btn-filter" onclick="setFiltro('missing', this)">
+						Missing
+					</button>
+				</div>
+			</div>
+			<div class="color-filter-container">
+    <span>Filter by color:</span>
+    <div class="color-dots">
+        <div class="dot all active" onclick="setFiltroCor('all')" title="All Colors"></div>
+        <div class="dot" style="background: var(--Black);" onclick="setFiltroCor('Black')" title="Black"></div>
+        <div class="dot" style="background: var(--Blue);" onclick="setFiltroCor('Blue')" title="Blue"></div>
+        <div class="dot" style="background: var(--Green);" onclick="setFiltroCor('Green')" title="Green"></div>
+        <div class="dot" style="background: var(--Red);" onclick="setFiltroCor('Red')" title="Red"></div>
+        <div class="dot" style="background: var(--Pink);" onclick="setFiltroCor('Pink')" title="Pink"></div>
+        <div class="dot" style="background: var(--Turquoise);" onclick="setFiltroCor('Turquoise')" title="Turquoise"></div>
+        <div class="dot" style="background: var(--Orange);" onclick="setFiltroCor('Orange')" title="Orange"></div>
+        <div class="dot" style="background: var(--Purple);" onclick="setFiltroCor('Purple')" title="Purple"></div>
+    </div>
+</div>
+		</div>
+		<main>
+			<div id="status">Loading data...</div>
+			<div class="grid-container" id="grid"></div>
+		
+		</main>
+		<footer class="creditos">
+			<div class="social-links">
+				<p>Criado com ❤️ por uma colecionadora</p>
+				
+				<a
+					href="https://vm.tiktok.com/ZGdm4Tpeg/"
+					target="_blank"
+					title="TikTok"
+				>
+					<i class="fab fa-tiktok"></i>
+				</a>
+				<a
+							href="https://www.paypal.me/fmarianas"
+							target="_blank"
+							title="coffee"
+						>
+							<i class="fa-solid fa-mug-hot"></i>
+						</a>
+			</div>
+			
+			<p>
+				The images and products shown belong to
+				<a
+					href="https://www.legami.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Legami</a
+				>.
+			</p>
+		</footer>
+		<button id="backToTop" title="Go to top">
+				<svg viewBox="0 0 24 24" width="24" height="24">
+						<path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+				</svg>
+		</button>
+		<script src="scriptLovelyFriends.js"></script>
+		
+	</body>
+</html>

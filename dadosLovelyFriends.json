@@ -1,0 +1,311 @@
+[{
+		"imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0001_1.jpg?sw=1200&sh=1200",
+
+		"nome": "Panda",
+		"mensagem": "Hug Me",
+		"numero": "VCPP0001",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},{
+    "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0002_1.jpg?sw=1200&sh=1200",
+    "nome": "Cat",
+    "mensagem": "Be Curious",
+    "numero": "VCPP0002",
+    "cores": "Pink",
+    "descontinuado": false,
+    "edicao_limitada": false,
+    "ano": ""
+    },{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0003_1.jpg?sw=1200&sh=1200",
+        "nome": "Teddy Bear",
+        "mensagem": "Dream Big",
+        "numero": "VCPP0003",
+        "cores": "Red",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+     },{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0004_1.jpg?sw=1200&sh=1200",
+        "nome": "Koala",
+        "mensagem": "Let Me Sleep",
+        "numero": "VCPP0004",
+        "cores": "Green",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0005_1.jpg?sw=1200&sh=1200",
+        "nome": "Sloth",
+        "mensagem": "Take It Easy",
+        "numero": "VCPP0005",
+        "cores": "Blue",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0006_1.jpg?sw=1200&sh=1200",
+        "nome": "Unicorn",
+        "mensagem": "Believe in Magic",
+        "numero": "VCPP0006",
+        "cores": "Pink",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0007_1.jpg?sw=1200&sh=1200",
+        "nome": "Dino",
+        "mensagem": "Rooarrr",
+        "numero": "VCPP0007",
+        "cores": "Green",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0008_1.jpg?sw=1200&sh=1200",
+        "nome": "Tiger",
+        "mensagem": "Grrreat Adventures",
+        "numero": "VCPP0008",
+        "cores": "Orange",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0009_1.jpg?sw=1200&sh=1200",
+        "nome": "Bunny",
+        "mensagem": "Don't Worry Be Hoppy",
+        "numero": "VCPP0009",
+        "cores": "Purple",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0010_1.jpg?sw=1200&sh=1200",
+        "nome": "Llama",
+        "mensagem": "No Probllama",
+        "numero": "VCPP0010",
+        "cores": "Blue",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0011_1.jpg?sw=1200&sh=1200",
+        "nome": "Ghost",
+        "mensagem": "Hey Boo!",
+        "numero": "VCPP0011",
+        "cores": "Black",
+        "descontinuado": false,
+         "edicao_limitada": true,
+         "ano": "2024 Halloween"
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw6b7cc628/images_legami/zoom/CPPSET1_3.jpg?sw=1200&sh=1200",
+        "nome": "Teddy Bear",
+        "mensagem": "I love you beary much",
+        "numero": "-tedy",
+		"display_num": "-",
+        "cores": "Purple",
+        "descontinuado": false,
+         "edicao_limitada": true,
+         "ano": "2024 Valentine's Day"
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw6b7cc628/images_legami/zoom/CPPSET1_4.jpg?sw=1200&sh=1200",
+        "nome": "Teddy Bear",
+        "mensagem": "I love you more",
+        "numero": "teddygirl",
+		"display_num": "-",
+        "cores": "Turquoise",
+        "descontinuado": false,
+         "edicao_limitada": true,
+         "ano": "2024 Valentine's Day"
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0012_1.jpg?sw=1200&sh=1200",
+        "nome": "Bee",
+        "mensagem": "Bee Different",
+        "numero": "VCPP0012",
+        "cores": "Black",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0013_1.jpg?sw=1200&sh=1200",
+        "nome": "Lion",
+        "mensagem": "The King",
+        "numero": "VCPP0013",
+        "cores": "Black",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0014_1.jpg?sw=1200&sh=1200",
+        "nome": "Monster",
+        "mensagem": "Aaargh-dorable!",
+        "numero": "VCPP0014",
+        "cores": "Blue",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0015_1.jpg?sw=1200&sh=1200",
+        "nome": "Hippo ",
+        "mensagem": "Hip Hippo Hooray",
+        "numero": "VCPP0015",
+        "cores": "Blue",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0016_1.jpg?sw=1200&sh=1200",
+        "nome": "Panda",
+        "mensagem": "Hug Me",
+        "numero": "VCPP0016",
+        "cores": "Black",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0017_1.jpg?sw=1200&sh=1200",
+        "nome": "Kitty",
+        "mensagem": "Meow",
+        "numero": "VCPP0017",
+        "cores": "Black",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0018_1.jpg?sw=1200&sh=1200",
+        "nome": "Teddy Bear",
+        "mensagem": "Dream Big",
+        "numero": "VCPP0018",
+        "cores": "Red",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0019_1.jpg?sw=1200&sh=1200",
+         "nome": "Koala",
+        "mensagem": "Let Me Sleep",
+        "cores": "Green",
+        "numero": "VCPP0019",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0020_1.jpg?sw=1200&sh=1200",
+        "nome": "Sloth",
+        "mensagem": "Take It Easy",
+        "cores": "Blue",
+        "numero": "VCPP0020",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0021_1.jpg?sw=1200&sh=1200",
+        "nome": "-",
+        "mensagem": "-",
+        "numero": "VCPP0021",
+        "cores": "-",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0022_1.jpg?sw=1200&sh=1200",
+        "nome": "-",
+        "mensagem": "-",
+        "numero": "VCPP0022",
+        "cores": "-",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0023_1.jpg?sw=1200&sh=1200",
+        "nome": "-",
+        "mensagem": "-",
+        "numero": "VCPP0023",
+        "cores": "-",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0024_1.jpg?sw=1200&sh=1200",
+       "nome": "Bunny",
+        "mensagem": "Don't Worry Be Hoppy",
+        "cores": "Purple",
+        "numero": "VCPP0024",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0025_1.jpg?sw=1200&sh=1200",
+        "nome": "Llama",
+        "mensagem": "No Probllama",
+        "cores": "Blue",
+        "numero": "VCPP0025",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0026_1.jpg?sw=1200&sh=1200",
+        "nome": "Spider",
+        "mensagem": "Free Hugs",
+        "numero": "VCPP0026",
+        "cores": "Green",
+        "descontinuado": true,
+         "edicao_limitada": true,
+         "ano": "2025 Halloween"
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw61832a6d/images_legami/zoom/CPP0027_1.jpg?sw=1200&sh=1200",
+        "nome": "Ladybug",
+        "mensagem": "Get Lucky",
+        "numero": "VCPP0027",
+        "cores": "Red",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": ""
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw7136152c/images_legami/zoom/CPPSET2_4.jpg?sw=1200&sh=1200",
+        "nome": "Bunny",
+        "mensagem": "Hope vibes only",
+        "numero": "VCPP0028",
+        "cores": "Pink",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": "2026 Easter"
+  }
+  ,{
+        "imagem": "https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/dw63c59beb/images_legami/zoom/CPPSET2_3.jpg?sw=1200&sh=1200",
+        "nome": "Chicken",
+        "mensagem": "Eggs-tra happy",
+        "numero": "VCPP0029",
+        "cores": "Purple",
+        "descontinuado": false,
+         "edicao_limitada": false,
+         "ano": "2026 Easter"
+  }
+        ]
