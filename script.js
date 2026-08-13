@@ -1,65 +1,98 @@
+const CONFIG = window.PAGE_CONFIG || { dataUrl: "dados.json", storageKey: "missingPens" };
+
+// As imagens do catálogo Legami partilham quase todo o URL — nos JSON só
+// guardamos a parte que muda ("dwHASH/CODIGO_N.jpg") e remontamos aqui.
+const LEGAMI_IMG_BASE =
+	"https://www.legami.com/dw/image/v2/BDSQ_PRD/on/demandware.static/-/Sites-legami-master-catalog/default/";
+const LEGAMI_IMG_MID = "images_legami/zoom/";
+const LEGAMI_IMG_SUFFIX = "?sw=1200&sh=1200";
+
+function resolveImagem(caminho) {
+	const m = /^(dw[0-9a-f]+)\/([A-Za-z0-9_]+\.jpg)$/.exec(caminho);
+	if (m) {
+		return LEGAMI_IMG_BASE + m[1] + "/" + LEGAMI_IMG_MID + m[2] + LEGAMI_IMG_SUFFIX;
+	}
+	return caminho; // já é um URL completo ou uma imagem local (placeholder)
+}
+
 let filtroAtual = "all";
+let filtroCorAtual = "all";
 
 async function carregarDados() {
 	const grid = document.getElementById("grid");
 	const status = document.getElementById("status");
 
 	try {
-		const resposta = await fetch("dados.json");
+		const resposta = await fetch(CONFIG.dataUrl);
 		const data = await resposta.json();
 
-		const missingPens = JSON.parse(localStorage.getItem("missingPens")) || [];
+		const missingPens = JSON.parse(localStorage.getItem(CONFIG.storageKey)) || [];
 		grid.innerHTML = "";
 		status.style.display = "none";
-        window.onscroll = function() {
-            const btn = document.getElementById("backToTop");
-            
-            // 1. Verifica se existem mais de 20 canetas no total dos dados carregados
-            // (Assumindo que a tua variável com os dados do JSON se chama 'data')
-            const hasManyPens = typeof data !== 'undefined' && data.length > 20;
 
-            // 2. Mostra o botão se descer mais de 300px E se tiver mais de 20 pens
-            if (hasManyPens && (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300)) {
-                btn.style.display = "flex";
-            } else {
-                btn.style.display = "none";
-            }
-        };
+		const backToTopBtn = document.getElementById("backToTop");
+		if (backToTopBtn) {
+			window.onscroll = function () {
+				const hasManyPens = data.length > 20;
+				const scrolledPast300 =
+					document.body.scrollTop > 300 || document.documentElement.scrollTop > 300;
+				backToTopBtn.style.display = hasManyPens && scrolledPast300 ? "flex" : "none";
+			};
+		}
 
-		data.forEach((item) => {
-			const isMissing = missingPens.includes(item.numero);
-			const eLimitada =
-				item.edicao_limitada === true || item.edicao_limitada === "true";
-			const listaCores = item.cores
-				? item.cores.split(",")
-				: [item.cores || "#ccc"];
-			const eDescontinuado =
-				item.descontinuado === true || item.descontinuado === "true";
-			const numToShow = item.display_num || item.numero;
-			const eStarPen =  item.numero.endsWith("star") ;
-            console.log(eStarPen)
-			const card = document.createElement("div");
-            card.setAttribute('data-cores', item.cores);
-           
-			card.className = `card ${eLimitada ? "limitada" : ""} ${eStarPen ? 'star-pen-active' : ''} ${isMissing ? "missing" : ""} ${eDescontinuado ? "descontinuado" : ""}`;
-			card.style.borderBottomColor = "var(--" + listaCores[0].trim() + ")";
+		data.forEach((item) => grid.appendChild(criarCard(item, missingPens)));
 
-			let coresHTML = '<div class="cores-container">';
+		filtrarVisualmente(); // Reaplica filtros ativos (pesquisa/estado/cor)
+	} catch (e) {
+		status.innerText = "Erro ao carregar dados.";
+	}
+}
 
-			card.innerHTML = `
+function criarCard(item, missingPens) {
+	const isMissing = missingPens.includes(item.numero);
+	const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
+	const listaCores = item.cores ? item.cores.split(",") : [item.cores || "#ccc"];
+	const eDescontinuado = item.descontinuado === true || item.descontinuado === "true";
+	const numToShow = item.display_num || item.numero;
+	const eStarPen = typeof item.numero === "string" && item.numero.endsWith("star");
+	const imagens = (Array.isArray(item.imagem) ? item.imagem : [item.imagem]).map(resolveImagem);
+
+	const card = document.createElement("div");
+	card.setAttribute("data-cores", item.cores);
+	card.className = `card ${eLimitada ? "limitada" : ""} ${eStarPen ? "star-pen-active" : ""} ${isMissing ? "missing" : ""} ${eDescontinuado ? "descontinuado" : ""}`;
+	card.style.borderBottomColor = "var(--" + listaCores[0].trim() + ")";
+
+	let coresHTML = '<div class="cores-container">';
+	if (listaCores.length > 1) {
+		listaCores.forEach((c) => {
+			coresHTML += `<div class="bola-cor" style="background-color: var(--${c.trim()})"></div>`;
+		});
+	}
+	coresHTML += "</div>";
+
+	card.innerHTML = `
                     ${eDescontinuado ? '<span class="badge-descontinuado">🚫 Discontinued</span>' : ""}
-                    ${eStarPen ? `<svg class="star-icon" viewBox="0 0 24 24" width="24" height="24">
-    <path fill=${"var(--" + listaCores[0].trim() + ")"} d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-</svg>` : ''}
-                    
+                    ${
+											eStarPen
+												? `<svg class="star-icon" viewBox="0 0 24 24" width="24" height="24">
+    <path fill="${"var(--" + listaCores[0].trim() + ")"}" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+</svg>`
+												: ""
+										}
                 <div class="image-container">
-                    <img src="${item.imagem}" alt="${item.nome}" onerror="this.src='https://fav.farm/🖊️'">
+                    ${
+											imagens.length > 1
+												? `<button class="btn-nav btn-prev" onclick="event.stopPropagation(); mudarFoto(this, -1)">❮</button>
+                    <button class="btn-nav btn-next" onclick="event.stopPropagation(); mudarFoto(this, 1)">❯</button>`
+												: ""
+										}
+                    <img src="${imagens[0]}" class="img-principal" alt="${item.nome || ""}" data-fotos='${JSON.stringify(imagens)}' data-index="0" onerror="this.src='https://fav.farm/🖊️'">
                 </div>
                 <div class="info">
                     ${eLimitada ? '<span class="badge-limitada">ED. LIMITADA</span>' : ""}
-                    <p class="ano-lancamento">${item.ano}</p>
-                    <p class="mensagem">${item.mensagem}</p>
-                    <p class="nome">${item.nome}</p>
+                    ${item.ano ? `<p class="ano-lancamento">${item.ano}</p>` : ""}
+                    ${item.mensagem ? `<p class="mensagem">${item.mensagem}</p>` : ""}
+                    ${item.nome ? `<p class="nome">${item.nome}</p>` : ""}
                     <span class="numero">Nº ${numToShow}</span>
                     ${coresHTML}
                     <div class="check-container" onclick="toggleMissing('${item.numero}')">
@@ -67,65 +100,60 @@ async function carregarDados() {
                     </div>
                 </div>
             `;
-			grid.appendChild(card);
-		});
-
-		filtrarVisualmente(); // Reaplica filtros se houver pesquisa ativa
-	} catch (e) {
-		status.innerText = "Erro ao carregar dados.";
-	}
+	return card;
 }
 
+function mudarFoto(botao, direcao) {
+	const container = botao.parentElement;
+	const img = container.querySelector(".img-principal");
+	const fotos = JSON.parse(img.getAttribute("data-fotos"));
+	let index = parseInt(img.getAttribute("data-index"));
 
-// Ação de clicar para subir suavemente
-document.getElementById("backToTop").onclick = function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-};
+	index += direcao;
+
+	// Loop infinito: se chegar ao fim volta ao início e vice-versa
+	if (index >= fotos.length) index = 0;
+	if (index < 0) index = fotos.length - 1;
+
+	img.src = fotos[index];
+	img.setAttribute("data-index", index);
+}
+
+const backToTopBtn = document.getElementById("backToTop");
+if (backToTopBtn) {
+	backToTopBtn.onclick = function () {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+}
 
 function toggleMissing(id) {
-	let missingPens = JSON.parse(localStorage.getItem("missingPens")) || [];
+	let missingPens = JSON.parse(localStorage.getItem(CONFIG.storageKey)) || [];
 	if (missingPens.includes(id)) {
 		missingPens = missingPens.filter((i) => i !== id);
 	} else {
 		missingPens.push(id);
 	}
-	localStorage.setItem("missingPens", JSON.stringify(missingPens));
+	localStorage.setItem(CONFIG.storageKey, JSON.stringify(missingPens));
 	carregarDados();
 }
 
 function setFiltroCor(cor) {
-    filtroCorAtual = cor;
-    
-    // Atualiza a bolinha ativa
-    document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
-    event.target.classList.add('active');
-    
-    filtrarVisualmente();
+	filtroCorAtual = cor;
+
+	// Atualiza a bolinha ativa
+	document.querySelectorAll(".dot").forEach((d) => d.classList.remove("active"));
+	event.target.classList.add("active");
+
+	filtrarVisualmente();
 }
 
 function filtrarCanetas() {
-	// 1. Pega o texto escrito e transforma em minúsculas
-	const termo = document.getElementById("inputPesquisa").value.toLowerCase();
-
-	// 2. Pega todos os cartões da grid
-	const cartoes = document.querySelectorAll(".card");
-
-	cartoes.forEach((card) => {
-		// 3. Procura o texto dentro do nome e do número
-		const nome = card.querySelector(".nome").innerText.toLowerCase();
-		const numero = card.querySelector(".numero").innerText.toLowerCase();
-
-		// 4. Se o termo estiver no nome ou no número, mostra. Se não, esconde.
-		if (nome.includes(termo) || numero.includes(termo)) {
-			card.style.display = "flex";
-		} else {
-			card.style.display = "none";
-		}
-	});
+	filtrarVisualmente();
 }
+
 function setFiltro(tipo, btn) {
 	filtroAtual = tipo;
 
@@ -135,38 +163,27 @@ function setFiltro(tipo, btn) {
 		.forEach((b) => b.classList.remove("active"));
 	btn.classList.add("active");
 
-	// Aplica o filtro visual
-	const cartoes = document.querySelectorAll(".card");
-	cartoes.forEach((card) => {
-		const isMissing = card.classList.contains("missing");
-		if (tipo === "all") card.style.display = "flex";
-		else if (tipo === "missing" && isMissing) card.style.display = "flex";
-		else card.style.display = "none";
-	});
+	filtrarVisualmente();
 }
+
 function filtrarVisualmente() {
-	const termo = document.getElementById("inputPesquisa").value.toLowerCase();
+	const inputEl = document.getElementById("inputPesquisa");
+	const termo = inputEl ? inputEl.value.toLowerCase() : "";
 	const cartoes = document.querySelectorAll(".card");
 
 	cartoes.forEach((card) => {
-		const nome = card.querySelector(".nome").innerText.toLowerCase();
+		const nomeEl = card.querySelector(".nome");
+		const nome = nomeEl ? nomeEl.innerText.toLowerCase() : "";
 		const numero = card.querySelector(".numero").innerText.toLowerCase();
 		const isMissing = card.classList.contains("missing");
-		const corDaCaneta = card.getAttribute('data-cores');
+		const corDaCaneta = card.getAttribute("data-cores");
 
 		const batePesquisa = nome.includes(termo) || numero.includes(termo);
-		const bateFiltroStatus = (filtroAtual === 'all') || (filtroAtual === 'missing' && isMissing);
+		const bateFiltroStatus =
+			filtroAtual === "all" || (filtroAtual === "missing" && isMissing);
+		const bateCor = filtroCorAtual === "all" || corDaCaneta === filtroCorAtual;
 
-		// Filtro de Cor Simples
-        let bateCor = (filtroCorAtual === 'all') || (corDaCaneta === filtroCorAtual);
-
-      
-
-        if (batePesquisa && bateFiltroStatus && bateCor) {
-            card.style.display = "flex";
-        } else {
-            card.style.display = "none";
-        }
+		card.style.display = batePesquisa && bateFiltroStatus && bateCor ? "flex" : "none";
 	});
 }
 
