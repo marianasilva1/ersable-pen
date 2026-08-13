@@ -1,0 +1,72 @@
+[
+	{
+		"imagem": "dw8191eb5a/HUG0001_1.jpg",
+		"nome": "Panda",
+		"mensagem": "Hug me",
+		"numero": "HUG0001",
+		"cores": "Black",
+		"ano": "",
+		"edicao_limitada": false,
+		"descontinuado": false
+	},
+	{
+		"imagem": "dw8191eb5a/HUG0002_1.jpg",
+		"nome": "Kitty",
+		"mensagem": "Be Curious",
+		"numero": "HUG0002",
+		"cores": "Blue",
+		"ano": "",
+		"edicao_limitada": false,
+		"descontinuado": false
+	},
+	{
+		"imagem": "dw8191eb5a/HUG0003_1.jpg",
+		"nome": "Teddy",
+		"mensagem": "Dream Big",
+		"numero": "HUG0003",
+		"cores": "Red",
+		"ano": "",
+		"edicao_limitada": false,
+		"descontinuado": false
+	},
+	{
+		"imagem": "dw8191eb5a/HUG0004_1.jpg",
+		"nome": "Unicorn",
+		"mensagem": "Believe in Magic",
+		"numero": "HUG0004",
+		"cores": "Pink",
+		"ano": "",
+		"edicao_limitada": false,
+		"descontinuado": false
+	},
+	{
+		"imagem": "dw8191eb5a/HUG0005_1.jpg",
+		"nome": "Penguin",
+		"mensagem": "Always Cool",
+		"numero": "HUG0005",
+		"cores": "Blue",
+		"ano": "",
+		"edicao_limitada": false,
+		"descontinuado": false
+	},
+	{
+		"imagem": "dw8191eb5a/HUG0006_1.jpg",
+		"nome": "Sloth",
+		"mensagem": "Take it Easy",
+		"numero": "HUG0006",
+		"cores": "Green",
+		"ano": "",
+		"edicao_limitada": false,
+		"descontinuado": false
+	},
+	{
+		"imagem": "dw8191eb5a/HUG0007_1.jpg",
+		"nome": "Gorilla",
+		"mensagem": "Wild but Kind",
+		"numero": "HUG0007",
+		"cores": "Black",
+		"ano": "",
+		"edicao_limitada": false,
+		"descontinuado": false
+	}
+]

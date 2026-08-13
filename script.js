@@ -48,10 +48,31 @@ async function carregarDados() {
 	}
 }
 
+// Cores conhecidas do tema (ver as variáveis --Black, --Green, etc. em style.css).
+// Valores de "cores" que não batem aqui (ex.: "-" em entradas por preencher) são
+// tratados como "sem cor" em vez de gerar um var(--...) inválido.
+const CORES_CONHECIDAS = new Set([
+	"Black",
+	"Green",
+	"Blue",
+	"Pink",
+	"Turquoise",
+	"Red",
+	"Orange",
+	"Purple",
+]);
+
+function corValida(c) {
+	return CORES_CONHECIDAS.has(c) || /^#[0-9a-fA-F]{3,8}$/.test(c);
+}
+
 function criarCard(item, missingPens) {
+	const showColors = CONFIG.showColors !== false;
 	const isMissing = missingPens.includes(item.numero);
 	const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
-	const listaCores = item.cores ? item.cores.split(",") : [item.cores || "#ccc"];
+	const listaCores = (item.cores ? item.cores.split(",") : [])
+		.map((c) => c.trim())
+		.filter(corValida);
 	const eDescontinuado = item.descontinuado === true || item.descontinuado === "true";
 	const numToShow = item.display_num || item.numero;
 	const eStarPen = typeof item.numero === "string" && item.numero.endsWith("star");
@@ -60,22 +81,30 @@ function criarCard(item, missingPens) {
 	const card = document.createElement("div");
 	card.setAttribute("data-cores", item.cores);
 	card.className = `card ${eLimitada ? "limitada" : ""} ${eStarPen ? "star-pen-active" : ""} ${isMissing ? "missing" : ""} ${eDescontinuado ? "descontinuado" : ""}`;
-	card.style.borderBottomColor = "var(--" + listaCores[0].trim() + ")";
-
-	let coresHTML = '<div class="cores-container">';
-	if (listaCores.length > 1) {
-		listaCores.forEach((c) => {
-			coresHTML += `<div class="bola-cor" style="background-color: var(--${c.trim()})"></div>`;
-		});
+	if (showColors && listaCores.length > 0) {
+		const primeiraCor = listaCores[0];
+		card.style.borderBottomColor = primeiraCor.startsWith("#") ? primeiraCor : "var(--" + primeiraCor + ")";
 	}
-	coresHTML += "</div>";
+
+	let coresHTML = "";
+	if (showColors && listaCores.length > 1) {
+		coresHTML = '<div class="cores-container">';
+		listaCores.forEach((c) => {
+			const valor = c.startsWith("#") ? c : "var(--" + c + ")";
+			coresHTML += `<div class="bola-cor" style="background-color: ${valor}"></div>`;
+		});
+		coresHTML += "</div>";
+	}
+
+	const corPrincipal = listaCores.length > 0 ? listaCores[0] : "Black";
+	const corPrincipalCSS = corPrincipal.startsWith("#") ? corPrincipal : "var(--" + corPrincipal + ")";
 
 	card.innerHTML = `
                     ${eDescontinuado ? '<span class="badge-descontinuado">🚫 Discontinued</span>' : ""}
                     ${
 											eStarPen
 												? `<svg class="star-icon" viewBox="0 0 24 24" width="24" height="24">
-    <path fill="${"var(--" + listaCores[0].trim() + ")"}" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+    <path fill="${corPrincipalCSS}" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
 </svg>`
 												: ""
 										}
@@ -140,15 +169,30 @@ function toggleMissing(id) {
 	carregarDados();
 }
 
-function setFiltroCor(cor) {
+function setFiltroCor(cor, evt) {
 	filtroCorAtual = cor;
 
 	// Atualiza a bolinha ativa
-	document.querySelectorAll(".dot").forEach((d) => d.classList.remove("active"));
-	event.target.classList.add("active");
+	document.querySelectorAll(".dot").forEach((d) => {
+		d.classList.remove("active");
+		d.setAttribute("aria-pressed", "false");
+	});
+	evt.target.classList.add("active");
+	evt.target.setAttribute("aria-pressed", "true");
 
 	filtrarVisualmente();
 }
+
+// Torna as bolinhas de filtro de cor operáveis por teclado (Enter/Espaço),
+// já que são <div>, não <button>.
+document.querySelectorAll(".dot").forEach((dot) => {
+	dot.addEventListener("keydown", (evt) => {
+		if (evt.key === "Enter" || evt.key === " ") {
+			evt.preventDefault();
+			dot.click();
+		}
+	});
+});
 
 function filtrarCanetas() {
 	filtrarVisualmente();

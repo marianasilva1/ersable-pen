@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 :root {
 	--font-heading: "Crafty Girls", cursive;
 	--font-body: "Quicksand", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -122,7 +128,7 @@ h1 {
 		box-shadow 0.3s;
 	display: flex;
 	flex-direction: column;
-	border-bottom: 8px solid; /* A cor da caneta aqui */
+	border-bottom: 8px solid #eadff2; /* A cor da caneta aqui, quando aplicável */
 }
 
 .card:hover {
@@ -315,13 +321,6 @@ h1 {
 	cursor: pointer;
 	border-top: 1px solid #eee;
 	padding-top: 5px;
-}
-
-.creditos {
-	margin-top: auto;
-	text-align: center;
-	font-size: 0.8rem;
-	opacity: 0.7;
 }
 
 #status {
@@ -602,6 +601,12 @@ main, .home-content {
 }
 
 .dot:hover {
+    transform: scale(1.2);
+}
+
+.dot:focus-visible {
+    outline: 2px solid var(--Purple);
+    outline-offset: 2px;
     transform: scale(1.2);
 }
 

@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en-en">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Browse and track the Legami Lovely Friends Gel Pens collection, with search and filters by name, number, and color." />
 		<link
 			rel="icon"
 			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>"
@@ -37,6 +38,12 @@
 					<li>
 						<a href="packs.html"><i class="fas fa-pen-nib"></i>Packs</a>
 					</li>
+					<li>
+						<a href="click-clack.html"><i class="fas fa-pen-nib"></i>Click&amp;Clack</a>
+					</li>
+					<li>
+						<a href="free-hugs.html"><i class="fas fa-heart"></i>Free Hugs</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -64,15 +71,15 @@
 			<div class="color-filter-container">
     <span>Filter by color:</span>
     <div class="color-dots">
-        <div class="dot all active" onclick="setFiltroCor('all')" title="All Colors"></div>
-        <div class="dot" style="background: var(--Black);" onclick="setFiltroCor('Black')" title="Black"></div>
-        <div class="dot" style="background: var(--Blue);" onclick="setFiltroCor('Blue')" title="Blue"></div>
-        <div class="dot" style="background: var(--Green);" onclick="setFiltroCor('Green')" title="Green"></div>
-        <div class="dot" style="background: var(--Red);" onclick="setFiltroCor('Red')" title="Red"></div>
-        <div class="dot" style="background: var(--Pink);" onclick="setFiltroCor('Pink')" title="Pink"></div>
-        <div class="dot" style="background: var(--Turquoise);" onclick="setFiltroCor('Turquoise')" title="Turquoise"></div>
-        <div class="dot" style="background: var(--Orange);" onclick="setFiltroCor('Orange')" title="Orange"></div>
-        <div class="dot" style="background: var(--Purple);" onclick="setFiltroCor('Purple')" title="Purple"></div>
+        <div class="dot all active" onclick="setFiltroCor('all', event)" role="button" tabindex="0" aria-pressed="true" title="All Colors"></div>
+        <div class="dot" style="background: var(--Black);" onclick="setFiltroCor('Black', event)" role="button" tabindex="0" aria-pressed="false" title="Black"></div>
+        <div class="dot" style="background: var(--Blue);" onclick="setFiltroCor('Blue', event)" role="button" tabindex="0" aria-pressed="false" title="Blue"></div>
+        <div class="dot" style="background: var(--Green);" onclick="setFiltroCor('Green', event)" role="button" tabindex="0" aria-pressed="false" title="Green"></div>
+        <div class="dot" style="background: var(--Red);" onclick="setFiltroCor('Red', event)" role="button" tabindex="0" aria-pressed="false" title="Red"></div>
+        <div class="dot" style="background: var(--Pink);" onclick="setFiltroCor('Pink', event)" role="button" tabindex="0" aria-pressed="false" title="Pink"></div>
+        <div class="dot" style="background: var(--Turquoise);" onclick="setFiltroCor('Turquoise', event)" role="button" tabindex="0" aria-pressed="false" title="Turquoise"></div>
+        <div class="dot" style="background: var(--Orange);" onclick="setFiltroCor('Orange', event)" role="button" tabindex="0" aria-pressed="false" title="Orange"></div>
+        <div class="dot" style="background: var(--Purple);" onclick="setFiltroCor('Purple', event)" role="button" tabindex="0" aria-pressed="false" title="Purple"></div>
     </div>
 </div>
 		</div>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Browse and track the Legami erasable pen packs collection." />
+		<meta name="description" content="Browse and track the Legami Free Hugs pens collection." />
 		<link
 			rel="icon"
 			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋️</text></svg>"
@@ -18,7 +18,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		/>
-		<title>Legami Packs</title>
+		<title>Free Hugs</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -36,20 +36,29 @@
 						<a href="lovely-friends.html"><i class="fas fa-heart"></i>Lovely Friends Gel Pens</a>
 					</li>
 					<li>
-						<a href="packs.html"  class="active"><i class="fas fa-pen-nib"></i>Packs</a>
+						<a href="packs.html"><i class="fas fa-pen-nib"></i>Packs</a>
 					</li>
 					<li>
 						<a href="click-clack.html"><i class="fas fa-pen-nib"></i>Click&amp;Clack</a>
 					</li>
 					<li>
-						<a href="free-hugs.html"><i class="fas fa-heart"></i>Free Hugs</a>
+						<a href="free-hugs.html" class="active"><i class="fas fa-heart"></i>Free Hugs</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<div>
-			<h1>Packs Collection</h1>
+			<h1>Free Hugs</h1>
+
 			<div class="nav-container">
+				<div class="search-box">
+					<input
+						type="text"
+						id="inputPesquisa"
+						placeholder="Search for pen by name or number..."
+						onkeyup="filtrarCanetas()"
+					/>
+				</div>
 				<div class="filter-options">
 					<button class="btn-filter active" onclick="setFiltro('all', this)">
 						All
@@ -59,15 +68,30 @@
 					</button>
 				</div>
 			</div>
+			<div class="color-filter-container">
+    <span>Filter by color:</span>
+    <div class="color-dots">
+        <div class="dot all active" onclick="setFiltroCor('all', event)" role="button" tabindex="0" aria-pressed="true" title="All Colors"></div>
+        <div class="dot" style="background: var(--Black);" onclick="setFiltroCor('Black', event)" role="button" tabindex="0" aria-pressed="false" title="Black"></div>
+        <div class="dot" style="background: var(--Blue);" onclick="setFiltroCor('Blue', event)" role="button" tabindex="0" aria-pressed="false" title="Blue"></div>
+        <div class="dot" style="background: var(--Green);" onclick="setFiltroCor('Green', event)" role="button" tabindex="0" aria-pressed="false" title="Green"></div>
+        <div class="dot" style="background: var(--Red);" onclick="setFiltroCor('Red', event)" role="button" tabindex="0" aria-pressed="false" title="Red"></div>
+        <div class="dot" style="background: var(--Pink);" onclick="setFiltroCor('Pink', event)" role="button" tabindex="0" aria-pressed="false" title="Pink"></div>
+        <div class="dot" style="background: var(--Turquoise);" onclick="setFiltroCor('Turquoise', event)" role="button" tabindex="0" aria-pressed="false" title="Turquoise"></div>
+        <div class="dot" style="background: var(--Orange);" onclick="setFiltroCor('Orange', event)" role="button" tabindex="0" aria-pressed="false" title="Orange"></div>
+        <div class="dot" style="background: var(--Purple);" onclick="setFiltroCor('Purple', event)" role="button" tabindex="0" aria-pressed="false" title="Purple"></div>
+    </div>
+</div>
 		</div>
 		<main>
 			<div id="status">Loading data...</div>
 			<div class="grid-container" id="grid"></div>
+
 		</main>
 		<footer class="creditos">
 			<div class="social-links">
 				<p>Criado com ❤️ por uma colecionadora</p>
-				
+
 				<a
 					href="https://vm.tiktok.com/ZGdm4Tpeg/"
 					target="_blank"
@@ -83,7 +107,7 @@
 							<i class="fa-solid fa-mug-hot"></i>
 						</a>
 			</div>
-			
+
 			<p>
 				The images and products shown belong to
 				<a
@@ -94,9 +118,15 @@
 				>.
 			</p>
 		</footer>
+		<button id="backToTop" title="Go to top">
+				<svg viewBox="0 0 24 24" width="24" height="24">
+						<path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+				</svg>
+		</button>
 		<script>
-			window.PAGE_CONFIG = { dataUrl: "dadosPack.json", storageKey: "missingPackPens" };
+			window.PAGE_CONFIG = { dataUrl: "dadosFreeHugs.json", storageKey: "missingFreeHugsPens" };
 		</script>
 		<script src="script.js"></script>
+
 	</body>
 </html>
