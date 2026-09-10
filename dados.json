@@ -1000,42 +1000,42 @@
 	},
 	{
 		"imagem": "dw44dc73e2/EP0081_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"nome": "Giraffe",
+		"mensagem": "Head In The Clouds",
 		"numero": "EP0081",
-		"cores": "",
+		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": false,
 		"ano": ""
 	},
 	{
-		"imagem": "dw44dc73e2/EP0082_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"imagem": "dw2481d217/EPSET0017_3.jpg",
+		"nome": "Dog",
+		"mensagem": "Fur-Ever Friends",
 		"numero": "EP0082",
 		"cores": "Red",
 		"descontinuado": false,
-		"edicao_limitada": false,
+		"edicao_limitada": true,
 		"ano": ""
 	},
 	{
-		"imagem": "dw44dc73e2/EP0083_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"imagem": "dw2481d217/EPSET0017_4.jpg",
+		"nome": "Dog",
+		"mensagem": "Big Nap Boss",
 		"numero": "EP0083",
-		"cores": "",
+		"cores": "Blue",
 		"descontinuado": false,
-		"edicao_limitada": false,
+		"edicao_limitada": true,
 		"ano": ""
 	},
 	{
-		"imagem": "dw44dc73e2/EP0084_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"imagem": "dw2481d217/EPSET0017_5.jpg",
+		"nome": "Dog",
+		"mensagem": "Cute?... Try iconic!",
 		"numero": "EP0084",
-		"cores": "",
+		"cores": "Black",
 		"descontinuado": false,
-		"edicao_limitada": false,
+		"edicao_limitada":true,
 		"ano": ""
 	},
 	{
@@ -1057,5 +1057,117 @@
 		"descontinuado": false,
 		"edicao_limitada": false,
 		"ano": ""
+	},
+	{
+		"imagem": "dw44dc73e2/EP00867_2.jpg",
+		"nome": "",
+		"mensagem": "",
+		"numero": "EP0087",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "dw44dc73e2/EP0088_2.jpg",
+		"nome": "",
+		"mensagem": "",
+		"numero": "EP0088",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "dw44dc73e2/EP0089_2.jpg",
+		"nome": "",
+		"mensagem": "",
+		"numero": "EP0089",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "dw44dc73e2/EP0090_2.jpg",
+		"nome": "",
+		"mensagem": "",
+		"numero": "EP0090",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	
+	{
+		"imagem": "dw44dc73e2/EP0091_2.jpg",
+		"nome": "",
+		"mensagem": "",
+		"numero": "EP0091",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "dw44dc73e2/EP0092_2.jpg",
+		"nome": "",
+		"mensagem": "",
+		"numero": "EP0092",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "dw44dc73e2/EP0093_2.jpg",
+		"nome": "",
+		"mensagem": "",
+		"numero": "EP0093",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "dw44dc73e2/EP0094_2.jpg",
+		"nome": "",
+		"mensagem": "",
+		"numero": "EP0094",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "dw44dc73e2/EP0095_4.jpg",
+		"nome": "PANDA VAMPIRE",
+		"mensagem": "Here for the boo-ffet",
+		"numero": "EP0095_red_cape",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Halloween Edition"
+	},
+	{
+		"imagem": "dw44dc73e2/EP0095_5.jpg",
+		"nome": "PANDA VAMPIRE",
+		"mensagem": "Bam-Boo!",
+		"numero": "EP0095_black_cape",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Halloween Edition"
+	},
+	{
+		"imagem": "dw44dc73e2/EP0095_6.jpg",
+		"nome": "PANDA VAMPIRE",
+		"mensagem": "Spooky Boo-Gie",
+		"numero": "EP0095_purple_cape",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Halloween Edition"
 	}
+
 ]

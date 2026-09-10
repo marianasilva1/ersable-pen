@@ -320,5 +320,25 @@
 		"descontinuado": false,
 		"edicao_limitada": false,
 		"ano": ""
+	},
+	{
+		"imagem": "dw61832a6d/CPPSET3_3.jpg",
+		"nome": "Ghost Bear",
+		"mensagem": "Guess who's back?",
+		"numero": "",
+		"cores": "Black",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Halloween"
+	},
+	{
+		"imagem": "dw61832a6d/CPPSET3_4.jpg",
+		"nome": "Mummy Cat",
+		"mensagem": "Nine lifes later...",
+		"numero": "",
+		"cores": "Purple",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Halloween"
 	}
 ]
