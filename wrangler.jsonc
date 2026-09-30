@@ -1,0 +1,9 @@
+{
+	// Configuração do Cloudflare: o site é só ficheiros estáticos (HTML/CSS/JS/JSON),
+	// servidos diretamente a partir da raiz do repositório.
+	"name": "ersable-pen",
+	"compatibility_date": "2026-09-01",
+	"assets": {
+		"directory": "."
+	}
+}
