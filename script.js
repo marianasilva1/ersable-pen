@@ -7,6 +7,36 @@ const LEGAMI_IMG_BASE =
 const LEGAMI_IMG_MID = "images_legami/zoom/";
 const LEGAMI_IMG_SUFFIX = "?sw=1200&sh=1200";
 
+// Links de afiliado. Enquanto amazonTag estiver vazio não aparece nenhum botão.
+// Quando fores aprovada no Amazon Associados, põe aqui o teu ID (ex.: "legamipens-21")
+// e cada caneta passa a ter um botão "Where to buy" que pesquisa essa caneta na Amazon.
+// Para uma caneta específica, podes pôr um link direto no JSON: "comprar": "https://..."
+// (esse link tem prioridade sobre a pesquisa automática).
+const AFILIADOS = {
+	amazonDominio: "amazon.es",
+	amazonTag: "",
+};
+
+function linkCompra(item) {
+	if (item.comprar) return item.comprar;
+	if (!AFILIADOS.amazonTag) return null;
+	const termo = ["Legami erasable pen", item.nome || item.display_num || item.numero]
+		.filter(Boolean)
+		.join(" ");
+	return `https://www.${AFILIADOS.amazonDominio}/s?k=${encodeURIComponent(termo)}&tag=${encodeURIComponent(AFILIADOS.amazonTag)}`;
+}
+
+// Aviso obrigatório pelos programas de afiliados — só aparece se houver links ativos.
+function mostrarAvisoAfiliados() {
+	const rodape = document.querySelector(".creditos");
+	if (!rodape || rodape.querySelector(".aviso-afiliados")) return;
+	const aviso = document.createElement("p");
+	aviso.className = "aviso-afiliados";
+	aviso.textContent =
+		"Some links are affiliate links: if you buy through them I may earn a small commission, at no extra cost to you.";
+	rodape.appendChild(aviso);
+}
+
 function resolveImagem(caminho) {
 	const m = /^(dw[0-9a-f]+)\/([A-Za-z0-9_]+\.jpg)$/.exec(caminho);
 	if (m) {
@@ -77,6 +107,8 @@ function criarCard(item, missingPens) {
 	const numToShow = item.display_num || item.numero;
 	const eStarPen = typeof item.numero === "string" && item.numero.endsWith("star");
 	const imagens = (Array.isArray(item.imagem) ? item.imagem : [item.imagem]).map(resolveImagem);
+	const urlCompra = linkCompra(item);
+	if (urlCompra) mostrarAvisoAfiliados();
 
 	const card = document.createElement("div");
 	card.setAttribute("data-cores", item.cores);
@@ -124,6 +156,7 @@ function criarCard(item, missingPens) {
                     ${item.nome ? `<p class="nome">${item.nome}</p>` : ""}
                     <span class="numero">Nº ${numToShow}</span>
                     ${coresHTML}
+                    ${urlCompra ? `<a class="btn-comprar" href="${urlCompra}" target="_blank" rel="sponsored noopener">🛒 Where to buy</a>` : ""}
                     <div class="check-container" onclick="toggleMissing('${item.numero}')">
                     <input type="checkbox" ${isMissing ? "checked" : ""}> Missing?
                     </div>
