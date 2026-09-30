@@ -650,3 +650,134 @@ main, .home-content {
 		flex-direction: column;
 	}
 }
+
+/* LOGIN (auth.js) */
+.btn-conta {
+	font-family: var(--font-body);
+	font-weight: 600;
+	font-size: 0.9rem;
+	padding: 8px 16px;
+	border: 2px solid var(--Purple);
+	border-radius: 20px;
+	background: #fff;
+	color: var(--Purple);
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background 0.2s, color 0.2s;
+}
+
+.btn-conta:hover {
+	background: var(--Purple);
+	color: #fff;
+}
+
+.dialog-login {
+	width: min(360px, calc(100vw - 32px));
+	padding: 30px 25px 20px;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 10px 40px rgba(167, 149, 199, 0.35);
+	font-family: var(--font-body);
+	text-align: center;
+}
+
+.dialog-login::backdrop {
+	background: rgba(44, 62, 80, 0.4);
+}
+
+.dialog-login h2 {
+	font-family: var(--font-heading);
+	font-weight: normal;
+	color: var(--Purple);
+	margin: 0 0 10px;
+}
+
+.dialog-login p {
+	color: #666;
+	font-size: 0.9rem;
+}
+
+.dialog-fechar {
+	position: absolute;
+	top: 10px;
+	right: 14px;
+	border: none;
+	background: none;
+	font-size: 1.5rem;
+	color: #999;
+	cursor: pointer;
+}
+
+.dialog-login .btn-google,
+.form-email button {
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-family: var(--font-body);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.dialog-login .btn-google {
+	border: 1px solid #ddd;
+	background: #fff;
+	color: #333;
+}
+
+.form-email {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.form-email input {
+	padding: 10px 14px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	font-family: var(--font-body);
+}
+
+.form-email button {
+	border: none;
+	background: var(--accent-gradient);
+	color: #fff;
+}
+
+.dialog-ou {
+	margin: 15px 0;
+	color: #aaa;
+	font-size: 0.8rem;
+}
+
+.dialog-msg {
+	min-height: 1.2em;
+	margin-bottom: 0;
+}
+
+/* "Missing?" e filtro "Missing" só para quem tem sessão iniciada (auth.js põe body.com-login) */
+body:not(.com-login) .check-container,
+body:not(.com-login) .filter-options {
+	display: none;
+}
+
+.dica-login {
+	display: block;
+	margin: 0 auto 20px;
+	padding: 8px 18px;
+	border: 1px dashed var(--Purple);
+	border-radius: 20px;
+	background: #fff;
+	color: var(--Purple);
+	font-family: var(--font-body);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.dica-login:hover {
+	background: var(--Purple);
+	color: #fff;
+}
+
+body.com-login .dica-login {
+	display: none;
+}

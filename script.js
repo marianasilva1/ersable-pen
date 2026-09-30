@@ -192,13 +192,23 @@ if (backToTopBtn) {
 }
 
 function toggleMissing(id) {
+	// Com o login ativo (auth.js), só quem entrou na conta pode marcar canetas.
+	const conta = window.Conta;
+	if (conta && !conta.utilizador) {
+		conta.abrirLogin();
+		carregarDados(); // desfaz o visto que o clique pôs na caixa
+		return;
+	}
+
 	let missingPens = JSON.parse(localStorage.getItem(CONFIG.storageKey)) || [];
-	if (missingPens.includes(id)) {
-		missingPens = missingPens.filter((i) => i !== id);
-	} else {
+	const marcado = !missingPens.includes(id);
+	if (marcado) {
 		missingPens.push(id);
+	} else {
+		missingPens = missingPens.filter((i) => i !== id);
 	}
 	localStorage.setItem(CONFIG.storageKey, JSON.stringify(missingPens));
+	if (conta) conta.guardar(CONFIG.storageKey, id, marcado);
 	carregarDados();
 }
 
