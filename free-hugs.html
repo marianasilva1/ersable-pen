@@ -19,7 +19,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
 		/>
 		<title>Free Hugs</title>
-		<link rel="stylesheet" href="style.css?v=3" />
+		<link rel="stylesheet" href="style.css?v=6" />
 	</head>
 	<body>
 		<header class="main-header">
@@ -65,6 +65,9 @@
 				<div class="filter-options">
 					<button class="btn-filter active" onclick="setFiltro('all', this)">
 						All
+					</button>
+					<button class="btn-filter" onclick="setFiltro('owned', this)">
+						Owned
 					</button>
 					<button class="btn-filter" onclick="setFiltro('missing', this)">
 						Missing
@@ -127,10 +130,10 @@
 				</svg>
 		</button>
 		<script>
-			window.PAGE_CONFIG = { dataUrl: "dadosFreeHugs.json", storageKey: "missingFreeHugsPens" };
+			window.PAGE_CONFIG = { dataUrl: "dadosFreeHugs.json", storageKey: "ownedFreeHugsPens" };
 		</script>
-		<script src="script.js?v=2"></script>
-		<script type="module" src="auth.js?v=2"></script>
+		<script src="script.js?v=4"></script>
+		<script type="module" src="auth.js?v=3"></script>
 		<script src="menu.js?v=1"></script>
 
 	</body>

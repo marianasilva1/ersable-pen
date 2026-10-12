@@ -1,4 +1,4 @@
-const CONFIG = window.PAGE_CONFIG || { dataUrl: "dados.json", storageKey: "missingPens" };
+const CONFIG = window.PAGE_CONFIG || { dataUrl: "dados.json", storageKey: "ownedPens" };
 
 // As imagens do catálogo Legami partilham quase todo o URL — nos JSON só
 // guardamos a parte que muda ("dwHASH/CODIGO_N.jpg") e remontamos aqui.
@@ -56,7 +56,7 @@ async function carregarDados() {
 		const resposta = await fetch(CONFIG.dataUrl);
 		const data = await resposta.json();
 
-		const missingPens = JSON.parse(localStorage.getItem(CONFIG.storageKey)) || [];
+		const ownedPens = JSON.parse(localStorage.getItem(CONFIG.storageKey)) || [];
 		grid.innerHTML = "";
 		status.style.display = "none";
 
@@ -70,7 +70,8 @@ async function carregarDados() {
 			};
 		}
 
-		data.forEach((item) => grid.appendChild(criarCard(item, missingPens)));
+		data.forEach((item) => grid.appendChild(criarCard(item, ownedPens)));
+		atualizarProgresso(data, ownedPens);
 
 		filtrarVisualmente(); // Reaplica filtros ativos (pesquisa/estado/cor)
 	} catch (e) {
@@ -96,9 +97,9 @@ function corValida(c) {
 	return CORES_CONHECIDAS.has(c) || /^#[0-9a-fA-F]{3,8}$/.test(c);
 }
 
-function criarCard(item, missingPens) {
+function criarCard(item, ownedPens) {
 	const showColors = CONFIG.showColors !== false;
-	const isMissing = missingPens.includes(item.numero);
+	const isOwned = ownedPens.includes(item.numero);
 	const eLimitada = item.edicao_limitada === true || item.edicao_limitada === "true";
 	const listaCores = (item.cores ? item.cores.split(",") : [])
 		.map((c) => c.trim())
@@ -112,7 +113,7 @@ function criarCard(item, missingPens) {
 
 	const card = document.createElement("div");
 	card.setAttribute("data-cores", item.cores);
-	card.className = `card ${eLimitada ? "limitada" : ""} ${eStarPen ? "star-pen-active" : ""} ${isMissing ? "missing" : ""} ${eDescontinuado ? "descontinuado" : ""}`;
+	card.className = `card ${eLimitada ? "limitada" : ""} ${eStarPen ? "star-pen-active" : ""} ${isOwned ? "owned" : ""} ${eDescontinuado ? "descontinuado" : ""}`;
 	if (showColors && listaCores.length > 0) {
 		const primeiraCor = listaCores[0];
 		card.style.borderBottomColor = primeiraCor.startsWith("#") ? primeiraCor : "var(--" + primeiraCor + ")";
@@ -157,12 +158,51 @@ function criarCard(item, missingPens) {
                     <span class="numero">Nº ${numToShow}</span>
                     ${coresHTML}
                     ${urlCompra ? `<a class="btn-comprar" href="${urlCompra}" target="_blank" rel="sponsored noopener">🛒 Where to buy</a>` : ""}
-                    <div class="check-container" onclick="toggleMissing('${item.numero}')">
-                    <input type="checkbox" ${isMissing ? "checked" : ""}> Missing?
+                    <div class="check-container" onclick="toggleOwned('${item.numero}')">
+                    <input type="checkbox" ${isOwned ? "checked" : ""}> Owned
                     </div>
                 </div>
             `;
 	return card;
+}
+
+// Contador "You own X of Y" com barra de progresso, por cima dos filtros.
+// Só fica visível com sessão iniciada (ver body.com-login em style.css).
+function atualizarProgresso(data, ownedPens) {
+	const filtros = document.querySelector(".filter-options");
+	if (!filtros) return;
+
+	let caixa = document.getElementById("progresso");
+	if (!caixa) {
+		caixa = document.createElement("div");
+		caixa.id = "progresso";
+		caixa.className = "progresso";
+		caixa.innerHTML = `
+			<p class="progresso-texto"></p>
+			<div class="progresso-barra" role="progressbar" aria-valuemin="0">
+				<div class="progresso-preenchido"></div>
+			</div>
+		`;
+		filtros.before(caixa);
+	}
+
+	const total = data.length;
+	const tenho = data.filter((item) => ownedPens.includes(item.numero)).length;
+	const pct = total ? Math.round((tenho / total) * 100) : 0;
+	const texto = caixa.querySelector(".progresso-texto");
+	const barra = caixa.querySelector(".progresso-barra");
+
+	// Sem nada marcado ainda, explica primeiro o que fazer em vez de mostrar 0%.
+	caixa.classList.toggle("sem-marcacoes", tenho === 0);
+	if (tenho === 0) {
+		texto.textContent = "Tick the pens you own to see your progress ✨";
+	} else {
+		texto.innerHTML = `You own <strong>${tenho}</strong> of ${total} <span class="progresso-pct">${pct}%</span>`;
+	}
+	barra.setAttribute("aria-valuemax", total);
+	barra.setAttribute("aria-valuenow", tenho);
+	barra.setAttribute("aria-label", `You own ${tenho} of ${total}`);
+	caixa.querySelector(".progresso-preenchido").style.width = pct + "%";
 }
 
 function mudarFoto(botao, direcao) {
@@ -191,7 +231,7 @@ if (backToTopBtn) {
 	};
 }
 
-function toggleMissing(id) {
+function toggleOwned(id) {
 	// Com o login ativo (auth.js), só quem entrou na conta pode marcar canetas.
 	const conta = window.Conta;
 	if (conta && !conta.utilizador) {
@@ -200,14 +240,14 @@ function toggleMissing(id) {
 		return;
 	}
 
-	let missingPens = JSON.parse(localStorage.getItem(CONFIG.storageKey)) || [];
-	const marcado = !missingPens.includes(id);
+	let ownedPens = JSON.parse(localStorage.getItem(CONFIG.storageKey)) || [];
+	const marcado = !ownedPens.includes(id);
 	if (marcado) {
-		missingPens.push(id);
+		ownedPens.push(id);
 	} else {
-		missingPens = missingPens.filter((i) => i !== id);
+		ownedPens = ownedPens.filter((i) => i !== id);
 	}
-	localStorage.setItem(CONFIG.storageKey, JSON.stringify(missingPens));
+	localStorage.setItem(CONFIG.storageKey, JSON.stringify(ownedPens));
 	if (conta) conta.guardar(CONFIG.storageKey, id, marcado);
 	carregarDados();
 }
@@ -262,12 +302,15 @@ function filtrarVisualmente() {
 		const nomeEl = card.querySelector(".nome");
 		const nome = nomeEl ? nomeEl.innerText.toLowerCase() : "";
 		const numero = card.querySelector(".numero").innerText.toLowerCase();
-		const isMissing = card.classList.contains("missing");
+		const isOwned = card.classList.contains("owned");
 		const corDaCaneta = card.getAttribute("data-cores");
 
 		const batePesquisa = nome.includes(termo) || numero.includes(termo);
+		// "Missing" = tudo o que não está marcado como Owned.
 		const bateFiltroStatus =
-			filtroAtual === "all" || (filtroAtual === "missing" && isMissing);
+			filtroAtual === "all" ||
+			(filtroAtual === "owned" && isOwned) ||
+			(filtroAtual === "missing" && !isOwned);
 		const bateCor = filtroCorAtual === "all" || corDaCaneta === filtroCorAtual;
 
 		card.style.display = batePesquisa && bateFiltroStatus && bateCor ? "flex" : "none";

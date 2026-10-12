@@ -136,10 +136,10 @@ h1 {
 	box-shadow: 0 10px 25px rgba(167, 149, 199, 0.3);
 }
 
-.card.missing {
-	opacity: 0.5;
-	filter: grayscale(0.8);
-	border: 8px solid #333;
+/* Caneta marcada como "Owned" */
+.card.owned .check-container {
+	color: var(--Green);
+	font-weight: 700;
 }
 .card.limitada {
 	background: var(--limitada-bg);
@@ -403,12 +403,6 @@ h1 {
     left: 10px; /* Colocamos à esquerda para não bater no badge de descontinuado que está à direita */
     font-size: 1.2rem;
     z-index: 15;
-}
-
-/* Opcional: Efeito no card quando descontinuado */
-.card.descontinuado {
-	opacity: 0.7; /* Suaviza o card */
-	filter: grayscale(0.2); /* Deixa-o ligeiramente a preto e branco */
 }
 
 .image-container {
@@ -756,7 +750,8 @@ main, .home-content {
 
 /* "Missing?" e filtro "Missing" só para quem tem sessão iniciada (auth.js põe body.com-login) */
 body:not(.com-login) .check-container,
-body:not(.com-login) .filter-options {
+body:not(.com-login) .filter-options,
+body:not(.com-login) .progresso {
 	display: none;
 }
 
@@ -916,6 +911,59 @@ body.com-login .dica-login {
 	.menu-toggle span,
 	.main-header nav,
 	.nav-links li {
+		transition: none;
+	}
+}
+
+/* PROGRESSO DA COLEÇÃO (script.js → atualizarProgresso) */
+.progresso {
+	max-width: 420px;
+	margin: 0 auto 18px;
+	text-align: center;
+}
+
+.progresso-texto {
+	margin: 0 0 8px;
+	color: #666;
+	font-size: 0.95rem;
+}
+
+.progresso-texto strong {
+	color: var(--Purple);
+	font-size: 1.15rem;
+}
+
+.progresso-pct {
+	margin-left: 6px;
+	padding: 2px 8px;
+	border-radius: 10px;
+	background: #f7f2fb;
+	color: var(--Purple);
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.progresso-barra {
+	height: 10px;
+	border-radius: 10px;
+	background: #eee6f5;
+	overflow: hidden;
+}
+
+.progresso-preenchido {
+	width: 0;
+	height: 100%;
+	border-radius: 10px;
+	background: var(--accent-gradient);
+	transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.progresso.sem-marcacoes .progresso-barra {
+	display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.progresso-preenchido {
 		transition: none;
 	}
 }
