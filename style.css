@@ -405,12 +405,6 @@ h1 {
     z-index: 15;
 }
 
-/* Opcional: Efeito no card quando descontinuado */
-.card.descontinuado {
-	opacity: 0.7; /* Suaviza o card */
-	filter: grayscale(0.2); /* Deixa-o ligeiramente a preto e branco */
-}
-
 .image-container {
 	position: relative;
 	width: 100%;
