@@ -71,6 +71,7 @@ async function carregarDados() {
 		}
 
 		data.forEach((item) => grid.appendChild(criarCard(item, missingPens)));
+		atualizarProgresso(data, missingPens);
 
 		filtrarVisualmente(); // Reaplica filtros ativos (pesquisa/estado/cor)
 	} catch (e) {
@@ -163,6 +164,46 @@ function criarCard(item, missingPens) {
                 </div>
             `;
 	return card;
+}
+
+// Contador "You own X of Y" com barra de progresso, por cima dos filtros.
+// Só fica visível com sessão iniciada (ver body.com-login em style.css).
+function atualizarProgresso(data, missingPens) {
+	const filtros = document.querySelector(".filter-options");
+	if (!filtros) return;
+
+	let caixa = document.getElementById("progresso");
+	if (!caixa) {
+		caixa = document.createElement("div");
+		caixa.id = "progresso";
+		caixa.className = "progresso";
+		caixa.innerHTML = `
+			<p class="progresso-texto"></p>
+			<div class="progresso-barra" role="progressbar" aria-valuemin="0">
+				<div class="progresso-preenchido"></div>
+			</div>
+		`;
+		filtros.before(caixa);
+	}
+
+	const total = data.length;
+	const emFalta = data.filter((item) => missingPens.includes(item.numero)).length;
+	const tenho = total - emFalta;
+	const pct = total ? Math.round((tenho / total) * 100) : 0;
+	const texto = caixa.querySelector(".progresso-texto");
+	const barra = caixa.querySelector(".progresso-barra");
+
+	// Sem nada marcado ainda, "100%" seria enganador: explica primeiro o que fazer.
+	caixa.classList.toggle("sem-marcacoes", emFalta === 0);
+	if (emFalta === 0) {
+		texto.textContent = "Mark the pens you're missing to see your progress ✨";
+	} else {
+		texto.innerHTML = `You own <strong>${tenho}</strong> of ${total} <span class="progresso-pct">${pct}%</span>`;
+	}
+	barra.setAttribute("aria-valuemax", total);
+	barra.setAttribute("aria-valuenow", tenho);
+	barra.setAttribute("aria-label", `You own ${tenho} of ${total}`);
+	caixa.querySelector(".progresso-preenchido").style.width = pct + "%";
 }
 
 function mudarFoto(botao, direcao) {
@@ -266,8 +307,11 @@ function filtrarVisualmente() {
 		const corDaCaneta = card.getAttribute("data-cores");
 
 		const batePesquisa = nome.includes(termo) || numero.includes(termo);
+		// "Owned" = tudo o que não está marcado como Missing.
 		const bateFiltroStatus =
-			filtroAtual === "all" || (filtroAtual === "missing" && isMissing);
+			filtroAtual === "all" ||
+			(filtroAtual === "missing" && isMissing) ||
+			(filtroAtual === "owned" && !isMissing);
 		const bateCor = filtroCorAtual === "all" || corDaCaneta === filtroCorAtual;
 
 		card.style.display = batePesquisa && bateFiltroStatus && bateCor ? "flex" : "none";
