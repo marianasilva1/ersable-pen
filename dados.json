@@ -191,6 +191,17 @@
 		"ano": ""
 	},
 	{
+		"imagem": "./images/space-explorer.jpg",
+		"nome": "Space",
+		"mensagem": "Space Explorer",
+		"numero": "EP0009_white_star",
+		"display_num": "EP0009",
+		"cores": "Black",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
 		"imagem": "dw15aea453/EP0009_2.jpg",
 		"nome": "Space",
 		"mensagem": "Space Explorer",
