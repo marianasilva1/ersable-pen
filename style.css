@@ -781,3 +781,141 @@ body:not(.com-login) .filter-options {
 body.com-login .dica-login {
 	display: none;
 }
+
+/* MENU HAMBURGER (menu.js) — só em ecrãs pequenos */
+.menu-toggle {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	.main-header {
+		flex-wrap: wrap;
+		padding: 12px 16px;
+	}
+
+	/* O logótipo ocupa o espaço que sobra (e encolhe), para o "Sign in" e o
+	   hamburger ficarem sempre na mesma linha */
+	.logo {
+		flex: 1 1 0;
+		min-width: 0;
+		font-size: clamp(1.1rem, 5vw, 1.5rem);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.btn-conta {
+		order: 2;
+		margin-right: 8px;
+		padding: 6px 12px;
+		font-size: 0.8rem;
+	}
+
+	.menu-toggle {
+		order: 3;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		width: 44px;
+		height: 44px;
+		padding: 0;
+		border: none;
+		border-radius: 50%;
+		background: transparent;
+		cursor: pointer;
+		transition: background 0.3s ease, transform 0.3s ease;
+	}
+
+	.menu-toggle:active {
+		transform: scale(0.9);
+	}
+
+	.menu-toggle span {
+		display: block;
+		width: 24px;
+		height: 3px;
+		border-radius: 3px;
+		background: var(--accent-gradient);
+		transition: transform 0.45s cubic-bezier(0.68, -0.6, 0.32, 1.6), opacity 0.25s ease;
+	}
+
+	/* As três barras transformam-se num X com um pequeno "salto" */
+	.menu-aberto .menu-toggle {
+		background: #f7f2fb;
+	}
+	.menu-aberto .menu-toggle span:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.menu-aberto .menu-toggle span:nth-child(2) {
+		opacity: 0;
+		transform: scaleX(0);
+	}
+	.menu-aberto .menu-toggle span:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	/* O menu desliza para baixo (a altura anima de 0 até ao conteúdo) */
+	.main-header nav {
+		order: 4;
+		flex-basis: 100%;
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 0.4s ease;
+	}
+	.menu-aberto nav {
+		grid-template-rows: 1fr;
+	}
+
+	.main-header .nav-links {
+		min-height: 0;
+		overflow: hidden;
+		flex-direction: column;
+		gap: 4px;
+		visibility: hidden;
+		transition: visibility 0s 0.4s;
+	}
+	.menu-aberto .nav-links {
+		visibility: visible;
+		transition-delay: 0s;
+	}
+
+	.nav-links li:first-child {
+		margin-top: 12px;
+	}
+
+	/* Cada link aparece com um pequeno atraso em relação ao anterior */
+	.nav-links li {
+		opacity: 0;
+		transform: translateY(-10px);
+		transition: opacity 0.3s ease, transform 0.3s ease;
+	}
+	.menu-aberto .nav-links li {
+		opacity: 1;
+		transform: none;
+	}
+	.menu-aberto .nav-links li:nth-child(1) { transition-delay: 0.05s; }
+	.menu-aberto .nav-links li:nth-child(2) { transition-delay: 0.1s; }
+	.menu-aberto .nav-links li:nth-child(3) { transition-delay: 0.15s; }
+	.menu-aberto .nav-links li:nth-child(4) { transition-delay: 0.2s; }
+	.menu-aberto .nav-links li:nth-child(5) { transition-delay: 0.25s; }
+	.menu-aberto .nav-links li:nth-child(6) { transition-delay: 0.3s; }
+
+	.nav-links a {
+		padding: 12px 16px;
+		border-radius: 12px;
+	}
+	.nav-links a.active {
+		background: #f7f2fb;
+		border-bottom: none;
+	}
+}
+
+@media (max-width: 900px) and (prefers-reduced-motion: reduce) {
+	.menu-toggle span,
+	.main-header nav,
+	.nav-links li {
+		transition: none;
+	}
+}
