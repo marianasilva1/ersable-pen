@@ -1,4 +1,4 @@
-// Login e sincronização da lista "Missing" com o Firebase.
+// Login e sincronização da lista "Owned" (canetas que cada pessoa já tem) com o Firebase.
 // Sem login qualquer pessoa vê a coleção, mas só quem entra na conta pode marcar
 // canetas. A lista fica guardada na conta (Firestore, documento users/{uid}) e em
 // cache no localStorage, que é o que o script.js lê para desenhar os cartões.
@@ -47,7 +47,7 @@ function lerLocal(chave) {
 
 function chavesLocais() {
 	try {
-		return Object.keys(localStorage).filter((k) => k.startsWith("missing"));
+		return Object.keys(localStorage).filter((k) => k.startsWith("owned"));
 	} catch {
 		return [];
 	}
@@ -59,7 +59,7 @@ function redesenhar() {
 	}
 }
 
-// O "Missing?" e o filtro "Missing" estão escondidos por CSS até esta classe
+// O "Owned" dos cartões e os filtros All/Owned/Missing estão escondidos por CSS até esta classe
 // aparecer no <body>: com login ativo só quando alguém entra na conta, sem login
 // configurado logo à partida (comportamento antigo).
 if (!firebaseConfig.apiKey) document.body.classList.add("com-login");
@@ -95,7 +95,7 @@ if (firebaseConfig.apiKey) {
 		const snap = await getDoc(ref);
 		const remoto = snap.exists() ? snap.data() : {};
 		const chaves = new Set([
-			...Object.keys(remoto).filter((k) => k.startsWith("missing")),
+			...Object.keys(remoto).filter((k) => k.startsWith("owned")),
 			...chavesLocais(),
 		]);
 		const novos = {};
@@ -124,7 +124,7 @@ if (firebaseConfig.apiKey) {
 	dialog.innerHTML = `
 		<button class="dialog-fechar" aria-label="Close">×</button>
 		<h2>Sign in to track your collection</h2>
-		<p>Mark the pens you're missing and find your list on any device.</p>
+		<p>Tick the pens you own and find your collection on any device.</p>
 		<button class="btn-google"><i class="fab fa-google"></i> Continue with Google</button>
 		<div class="dialog-ou">or</div>
 		<form class="form-email">
@@ -136,12 +136,12 @@ if (firebaseConfig.apiKey) {
 	document.body.appendChild(dialog);
 	const msg = dialog.querySelector(".dialog-msg");
 
-	// Convite para entrar, no lugar dos filtros "All / Missing" (só aparece sem login).
+	// Convite para entrar, no lugar dos filtros "All / Owned / Missing" (só aparece sem login).
 	const filtros = document.querySelector(".filter-options");
 	if (filtros) {
 		const dica = document.createElement("button");
 		dica.className = "dica-login";
-		dica.innerHTML = '<i class="fas fa-lock"></i> Sign in to track the pens you\'re missing';
+		dica.innerHTML = '<i class="fas fa-lock"></i> Sign in to track your collection';
 		dica.onclick = () => abrirLogin();
 		filtros.after(dica);
 	}
@@ -208,7 +208,7 @@ if (firebaseConfig.apiKey) {
 		const saiu = Conta.utilizador && !user;
 		Conta.utilizador = user;
 		document.body.classList.toggle("com-login", !!user);
-		// Ao sair, volta ao filtro "All" (o "Missing" deixa de estar visível).
+		// Ao sair, volta ao filtro "All" (os filtros deixam de estar visíveis).
 		if (saiu) document.querySelector(".btn-filter")?.click();
 
 		if (user) {

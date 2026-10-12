@@ -136,10 +136,10 @@ h1 {
 	box-shadow: 0 10px 25px rgba(167, 149, 199, 0.3);
 }
 
-.card.missing {
-	opacity: 0.5;
-	filter: grayscale(0.8);
-	border: 8px solid #333;
+/* Caneta marcada como "Owned" */
+.card.owned .check-container {
+	color: var(--Green);
+	font-weight: 700;
 }
 .card.limitada {
 	background: var(--limitada-bg);
