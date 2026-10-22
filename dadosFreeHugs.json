@@ -68,5 +68,15 @@
 		"ano": "",
 		"edicao_limitada": false,
 		"descontinuado": false
+	},
+	{
+		"imagem": "dw8191eb5a/HUG0008_1.jpg",
+		"nome": "Koala",
+		"mensagem": "Sleeping la Vida Loca",
+		"numero": "HUG0008",
+		"cores": "Blue",
+		"ano": "",
+		"edicao_limitada": false,
+		"descontinuado": false
 	}
 ]
