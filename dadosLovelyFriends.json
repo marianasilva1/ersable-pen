@@ -322,10 +322,30 @@
 		"ano": ""
 	},
 	{
+		"imagem": "dw61832a6d/CPP0031_1.jpg",
+		"nome": "??",
+		"mensagem": "??",
+		"numero": "VCPP0031",
+		"cores": "",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
+		"imagem": "dw61832a6d/CPP00302_1.jpg",
+		"nome": "Koala",
+		"mensagem": "Sleeping la Vida Loca",
+		"numero": "VCPP0030",
+		"cores": "Blue",
+		"descontinuado": false,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
 		"imagem": "dw61832a6d/CPPSET3_3.jpg",
 		"nome": "Ghost Bear",
 		"mensagem": "Guess who's back?",
-		"numero": "",
+		"numero": "CPP0033",
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
@@ -335,7 +355,7 @@
 		"imagem": "dw61832a6d/CPPSET3_4.jpg",
 		"nome": "Mummy Cat",
 		"mensagem": "Nine lifes later...",
-		"numero": "",
+		"numero": "CPP003334",
 		"cores": "Purple",
 		"descontinuado": false,
 		"edicao_limitada": true,
