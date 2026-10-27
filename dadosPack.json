@@ -169,5 +169,15 @@
 		"cores": " Red, Blue, Black",
 		"edicao_limitada": false,
 		"ano": "Fur-ever Friends 2026"
+	},
+	{
+		"imagem": [
+			"dwac3327dd/EPSET0018_1.jpg",
+			"dwac3327dd/EPSET0018_2.jpg"
+		],
+		"numero": "EPSET0018",
+		"cores": "Green, Red, Blue, Pink, Black",
+		"edicao_limitada": true,
+		"ano": "Christmas 2026"
 	}
 ]
