@@ -1,3 +1,9 @@
+/* ==========================================================================
+   Stationary Lover — estilo "papelaria boutique"
+   Fundo cor de papel, texto cor de tinta, títulos serifados (Fraunces),
+   texto em DM Sans e uma única cor de destaque (rosa antigo).
+   ========================================================================== */
+
 *,
 *::before,
 *::after {
@@ -5,13 +11,27 @@
 }
 
 :root {
-	--font-heading: "Crafty Girls", cursive;
-	--font-body: "Quicksand", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	--bg-color: #f4f4f9;
-	--card-bg: #ffffff;
-	--primary-color: #333;
-	--limitada-bg: #fff9e6;
-	--limitada-border: #ffd700;
+	--font-heading: "Fraunces", Georgia, "Times New Roman", serif;
+	--font-body: "DM Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+
+	--paper: #faf7f2; /* fundo da página */
+	--surface: #ffffff; /* cartões, cabeçalho */
+	--surface-soft: #f3eee7; /* fundo das imagens, chips */
+	--ink: #2b2724; /* texto principal */
+	--ink-soft: #6f665e; /* texto secundário */
+	--ink-faint: #9a9089;
+	--line: #e7e0d6; /* linhas e contornos */
+	--accent: #8c4a5a; /* rosa antigo */
+	--accent-dark: #6f3846;
+	--accent-soft: #f4e9eb;
+	--gold: #9a7b2f; /* edições limitadas */
+	--gold-soft: #f7f0dc;
+
+	--radius: 10px;
+	--radius-sm: 6px;
+	--shadow-hover: 0 12px 28px rgba(43, 39, 36, 0.1);
+
+	/* Cores das canetas — usadas pelo script.js (var(--Black), etc.) e pelos filtros de cor */
 	--Black: #211f1e;
 	--Green: #4ca23e;
 	--Blue: #184d9a;
@@ -20,63 +40,11 @@
 	--Red: #dc0637;
 	--Orange: #e96233;
 	--Purple: #a795c7;
-	--accent-gradient: linear-gradient(135deg, var(--Pink), var(--Purple));
-	--descontinuado-bg: #dc3545; /* Vermelho */
-	--descontinuado-text: #ffffff; /* Branco */
-}
-/* Estilos para a Home Page */
-.home-content {
-    max-width: 800px;
-    margin: 60px auto;
-    text-align: center;
-    padding: 20px;
 }
 
-.profile-avatar {
-    font-size: 4rem;
-    background: #fff;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    box-shadow: 0 4px 15px rgba(167, 149, 199, 0.2);
-}
-
-.profile-section h1 {
-    font-size: 2.4rem;
-}
-
-.bio-card {
-    background: white;
-    padding: 30px;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(167, 149, 199, 0.15);
-    line-height: 1.6;
-    font-size: 1.1rem;
-    color: #444;
-    margin-bottom: 30px;
-}
-
-.btn-main {
-    background: var(--accent-gradient);
-    color: white;
-    padding: 15px 40px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-family: var(--font-heading);
-    font-weight: normal;
-    font-size: 1.5rem;
-    letter-spacing: 0.5px;
-    transition: 0.3s;
-    display: inline-block;
-    box-shadow: 0 6px 18px rgba(242, 136, 190, 0.35);
-}
-
-.btn-main:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 22px rgba(167, 149, 199, 0.4);
-}
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
 
 html,
 body {
@@ -85,610 +53,801 @@ body {
 }
 
 body {
-	font-family: var(--font-body);
-	margin: 0;
 	min-height: 100vh;
 	display: grid;
-	/* Linha 1: Topo (auto), Linha 2: Conteúdo (1fr - estica), Linha 3: Footer (auto) */
-	grid-template-rows: auto 1fr auto;
-	background: linear-gradient(160deg, #fdf3fa 0%, #f5f2fb 45%, #eef8f7 100%);
-	background-attachment: fixed;
+	grid-template-rows: auto 1fr auto; /* cabeçalho, conteúdo, rodapé */
+	grid-template-columns: minmax(0, 1fr); /* impede a grelha de cartões de alargar a página */
+	background: var(--paper);
+	color: var(--ink);
+	font-family: var(--font-body);
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
+	margin: 48px 16px 32px;
 	font-family: var(--font-heading);
-	font-weight: normal;
+	font-weight: 500;
+	font-size: clamp(2rem, 5vw, 2.8rem);
+	letter-spacing: -0.01em;
+	line-height: 1.15;
 	text-align: center;
-	font-size: 3rem;
-	background: var(--accent-gradient);
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	margin-bottom: 40px;
+	color: var(--ink);
 }
 
-/* Grid de 6 espaços (3 colunas em telas grandes) */
-.grid-container {
-	display: grid;
-	grid-template-columns: repeat(6, minmax(200px, 1fr));
-	gap: 25px;
-	max-width: 1400px;
-	padding: 40px 30px;
-	margin: 0 auto;
-}
-/* Cartão */
-.card {
-	position: relative;
-	background: var(--card-bg);
-	border-radius: 18px;
-	overflow: hidden;
-	box-shadow: 0 4px 15px rgba(167, 149, 199, 0.15);
-	transition:
-		transform 0.3s,
-		box-shadow 0.3s;
-	display: flex;
-	flex-direction: column;
-	border-bottom: 8px solid #eadff2; /* A cor da caneta aqui, quando aplicável */
+a {
+	color: var(--accent);
 }
 
-.card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 10px 25px rgba(167, 149, 199, 0.3);
+button {
+	font-family: inherit;
 }
 
-/* Caneta marcada como "Owned" */
-.card.owned .check-container {
-	color: var(--Green);
-	font-weight: 700;
-}
-.card.limitada {
-	background: var(--limitada-bg);
-	border: 2px solid var(--limitada-border);
-	border-bottom-width: 8px;
-} /* Fundo amarelado/dourado suave */
-
-.image-container {
-	width: 100%;
-	height: 200px;
-	overflow: hidden;
-	background: #eee;
-}
-.image-container img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: 0.5s;
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
 }
 
-.card:hover .image-container img {
-	transform: scale(1.1);
-}
-
-.info {
-	padding: 20px;
-	text-align: center;
-}
-.nome {
-	font-family: var(--font-heading);
-	font-weight: normal;
-	font-size: 1.5rem;
-	color: #2c3e50;
-	margin: 0;
-}
-.numero {
-	font-size: 0.9rem;
-	color: #7f8c8d;
-	margin-top: 8px;
-	background: #f0f0f0;
-	display: inline-block;
-	padding: 2px 10px;
-	border-radius: 20px;
-}
-.mensagem {
-	padding-bottom: 8px;
-	font-size: 0.9rem;
-	color: #2c3e50;
-	margin: 0;
-}
-.empty-state {
-    text-align: center;
-    padding: 40px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    margin: 20px auto;
-    max-width: 400px;
-    color: #666;
-    line-height: 1.6;
-}
-
-.empty-state i {
-    margin-bottom: 15px;
-    display: block;
-}
-.cores-container {
-	display: flex;
-	justify-content: center;
-	gap: 4px;
-	margin: 8px 0;
-}
-.bola-cor {
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	border: 1px solid #ddd;
-}
-
-.badge-limitada {
-	background-color: #ffd700;
-	color: #000;
-	font-size: 0.7rem;
-	font-weight: bold;
-	padding: 2px 8px;
-	border-radius: 5px;
-	display: inline-block;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-.nav-container {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.btn-coleccao {
-	background: var(--accent-gradient);
-	color: white;
-	padding: 12px 24px;
-	text-decoration: none;
-	border-radius: 25px;
-	font-family: var(--font-heading);
-	font-size: 1.2rem;
-	margin-bottom: 20px;
-	transition:
-		box-shadow 0.3s,
-		transform 0.2s;
-	box-shadow: 0 6px 18px rgba(242, 136, 190, 0.35);
-	display: inline-block;
-}
-
-.btn-coleccao:hover {
-	transform: scale(1.05);
-	box-shadow: 0 10px 22px rgba(167, 149, 199, 0.4);
-}
-
-.ano-lancamento {
-	font-size: 0.8rem;
-	color: #666;
-	display: block;
-	margin-top: 5px;
-}
-
-.nav-container {
-	max-width: 800px;
-	margin: 0 auto 30px;
-	text-align: center;
-}
-
-#inputPesquisa {
-	width: 80%;
-	padding: 12px 20px;
-	border-radius: 25px;
-	border: 2px solid #eadff2;
-	outline: none;
-	font-family: var(--font-body);
-	font-size: 1rem;
-	margin-bottom: 15px;
-	transition: border-color 0.3s, box-shadow 0.3s;
-}
-#inputPesquisa:focus {
-	border-color: var(--Purple);
-	box-shadow: 0 0 0 3px rgba(167, 149, 199, 0.2);
-}
-.filter-options {
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.btn-filter,
-.btn-link {
-	padding: 8px 15px;
-	border-radius: 15px;
-	border: 1px solid #eadff2;
-	background: white;
-	cursor: pointer;
-	text-decoration: none;
-	color: #333;
-	font-family: var(--font-body);
-	font-weight: 600;
-	font-size: 0.9rem;
-	transition: background 0.3s, color 0.3s, transform 0.2s;
-}
-
-.btn-filter:hover,
-.btn-link:hover {
-	transform: translateY(-2px);
-}
-
-.btn-filter.active {
-	background: var(--accent-gradient);
-	border-color: transparent;
-	color: white;
-}
-
-.btn-comprar {
-	display: inline-block;
-	margin-top: 10px;
-	padding: 6px 14px;
-	border-radius: 20px;
-	background: var(--Purple);
-	color: #fff;
-	font-size: 0.8rem;
-	font-weight: 600;
-	text-decoration: none;
-	transition: transform 0.2s ease;
-}
-
-.btn-comprar:hover {
-	transform: scale(1.05);
-}
-
-.aviso-afiliados {
-	font-size: 0.75rem;
-	color: #888;
-}
-
-.check-container {
-	margin-top: 10px;
-	font-size: 0.75rem;
-	cursor: pointer;
-	border-top: 1px solid #eee;
-	padding-top: 5px;
+main,
+.home-content {
+	padding-top: 8px;
 }
 
 #status {
 	text-align: center;
 	font-style: italic;
-	color: #666;
-}
-/* SEARCH */
-.search-box {
-	max-width: 600px;
-	margin: 0 auto 5px auto;
-	padding: 0 20px;
+	color: var(--ink-soft);
 }
 
+/* --------------------------------------------------------------------------
+   Cabeçalho e navegação
+   -------------------------------------------------------------------------- */
 
-
-/* FOOTER */
-.creditos {
-	margin-top: auto;
-	padding: 20px;
-	text-align: center;
-	border-top: 1px solid #eadff2;
-	font-size: 0.9rem;
-	color: #666;
-	background-color: #fff;
+.main-header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	padding: 14px 5%;
+	background: rgba(255, 255, 255, 0.92);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-bottom: 1px solid var(--line);
 }
 
-.creditos a {
-	color: var(--Purple);
+.logo {
+	margin-right: auto;
+	font-family: var(--font-heading);
+	font-weight: 500;
+	font-size: 1.6rem;
+	letter-spacing: -0.01em;
+	color: var(--ink);
 	text-decoration: none;
-	font-weight: bold;
+	white-space: nowrap;
 }
 
-.creditos a:hover {
-	text-decoration: underline;
+.logo em {
+	font-style: italic;
+	font-weight: 400;
+	color: var(--accent);
 }
 
-/* DESCONTINUADO */
-.badge-descontinuado {
-	position: absolute;
-	top: 10px; /* 10px do topo */
-	right: 10px; /* 10px da direita */
-	background-color: var(--descontinuado-bg);
-	color: var(--descontinuado-text);
-	font-size: 0.7rem;
-	font-weight: bold;
-	padding: 4px 8px;
-	border-radius: 5px;
-	z-index: 10; /* Garante que fica por cima de outros elementos */
+.nav-links {
+	display: flex;
+	gap: 4px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-links a {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	font-size: 0.92rem;
+	font-weight: 500;
+	color: var(--ink-soft);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: color 0.2s, border-color 0.2s;
+}
+
+/* Ícones do menu escondidos: o texto chega e fica mais limpo */
+.nav-links a i {
+	display: none;
+}
+
+.nav-links a:hover {
+	color: var(--ink);
+}
+
+.nav-links a.active {
+	color: var(--ink);
+	border-bottom-color: var(--accent);
+}
+
+/* Botão de conta (auth.js) */
+.btn-conta {
+	padding: 7px 14px;
+	border: 1px solid var(--ink);
+	border-radius: var(--radius-sm);
+	background: transparent;
+	color: var(--ink);
+	font-size: 0.85rem;
+	font-weight: 500;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+
+.btn-conta:hover {
+	background: var(--ink);
+	color: var(--paper);
+}
+
+/* Botão hamburger (menu.js) — só aparece em ecrãs pequenos */
+.menu-toggle {
+	display: none;
+}
+
+/* --------------------------------------------------------------------------
+   Pesquisa, filtros e progresso
+   -------------------------------------------------------------------------- */
+
+.nav-container {
+	max-width: 760px;
+	margin: 0 auto 8px;
+	padding: 0 16px;
+	text-align: center;
+}
+
+.search-box {
+	max-width: 520px;
+	margin: 0 auto 20px;
+}
+
+#inputPesquisa {
+	width: 100%;
+	padding: 12px 16px;
+	border: 1px solid var(--line);
+	border-radius: var(--radius-sm);
+	background: var(--surface);
+	color: var(--ink);
+	font-family: var(--font-body);
+	font-size: 1rem;
+	outline: none;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#inputPesquisa::placeholder {
+	color: var(--ink-faint);
+}
+
+#inputPesquisa:focus {
+	border-color: var(--ink-soft);
+	box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.filter-options {
+	display: inline-flex;
+	gap: 0;
+	margin-bottom: 20px;
+	border: 1px solid var(--line);
+	border-radius: var(--radius-sm);
+	background: var(--surface);
+	overflow: hidden;
+}
+
+.btn-filter,
+.btn-link {
+	padding: 8px 18px;
+	border: none;
+	background: transparent;
+	color: var(--ink-soft);
+	font-size: 0.88rem;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+
+.btn-filter + .btn-filter {
+	border-left: 1px solid var(--line);
+}
+
+.btn-filter:hover {
+	color: var(--ink);
+	background: var(--surface-soft);
+}
+
+.btn-filter.active {
+	background: var(--ink);
+	color: var(--paper);
+}
+
+/* Contador "You own X of Y" (script.js → atualizarProgresso) */
+.progresso {
+	max-width: 420px;
+	margin: 0 auto 20px;
+	text-align: center;
+}
+
+.progresso-texto {
+	margin: 0 0 8px;
+	color: var(--ink-soft);
+	font-size: 0.92rem;
+}
+
+.progresso-texto strong {
+	font-family: var(--font-heading);
+	font-weight: 600;
+	font-size: 1.25rem;
+	color: var(--ink);
+}
+
+.progresso-pct {
+	margin-left: 6px;
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: var(--accent-soft);
+	color: var(--accent);
+	font-size: 0.78rem;
+	font-weight: 600;
+}
+
+.progresso-barra {
+	height: 6px;
+	border-radius: 999px;
+	background: var(--line);
+	overflow: hidden;
+}
+
+.progresso-preenchido {
+	width: 0;
+	height: 100%;
+	border-radius: 999px;
+	background: var(--accent);
+	transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.progresso.sem-marcacoes .progresso-barra {
+	display: none;
+}
+
+/* Convite para entrar (auth.js) — no lugar dos filtros, sem sessão iniciada */
+.dica-login {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0 auto 20px;
+	padding: 6px 2px;
+	border: none;
+	border-bottom: 1px solid var(--accent);
+	background: none;
+	color: var(--accent);
+	font-size: 0.9rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: color 0.2s, border-color 0.2s;
+}
+
+.dica-login:hover {
+	color: var(--accent-dark);
+	border-color: var(--accent-dark);
+}
+
+/* "Owned", filtros e progresso só para quem tem sessão iniciada (auth.js põe body.com-login) */
+body:not(.com-login) .check-container,
+body:not(.com-login) .filter-options,
+body:not(.com-login) .progresso,
+body.com-login .dica-login {
+	display: none;
+}
+
+/* Filtro por cor */
+.color-filter-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin: 4px 0 8px;
+	padding: 0 16px;
+}
+
+.color-filter-container > span {
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	color: var(--ink-faint);
 }
-.star-icon {
-    position: absolute;
-		background-color: white;
-		border-radius: 50%;
-    top: 10px;
-    left: 10px; /* Colocamos à esquerda para não bater no badge de descontinuado que está à direita */
-    font-size: 1.2rem;
-    z-index: 15;
+
+.color-dots {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.dot {
+	width: 22px;
+	height: 22px;
+	border: 2px solid var(--paper);
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px var(--line);
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dot.all {
+	background: conic-gradient(var(--Black), var(--Blue), var(--Green), var(--Orange), var(--Pink), var(--Purple), var(--Red), var(--Turquoise), var(--Black));
+}
+
+.dot:hover {
+	transform: scale(1.15);
+}
+
+.dot.active {
+	box-shadow: 0 0 0 2px var(--ink);
+}
+
+.dot:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   Grelha e cartões
+   -------------------------------------------------------------------------- */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 24px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 32px 5% 56px;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-bottom: 3px solid var(--line); /* cor da caneta, posta pelo script.js */
+	border-radius: var(--radius);
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+	transform: translateY(-3px);
+	box-shadow: var(--shadow-hover);
 }
 
 .image-container {
 	position: relative;
 	width: 100%;
-	height: 150px;
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	background: var(--surface-soft);
 }
 
-/* Setas de navegação */
+.image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s ease;
+}
+
+.card:hover .image-container img {
+	transform: scale(1.04);
+}
+
+/* Setas quando há mais do que uma foto */
 .btn-nav {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
-	background: rgba(255, 255, 255, 0.7);
-	border: none;
-	font-size: 1.2rem;
-	cursor: pointer;
-	padding: 5px 8px;
 	z-index: 5;
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border: none;
 	border-radius: 50%;
-	display: none; /* Escondido por padrão, aparece se houver > 1 imagem */
+	background: rgba(255, 255, 255, 0.85);
+	color: var(--ink);
+	font-size: 0.9rem;
+	transform: translateY(-50%);
+	cursor: pointer;
 }
 
 .card:hover .btn-nav {
 	display: block;
-} /* Só mostra as setas no hover */
-
-.btn-prev {
-	left: 5px;
-}
-.btn-next {
-	right: 5px;
 }
 
 .btn-nav:hover {
-	background: white;
-}
-.social-links {
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-		align-items: center;
+	background: var(--surface);
 }
 
-.social-links a {
-    font-size: 1.5rem;
-    color: #666;
-    transition: transform 0.3s, color 0.3s;
-    text-decoration: none;
+.btn-prev {
+	left: 8px;
 }
 
-/* Cor do Instagram no Hover */
-.social-links a[title="Instagram"]:hover {
-    color: #E1306C;
-    transform: translateY(-3px);
+.btn-next {
+	right: 8px;
 }
 
-/* Cor do TikTok no Hover */
-.social-links a[title="TikTok"]:hover {
-    color: #000;
-    transform: translateY(-3px);
-}
-/* Cor do Coffee no Hover */
-.social-links a[title="coffee"]:hover {
-    color: var(--Red);
-    transform: translateY(-3px);
-}
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    background-color: #fff;
-    box-shadow: 0 2px 15px rgba(167, 149, 199, 0.15);
-    border-bottom: 3px solid transparent;
-    border-image: var(--accent-gradient) 1;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.info {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px 16px 14px;
+	text-align: center;
 }
 
-.logo {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-		flex-direction: row;
-}
-
-.nav-links a {
-    font-family: var(--font-body);
-    text-decoration: none;
-    color: #666;
-    font-weight: 600;
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-		padding: 10px;
-}
-
-.nav-links a:hover {
-    color: var(--Pink);
-}
-
-/* Margem para o conteúdo não ficar colado ao menu */
-main, .home-content {
-    padding-top: 20px;
-}
-.nav-links a.active {
-    color: var(--Purple);
-    border-bottom: 2px solid var(--Pink);
-}
-.support-section {
-    margin-top: 40px;
-    padding: 25px;
-    background: #fffdf5; /* Um tom creme suave */
-    border: 1px dashed #ffd700;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.support-section p {
-    margin: 5px 0;
-    color: #555;
-}
-
-.support-text {
-    font-size: 0.9rem;
-    margin-bottom: 15px !important;
-}
-
-.bmc-button {
-    display: inline-block;
-    transition: transform 0.3s ease;
-		color: var(--Red);
-}
-
-
-.bmc-button:hover {
-    transform: scale(1.05);
-}
-#backToTop {
-    position: fixed;
-    bottom: 50px;
-    right: 30px;
-    width: 45px;
-    height: 45px;
-    background: var(--accent-gradient);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none; /* Escondido por padrão */
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    z-index: 2000;
-    box-shadow: 0 4px 10px rgba(167, 149, 199, 0.35);
-}
-
-#backToTop:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(167, 149, 199, 0.45);
-}
-
-/* Para o SVG ficar bem centrado */
-#backToTop svg {
-    width: 30px;
-    height: 30px;
-}
-
-.color-filter-container {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.color-dots {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.dot {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: transform 0.2s, border-color 0.2s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-		border-color: #fff;
-}
-
-.dot.all {
-    background: conic-gradient(var(--Black),var(--Black), var(--Green), var(--Orange), var(--Pink), var(--Purple), var(--Red), var(--Turquoise));
-}
-
-.dot:hover {
-    transform: scale(1.2);
-}
-
-.dot:focus-visible {
-    outline: 2px solid var(--Purple);
-    outline-offset: 2px;
-    transform: scale(1.2);
-}
-
-.dot.active {
-    border-color: var(--Purple);
-    transform: scale(1.1);
-}
-
-@media (max-width: 1400px) {
-	.grid-container {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-@media (max-width: 600px) {
-	.grid-container {
-		grid-template-columns: repeat(1, 1fr);
-	}
-	.nav-links{
-		flex-direction: column;
-	}
-}
-
-/* LOGIN (auth.js) */
-.btn-conta {
-	font-family: var(--font-body);
+.mensagem {
+	margin: 0 0 2px;
+	font-size: 0.72rem;
 	font-weight: 600;
-	font-size: 0.9rem;
-	padding: 8px 16px;
-	border: 2px solid var(--Purple);
-	border-radius: 20px;
-	background: #fff;
-	color: var(--Purple);
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--ink-faint);
+}
+
+.nome {
+	margin: 0;
+	font-family: var(--font-heading);
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.25;
+	color: var(--ink);
+}
+
+.numero {
+	display: inline-block;
+	margin-top: 8px;
+	font-size: 0.8rem;
+	font-variant-numeric: tabular-nums;
+	letter-spacing: 0.04em;
+	color: var(--ink-soft);
+}
+
+.ano-lancamento {
+	margin: 0 0 4px;
+	font-size: 0.78rem;
+	color: var(--ink-soft);
+}
+
+.cores-container {
+	display: flex;
+	justify-content: center;
+	gap: 4px;
+	margin: 8px 0 0;
+}
+
+.bola-cor {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px var(--line);
+}
+
+/* Selos */
+.badge-descontinuado {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10;
+	padding: 3px 8px;
+	border-radius: 4px;
+	background: rgba(43, 39, 36, 0.8);
+	color: #fff;
+	font-size: 0.65rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.badge-limitada {
+	display: inline-block;
+	margin-bottom: 6px;
+	padding: 2px 8px;
+	border-radius: 4px;
+	background: var(--gold-soft);
+	color: var(--gold);
+	font-size: 0.65rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.card.limitada {
+	background: #fffdf7;
+	border-color: #e9dcb6;
+}
+
+.star-icon {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 15;
+	padding: 3px;
+	border-radius: 50%;
+	background: var(--surface);
+	box-shadow: 0 1px 4px rgba(43, 39, 36, 0.15);
+}
+
+/* Caixa "Owned" */
+.check-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	width: 100%;
+	margin-top: auto;
+	padding-top: 12px;
+	border-top: 1px solid var(--line);
+	color: var(--ink-soft);
+	font-size: 0.8rem;
 	cursor: pointer;
-	white-space: nowrap;
+	transform: translateY(8px); /* encosta ao fundo do cartão */
+}
+
+.check-container input {
+	accent-color: var(--accent);
+	cursor: pointer;
+}
+
+.card.owned .check-container {
+	color: var(--accent);
+	font-weight: 600;
+}
+
+/* Botão de compra (afiliados) */
+.btn-comprar {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 6px 14px;
+	border: 1px solid var(--accent);
+	border-radius: var(--radius-sm);
+	color: var(--accent);
+	font-size: 0.8rem;
+	font-weight: 500;
+	text-decoration: none;
 	transition: background 0.2s, color 0.2s;
 }
 
-.btn-conta:hover {
-	background: var(--Purple);
+.btn-comprar:hover {
+	background: var(--accent);
 	color: #fff;
 }
 
-.dialog-login {
-	width: min(360px, calc(100vw - 32px));
-	padding: 30px 25px 20px;
+.empty-state {
+	max-width: 400px;
+	margin: 20px auto;
+	padding: 40px;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background: var(--surface);
+	color: var(--ink-soft);
+	text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Página inicial
+   -------------------------------------------------------------------------- */
+
+.home-content {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 24px 16px 64px;
+	text-align: center;
+}
+
+.profile-avatar {
+	display: none; /* o emoji ✨ deixava a página com ar infantil */
+}
+
+.profile-section h1 {
+	margin-top: 40px;
+	font-size: clamp(2rem, 5.5vw, 3rem);
+}
+
+.bio-card {
+	margin-bottom: 32px;
+	padding: 32px;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background: var(--surface);
+	color: var(--ink-soft);
+	font-size: 1.05rem;
+	line-height: 1.7;
+}
+
+.bio-card strong {
+	color: var(--ink);
+	font-weight: 600;
+}
+
+.support-section {
+	margin-top: 28px;
+	padding-top: 24px;
+	border-top: 1px solid var(--line);
+}
+
+.support-section p {
+	margin: 4px 0;
+	color: var(--ink-soft);
+}
+
+.support-section p:first-child {
+	font-family: var(--font-heading);
+	font-size: 1.2rem;
+	color: var(--ink);
+}
+
+.support-text {
+	margin-bottom: 16px !important;
+	font-size: 0.92rem;
+}
+
+.bmc-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 9px 18px;
+	border: 1px solid var(--accent);
+	border-radius: var(--radius-sm);
+	color: var(--accent);
+	font-size: 0.92rem;
+	font-weight: 500;
+	text-decoration: none;
+	transition: background 0.2s, color 0.2s;
+}
+
+.bmc-button:hover {
+	background: var(--accent);
+	color: #fff;
+}
+
+.btn-main,
+.btn-coleccao {
+	display: inline-block;
+	padding: 14px 32px;
+	border-radius: var(--radius-sm);
+	background: var(--ink);
+	color: var(--paper);
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	transition: background 0.2s, transform 0.2s;
+}
+
+.btn-main:hover,
+.btn-coleccao:hover {
+	background: var(--accent);
+	transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   Rodapé e botão "voltar ao topo"
+   -------------------------------------------------------------------------- */
+
+.creditos {
+	margin-top: auto;
+	padding: 28px 20px;
+	border-top: 1px solid var(--line);
+	background: var(--surface);
+	color: var(--ink-soft);
+	font-size: 0.85rem;
+	text-align: center;
+}
+
+.creditos p {
+	margin: 4px 0;
+}
+
+.creditos a {
+	color: var(--ink);
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.creditos a:hover {
+	color: var(--accent);
+}
+
+.social-links {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+	margin-bottom: 12px;
+}
+
+.social-links a {
+	color: var(--ink-soft);
+	font-size: 1.2rem;
+	transition: color 0.2s, transform 0.2s;
+}
+
+.social-links a:hover {
+	color: var(--accent);
+	transform: translateY(-2px);
+}
+
+.aviso-afiliados {
+	font-size: 0.75rem;
+	color: var(--ink-faint);
+}
+
+#backToTop {
+	position: fixed;
+	right: 24px;
+	bottom: 32px;
+	z-index: 2000;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
 	border: none;
-	border-radius: 20px;
-	box-shadow: 0 10px 40px rgba(167, 149, 199, 0.35);
+	border-radius: 50%;
+	background: var(--ink);
+	color: var(--paper);
+	box-shadow: 0 4px 14px rgba(43, 39, 36, 0.2);
+	cursor: pointer;
+	transition: transform 0.2s, background 0.2s;
+}
+
+#backToTop:hover {
+	background: var(--accent);
+	transform: translateY(-3px);
+}
+
+#backToTop svg {
+	width: 26px;
+	height: 26px;
+}
+
+/* --------------------------------------------------------------------------
+   Janela de login (auth.js)
+   -------------------------------------------------------------------------- */
+
+.dialog-login {
+	width: min(380px, calc(100vw - 32px));
+	padding: 32px 28px 22px;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background: var(--surface);
+	color: var(--ink);
+	box-shadow: 0 20px 50px rgba(43, 39, 36, 0.18);
 	font-family: var(--font-body);
 	text-align: center;
 }
 
 .dialog-login::backdrop {
-	background: rgba(44, 62, 80, 0.4);
+	background: rgba(43, 39, 36, 0.4);
 }
 
 .dialog-login h2 {
+	margin: 0 0 8px;
 	font-family: var(--font-heading);
-	font-weight: normal;
-	color: var(--Purple);
-	margin: 0 0 10px;
+	font-weight: 500;
+	font-size: 1.6rem;
+	color: var(--ink);
 }
 
 .dialog-login p {
-	color: #666;
-	font-size: 0.9rem;
+	color: var(--ink-soft);
+	font-size: 0.92rem;
 }
 
 .dialog-fechar {
@@ -697,25 +856,29 @@ main, .home-content {
 	right: 14px;
 	border: none;
 	background: none;
+	color: var(--ink-faint);
 	font-size: 1.5rem;
-	color: #999;
 	cursor: pointer;
 }
 
 .dialog-login .btn-google,
 .form-email button {
 	width: 100%;
-	padding: 10px;
-	border-radius: 20px;
-	font-family: var(--font-body);
-	font-weight: 600;
+	padding: 11px;
+	border-radius: var(--radius-sm);
+	font-weight: 500;
 	cursor: pointer;
+	transition: background 0.2s, border-color 0.2s;
 }
 
 .dialog-login .btn-google {
-	border: 1px solid #ddd;
-	background: #fff;
-	color: #333;
+	border: 1px solid var(--line);
+	background: var(--surface);
+	color: var(--ink);
+}
+
+.dialog-login .btn-google:hover {
+	border-color: var(--ink-soft);
 }
 
 .form-email {
@@ -725,21 +888,26 @@ main, .home-content {
 }
 
 .form-email input {
-	padding: 10px 14px;
-	border: 1px solid #ddd;
-	border-radius: 20px;
+	padding: 11px 14px;
+	border: 1px solid var(--line);
+	border-radius: var(--radius-sm);
 	font-family: var(--font-body);
+	font-size: 0.95rem;
 }
 
 .form-email button {
 	border: none;
-	background: var(--accent-gradient);
-	color: #fff;
+	background: var(--ink);
+	color: var(--paper);
+}
+
+.form-email button:hover {
+	background: var(--accent);
 }
 
 .dialog-ou {
-	margin: 15px 0;
-	color: #aaa;
+	margin: 14px 0;
+	color: var(--ink-faint);
 	font-size: 0.8rem;
 }
 
@@ -748,44 +916,15 @@ main, .home-content {
 	margin-bottom: 0;
 }
 
-/* "Missing?" e filtro "Missing" só para quem tem sessão iniciada (auth.js põe body.com-login) */
-body:not(.com-login) .check-container,
-body:not(.com-login) .filter-options,
-body:not(.com-login) .progresso {
-	display: none;
-}
-
-.dica-login {
-	display: block;
-	margin: 0 auto 20px;
-	padding: 8px 18px;
-	border: 1px dashed var(--Purple);
-	border-radius: 20px;
-	background: #fff;
-	color: var(--Purple);
-	font-family: var(--font-body);
-	font-weight: 600;
-	cursor: pointer;
-}
-
-.dica-login:hover {
-	background: var(--Purple);
-	color: #fff;
-}
-
-body.com-login .dica-login {
-	display: none;
-}
-
-/* MENU HAMBURGER (menu.js) — só em ecrãs pequenos */
-.menu-toggle {
-	display: none;
-}
+/* --------------------------------------------------------------------------
+   Ecrãs pequenos: menu hamburger (menu.js) e cartões em 2 colunas
+   -------------------------------------------------------------------------- */
 
 @media (max-width: 900px) {
 	.main-header {
 		flex-wrap: wrap;
-		padding: 12px 16px;
+		gap: 0;
+		padding: 10px 16px;
 	}
 
 	/* O logótipo ocupa o espaço que sobra (e encolhe), para o "Sign in" e o
@@ -793,15 +932,14 @@ body.com-login .dica-login {
 	.logo {
 		flex: 1 1 0;
 		min-width: 0;
-		font-size: clamp(1.1rem, 5vw, 1.5rem);
-		white-space: nowrap;
 		overflow: hidden;
+		font-size: clamp(1.2rem, 5.5vw, 1.5rem);
 		text-overflow: ellipsis;
 	}
 
 	.btn-conta {
 		order: 2;
-		margin-right: 8px;
+		margin-right: 6px;
 		padding: 6px 12px;
 		font-size: 0.8rem;
 	}
@@ -810,8 +948,8 @@ body.com-login .dica-login {
 		order: 3;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
 		gap: 5px;
 		width: 44px;
 		height: 44px;
@@ -829,26 +967,26 @@ body.com-login .dica-login {
 
 	.menu-toggle span {
 		display: block;
-		width: 24px;
-		height: 3px;
-		border-radius: 3px;
-		background: var(--accent-gradient);
+		width: 22px;
+		height: 2px;
+		border-radius: 2px;
+		background: var(--ink);
 		transition: transform 0.45s cubic-bezier(0.68, -0.6, 0.32, 1.6), opacity 0.25s ease;
 	}
 
 	/* As três barras transformam-se num X com um pequeno "salto" */
 	.menu-aberto .menu-toggle {
-		background: #f7f2fb;
+		background: var(--surface-soft);
 	}
 	.menu-aberto .menu-toggle span:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
+		transform: translateY(7px) rotate(45deg);
 	}
 	.menu-aberto .menu-toggle span:nth-child(2) {
 		opacity: 0;
 		transform: scaleX(0);
 	}
 	.menu-aberto .menu-toggle span:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
+		transform: translateY(-7px) rotate(-45deg);
 	}
 
 	/* O menu desliza para baixo (a altura anima de 0 até ao conteúdo) */
@@ -864,10 +1002,10 @@ body.com-login .dica-login {
 	}
 
 	.main-header .nav-links {
+		flex-direction: column;
+		gap: 2px;
 		min-height: 0;
 		overflow: hidden;
-		flex-direction: column;
-		gap: 4px;
 		visibility: hidden;
 		transition: visibility 0s 0.4s;
 	}
@@ -877,13 +1015,13 @@ body.com-login .dica-login {
 	}
 
 	.nav-links li:first-child {
-		margin-top: 12px;
+		margin-top: 10px;
 	}
 
 	/* Cada link aparece com um pequeno atraso em relação ao anterior */
 	.nav-links li {
 		opacity: 0;
-		transform: translateY(-10px);
+		transform: translateY(-8px);
 		transition: opacity 0.3s ease, transform 0.3s ease;
 	}
 	.menu-aberto .nav-links li {
@@ -898,72 +1036,67 @@ body.com-login .dica-login {
 	.menu-aberto .nav-links li:nth-child(6) { transition-delay: 0.3s; }
 
 	.nav-links a {
-		padding: 12px 16px;
-		border-radius: 12px;
+		padding: 12px 8px;
+		border-bottom: 1px solid var(--line);
+		font-size: 1rem;
 	}
-	.nav-links a.active {
-		background: #f7f2fb;
+	.nav-links li:last-child a {
 		border-bottom: none;
 	}
-}
-
-@media (max-width: 900px) and (prefers-reduced-motion: reduce) {
-	.menu-toggle span,
-	.main-header nav,
-	.nav-links li {
-		transition: none;
+	.nav-links a.active {
+		border-bottom-color: var(--line);
+		color: var(--accent);
 	}
 }
 
-/* PROGRESSO DA COLEÇÃO (script.js → atualizarProgresso) */
-.progresso {
-	max-width: 420px;
-	margin: 0 auto 18px;
-	text-align: center;
-}
+@media (max-width: 600px) {
+	.grid-container {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 12px;
+		padding: 20px 12px 40px;
+	}
 
-.progresso-texto {
-	margin: 0 0 8px;
-	color: #666;
-	font-size: 0.95rem;
-}
+	.info {
+		padding: 12px 10px 10px;
+	}
 
-.progresso-texto strong {
-	color: var(--Purple);
-	font-size: 1.15rem;
-}
+	.nome {
+		font-size: 1.05rem;
+	}
 
-.progresso-pct {
-	margin-left: 6px;
-	padding: 2px 8px;
-	border-radius: 10px;
-	background: #f7f2fb;
-	color: var(--Purple);
-	font-weight: 700;
-	font-size: 0.8rem;
-}
+	.mensagem {
+		font-size: 0.62rem;
+	}
 
-.progresso-barra {
-	height: 10px;
-	border-radius: 10px;
-	background: #eee6f5;
-	overflow: hidden;
-}
+	.badge-descontinuado {
+		top: 6px;
+		right: 6px;
+		padding: 2px 6px;
+		font-size: 0.55rem;
+	}
 
-.progresso-preenchido {
-	width: 0;
-	height: 100%;
-	border-radius: 10px;
-	background: var(--accent-gradient);
-	transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
+	.star-icon {
+		top: 6px;
+		left: 6px;
+		width: 22px;
+		height: 22px;
+	}
 
-.progresso.sem-marcacoes .progresso-barra {
-	display: none;
+	.bio-card {
+		padding: 24px 20px;
+		font-size: 1rem;
+	}
+
+	#backToTop {
+		right: 16px;
+		bottom: 20px;
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.progresso-preenchido {
-		transition: none;
+	*,
+	*::before,
+	*::after {
+		transition: none !important;
 	}
 }

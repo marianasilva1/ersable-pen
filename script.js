@@ -133,7 +133,7 @@ function criarCard(item, ownedPens) {
 	const corPrincipalCSS = corPrincipal.startsWith("#") ? corPrincipal : "var(--" + corPrincipal + ")";
 
 	card.innerHTML = `
-                    ${eDescontinuado ? '<span class="badge-descontinuado">🚫 Discontinued</span>' : ""}
+                    ${eDescontinuado ? '<span class="badge-descontinuado">Discontinued</span>' : ""}
                     ${
 											eStarPen
 												? `<svg class="star-icon" viewBox="0 0 24 24" width="24" height="24">
@@ -151,7 +151,7 @@ function criarCard(item, ownedPens) {
                     <img src="${imagens[0]}" class="img-principal" alt="${item.nome || ""}" data-fotos='${JSON.stringify(imagens)}' data-index="0" onerror="this.src='https://fav.farm/🖊️'">
                 </div>
                 <div class="info">
-                    ${eLimitada ? '<span class="badge-limitada">ED. LIMITADA</span>' : ""}
+                    ${eLimitada ? '<span class="badge-limitada">Limited edition</span>' : ""}
                     ${item.ano ? `<p class="ano-lancamento">${item.ano}</p>` : ""}
                     ${item.mensagem ? `<p class="mensagem">${item.mensagem}</p>` : ""}
                     ${item.nome ? `<p class="nome">${item.nome}</p>` : ""}
