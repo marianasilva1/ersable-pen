@@ -7,7 +7,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0002_1.jpg",
@@ -17,7 +18,8 @@
 		"cores": "Pink",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0003_1.jpg",
@@ -27,7 +29,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0004_1.jpg",
@@ -37,7 +40,8 @@
 		"cores": "Green",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0005_1.jpg",
@@ -47,7 +51,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0006_1.jpg",
@@ -107,7 +112,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Halloween"
+		"ano": "2024 Halloween",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw6b7cc628/CPPSET1_3.jpg",
@@ -209,7 +215,8 @@
 		"numero": "VCPP0019",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0020_1.jpg",
@@ -229,7 +236,8 @@
 		"cores": "-",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0022_1.jpg",
@@ -239,7 +247,8 @@
 		"cores": "-",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0023_1.jpg",
@@ -249,7 +258,8 @@
 		"cores": "-",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0024_1.jpg",
@@ -269,7 +279,8 @@
 		"numero": "VCPP0025",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0026_1.jpg",
@@ -299,7 +310,8 @@
 		"cores": "Pink",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2026 Easter"
+		"ano": "2026 Easter",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw63c59beb/CPPSET2_3.jpg",
@@ -309,7 +321,8 @@
 		"cores": "Purple",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2026 Easter"
+		"ano": "2026 Easter",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0030_1.jpg",
@@ -329,7 +342,8 @@
 		"cores": "",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPP0032_1.jpg",
@@ -349,7 +363,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2026 Halloween"
+		"ano": "2026 Halloween",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw61832a6d/CPPSET3_4.jpg",
@@ -359,6 +374,7 @@
 		"cores": "Purple",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2026 Halloween"
+		"ano": "2026 Halloween",
+		"naLoja": false
 	}
 ]

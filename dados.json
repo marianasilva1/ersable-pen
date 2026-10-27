@@ -29,7 +29,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw811932d2/EP0002_2.jpg",
@@ -282,7 +283,8 @@
 		"cores": "Pink",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0002_3.jpg",
@@ -292,7 +294,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2022 Christmas Edition"
+		"ano": "2022 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0002_5.jpg",
@@ -302,7 +305,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2022 Christmas Edition"
+		"ano": "2022 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0002_7.jpg",
@@ -312,7 +316,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2022 Christmas Edition"
+		"ano": "2022 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw15aea453/EP0017_2.jpg",
@@ -342,7 +347,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw76ca07b1/EP0020_2.jpg",
@@ -362,7 +368,8 @@
 		"cores": "Green",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2023 Christmas Edition"
+		"ano": "2023 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0004_3.jpg",
@@ -372,7 +379,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2023 Christmas Edition"
+		"ano": "2023 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0004_4.jpg",
@@ -382,7 +390,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2023 Christmas Edition"
+		"ano": "2023 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw5574c9be/EP0024_2.jpg",
@@ -392,7 +401,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0005_2.jpg",
@@ -402,7 +412,8 @@
 		"cores": "Green",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2023 Halloween Edition"
+		"ano": "2023 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0005_3.jpg",
@@ -412,7 +423,8 @@
 		"cores": "Orange",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2023 Halloween Edition"
+		"ano": "2023 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0005_4.jpg",
@@ -422,7 +434,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2023 Halloween Edition"
+		"ano": "2023 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0006_2.jpg",
@@ -454,7 +467,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dwac555ab7/EP0029_2.jpg",
@@ -464,7 +478,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0007_2.jpg",
@@ -507,7 +522,8 @@
 		"cores": "Turquoise",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Under The Sea Edition"
+		"ano": "2024 Under The Sea Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0007_4.jpg",
@@ -517,7 +533,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Under The Sea Edition"
+		"ano": "2024 Under The Sea Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0007_3.jpg",
@@ -527,7 +544,8 @@
 		"cores": "Purple",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Under The Sea Edition"
+		"ano": "2024 Under The Sea Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw18432d58/EP0033_2.jpg",
@@ -537,7 +555,8 @@
 		"cores": "Turquoise",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0008_8.jpg",
@@ -547,7 +566,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Halloween Edition"
+		"ano": "2024 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0008_7.jpg",
@@ -557,7 +577,8 @@
 		"cores": "Purple",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Halloween Edition"
+		"ano": "2024 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0008_6.jpg",
@@ -567,7 +588,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Halloween Edition"
+		"ano": "2024 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0009_6.jpg",
@@ -577,7 +599,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Christmas Edition"
+		"ano": "2024 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0009_7.jpg",
@@ -587,7 +610,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Christmas Edition"
+		"ano": "2024 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0009_8.jpg",
@@ -597,7 +621,8 @@
 		"cores": "Green",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Christmas Edition"
+		"ano": "2024 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "./images/bat.jpg",
@@ -607,7 +632,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Halloween Edition Solo"
+		"ano": "2024 Halloween Edition Solo",
+		"naLoja": false
 	},
 	{
 		"imagem": "./images/hohoho.jpg",
@@ -617,7 +643,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Christmas Edition Solo"
+		"ano": "2024 Christmas Edition Solo",
+		"naLoja": false
 	},
 	{
 		"imagem": "./images/yeti.jpg",
@@ -627,7 +654,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2024 Advent Edition"
+		"ano": "2024 Advent Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw811932d2/EP0003_2.jpg",
@@ -637,7 +665,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dwb3659aed/EP0044_2.jpg",
@@ -647,7 +676,8 @@
 		"cores": "Orange",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw924e12ad/EP0045_2.jpg",
@@ -657,7 +687,8 @@
 		"cores": "Pink",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0010_2.jpg",
@@ -667,7 +698,8 @@
 		"cores": "Pink",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Easter Edition"
+		"ano": "2025 Easter Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0010_3.jpg",
@@ -677,7 +709,8 @@
 		"cores": "Purple",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Easter Edition"
+		"ano": "2025 Easter Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0011_3.jpg",
@@ -687,7 +720,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": "2025 Farm Sweet Farm Edition"
+		"ano": "2025 Farm Sweet Farm Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0011_4.jpg",
@@ -697,7 +731,8 @@
 		"cores": "Pink",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": "2025 Farm Sweet Farm Edition"
+		"ano": "2025 Farm Sweet Farm Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0011_5.jpg",
@@ -707,7 +742,8 @@
 		"cores": "Green",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": "2025 Farm Sweet Farm Edition"
+		"ano": "2025 Farm Sweet Farm Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0011_6.jpg",
@@ -717,7 +753,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": "2025 Farm Sweet Farm Edition"
+		"ano": "2025 Farm Sweet Farm Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "./images/bear.jpg",
@@ -727,7 +764,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Advent Edition"
+		"ano": "2025 Advent Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0013_9.jpg",
@@ -737,7 +775,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Halloween Edition"
+		"ano": "2025 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0013_8.jpg",
@@ -747,7 +786,8 @@
 		"cores": "Purple",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Halloween Edition"
+		"ano": "2025 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0013_10.jpg",
@@ -757,7 +797,8 @@
 		"cores": "Orange",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Halloween Edition"
+		"ano": "2025 Halloween Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0056_2.jpg",
@@ -777,7 +818,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Christmas Edition"
+		"ano": "2025 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0014_8.jpg",
@@ -787,7 +829,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Christmas Edition"
+		"ano": "2025 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0014_7.jpg",
@@ -797,7 +840,8 @@
 		"cores": "Green",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2025 Christmas Edition"
+		"ano": "2025 Christmas Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0060_2.jpg",
@@ -847,7 +891,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0065_2.jpg",
@@ -937,7 +982,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0074_2.jpg",
@@ -957,7 +1003,8 @@
 		"cores": "Turquoise",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2026 Better Together Edition"
+		"ano": "2026 Better Together Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0015_3.jpg",
@@ -967,7 +1014,8 @@
 		"cores": "Orange",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": "2026 Better Together Edition"
+		"ano": "2026 Better Together Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0016_3.jpg",
@@ -977,7 +1025,8 @@
 		"cores": "Black",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": "2026 Farm Sweet Farm Edition"
+		"ano": "2026 Farm Sweet Farm Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0016_4.jpg",
@@ -987,7 +1036,8 @@
 		"cores": "Pink",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": "2026 Farm Sweet Farm Edition"
+		"ano": "2026 Farm Sweet Farm Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0016_5.jpg",
@@ -997,7 +1047,8 @@
 		"cores": "Green",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": "2026 Farm Sweet Farm Edition"
+		"ano": "2026 Farm Sweet Farm Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2cf33702/EPSET0016_6.jpg",
@@ -1007,7 +1058,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": "2026 Farm Sweet Farm Edition"
+		"ano": "2026 Farm Sweet Farm Edition",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0081_2.jpg",
@@ -1027,7 +1079,8 @@
 		"cores": "Red",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2481d217/EPSET0017_4.jpg",
@@ -1037,7 +1090,8 @@
 		"cores": "Blue",
 		"descontinuado": false,
 		"edicao_limitada": true,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw2481d217/EPSET0017_5.jpg",
@@ -1046,7 +1100,7 @@
 		"numero": "EP0084",
 		"cores": "Black",
 		"descontinuado": false,
-		"edicao_limitada":true,
+		"edicao_limitada": true,
 		"ano": ""
 	},
 	{
@@ -1077,7 +1131,8 @@
 		"cores": "",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0088_2.jpg",
@@ -1087,7 +1142,8 @@
 		"cores": "",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0089_2.jpg",
@@ -1107,9 +1163,9 @@
 		"cores": "",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
-	
 	{
 		"imagem": "dw44dc73e2/EP0091_2.jpg",
 		"nome": "",
@@ -1118,7 +1174,8 @@
 		"cores": "",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0092_2.jpg",
@@ -1128,7 +1185,8 @@
 		"cores": "",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0093_2.jpg",
@@ -1138,7 +1196,8 @@
 		"cores": "",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0094_2.jpg",
@@ -1148,7 +1207,8 @@
 		"cores": "",
 		"descontinuado": false,
 		"edicao_limitada": false,
-		"ano": ""
+		"ano": "",
+		"naLoja": false
 	},
 	{
 		"imagem": "dw44dc73e2/EP0095_4.jpg",
@@ -1180,5 +1240,4 @@
 		"edicao_limitada": true,
 		"ano": "2026 Halloween Edition"
 	}
-
 ]

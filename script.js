@@ -7,23 +7,73 @@ const LEGAMI_IMG_BASE =
 const LEGAMI_IMG_MID = "images_legami/zoom/";
 const LEGAMI_IMG_SUFFIX = "?sw=1200&sh=1200";
 
-// Links de afiliado. Enquanto amazonTag estiver vazio não aparece nenhum botão.
-// Quando fores aprovada no Amazon Associados, põe aqui o teu ID (ex.: "legamipens-21")
-// e cada caneta passa a ter um botão "Where to buy" que pesquisa essa caneta na Amazon.
+// Links de afiliado. Enquanto os IDs estiverem vazios não aparece nenhum botão.
+//
+// Awin (programa "Legami IT"): quando fores aprovada, põe aqui o teu ID de publisher
+// e o ID do anunciante (merchant ID) que aparecem no painel da Awin. Cada caneta à
+// venda passa a ter um botão para a loja Legami, através do teu link Awin:
+//  - "Buy on Legami" abre a página do produto (legami.com/it-it/V<código>.html);
+//  - "Shop on Legami" abre a página das canetas apagáveis, para as canetas marcadas
+//    no JSON com "naLoja": false (não têm página própria na loja Legami IT).
+// As descontinuadas não têm botão (a Legami já não as vende).
+//
+// Amazon: quando fores aprovada no Amazon Associados, põe aqui o teu ID (ex.: "legamipens-21").
+// Só é usada nas canetas em que a Awin não se aplica.
+//
 // Para uma caneta específica, podes pôr um link direto no JSON: "comprar": "https://..."
-// (esse link tem prioridade sobre a pesquisa automática).
+// (esse link tem prioridade sobre tudo o resto).
 const AFILIADOS = {
+	awinPublisherId: "",
+	awinMerchantId: "",
+	legamiLoja: "https://www.legami.com/it-it",
+	legamiCategoria: "/cartoleria/scrittura/penne-cancellabili.html",
+	// Páginas com categoria própria na loja Legami
+	legamiCategoriaPorPagina: {
+		"dadosLovelyFriends.json": "/cartoleria/scrittura/penne-lovely-friends.html",
+	},
 	amazonDominio: "amazon.es",
 	amazonTag: "",
 };
 
+// Código Legami do produto: "EP0001_star" → "EP0001" (os sufixos são variantes nossas).
+function codigoLegami(item) {
+	return String(item.display_num || item.numero).split("_")[0];
+}
+
+// Destino na loja Legami: a página do produto, ou a categoria quando não existe.
+function destinoLegami(item) {
+	const codigo = codigoLegami(item);
+	if (item.naLoja !== false && /^[A-Z]+\d+$/.test(codigo)) {
+		const ref = codigo.startsWith("V") ? codigo : "V" + codigo;
+		return { url: `${AFILIADOS.legamiLoja}/${ref}.html`, texto: "Buy on Legami" };
+	}
+	const categoria = AFILIADOS.legamiCategoriaPorPagina[CONFIG.dataUrl] || AFILIADOS.legamiCategoria;
+	return { url: AFILIADOS.legamiLoja + categoria, texto: "Shop on Legami" };
+}
+
+// Devolve { url, texto } para o botão de compra, ou null se não houver link.
 function linkCompra(item) {
-	if (item.comprar) return item.comprar;
-	if (!AFILIADOS.amazonTag) return null;
-	const termo = ["Legami erasable pen", item.nome || item.display_num || item.numero]
-		.filter(Boolean)
-		.join(" ");
-	return `https://www.${AFILIADOS.amazonDominio}/s?k=${encodeURIComponent(termo)}&tag=${encodeURIComponent(AFILIADOS.amazonTag)}`;
+	if (item.comprar) return { url: item.comprar, texto: "Where to buy" };
+
+	const eDescontinuado = item.descontinuado === true || item.descontinuado === "true";
+	if (AFILIADOS.awinPublisherId && AFILIADOS.awinMerchantId && !eDescontinuado) {
+		const destino = destinoLegami(item);
+		return {
+			url: `https://www.awin1.com/cread.php?awinmid=${encodeURIComponent(AFILIADOS.awinMerchantId)}&awinaffid=${encodeURIComponent(AFILIADOS.awinPublisherId)}&ued=${encodeURIComponent(destino.url)}`,
+			texto: destino.texto,
+		};
+	}
+
+	if (AFILIADOS.amazonTag) {
+		const termo = ["Legami erasable pen", item.nome || item.display_num || item.numero]
+			.filter(Boolean)
+			.join(" ");
+		return {
+			url: `https://www.${AFILIADOS.amazonDominio}/s?k=${encodeURIComponent(termo)}&tag=${encodeURIComponent(AFILIADOS.amazonTag)}`,
+			texto: "Where to buy",
+		};
+	}
+	return null;
 }
 
 // Aviso obrigatório pelos programas de afiliados — só aparece se houver links ativos.
@@ -108,8 +158,8 @@ function criarCard(item, ownedPens) {
 	const numToShow = item.display_num || item.numero;
 	const eStarPen = typeof item.numero === "string" && item.numero.endsWith("star");
 	const imagens = (Array.isArray(item.imagem) ? item.imagem : [item.imagem]).map(resolveImagem);
-	const urlCompra = linkCompra(item);
-	if (urlCompra) mostrarAvisoAfiliados();
+	const compra = linkCompra(item);
+	if (compra) mostrarAvisoAfiliados();
 
 	const card = document.createElement("div");
 	card.setAttribute("data-cores", item.cores);
@@ -157,7 +207,7 @@ function criarCard(item, ownedPens) {
                     ${item.nome ? `<p class="nome">${item.nome}</p>` : ""}
                     <span class="numero">Nº ${numToShow}</span>
                     ${coresHTML}
-                    ${urlCompra ? `<a class="btn-comprar" href="${urlCompra}" target="_blank" rel="sponsored noopener">🛒 Where to buy</a>` : ""}
+                    ${compra ? `<a class="btn-comprar" href="${compra.url}" target="_blank" rel="sponsored noopener">${compra.texto}</a>` : ""}
                     <div class="check-container" onclick="toggleOwned('${item.numero}')">
                     <input type="checkbox" ${isOwned ? "checked" : ""}> Owned
                     </div>
