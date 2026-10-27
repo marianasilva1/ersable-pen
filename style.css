@@ -1100,3 +1100,35 @@ body.com-login .dica-login {
 		transition: none !important;
 	}
 }
+
+/* Página inicial: subtítulo e atalhos para as coleções */
+.home-subtitulo {
+	max-width: 520px;
+	margin: -16px auto 32px;
+	color: var(--ink-soft);
+	font-size: 1.1rem;
+}
+
+.home-colecoes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 24px;
+}
+
+.home-colecoes a {
+	padding: 6px 14px;
+	border: 1px solid var(--line);
+	border-radius: 999px;
+	background: var(--surface);
+	color: var(--ink-soft);
+	font-size: 0.88rem;
+	text-decoration: none;
+	transition: border-color 0.2s, color 0.2s;
+}
+
+.home-colecoes a:hover {
+	border-color: var(--ink);
+	color: var(--ink);
+}
