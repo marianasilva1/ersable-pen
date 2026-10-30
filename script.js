@@ -133,7 +133,6 @@ function criarCard(item, ownedPens) {
 	const corPrincipalCSS = corPrincipal.startsWith("#") ? corPrincipal : "var(--" + corPrincipal + ")";
 
 	card.innerHTML = `
-                    ${eDescontinuado ? '<span class="badge-descontinuado">Discontinued</span>' : ""}
                     ${
 											eStarPen
 												? `<svg class="star-icon" viewBox="0 0 24 24" width="24" height="24">

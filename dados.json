@@ -28,7 +28,7 @@
 		"numero": "EP0001_pinta",
 		"display_num": "EP0001",
 		"cores": "Black",
-		"descontinuado": true,
+		"descontinuado": false,
 		"edicao_limitada": false,
 		"ano": ""
 	},
