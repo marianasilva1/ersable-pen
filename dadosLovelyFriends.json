@@ -360,5 +360,25 @@
 		"descontinuado": false,
 		"edicao_limitada": true,
 		"ano": "2026 Halloween"
+	},
+	{
+		"imagem": "dwbe1b6184/CPPSET4_3.jpg",
+		"nome": "Polar Bear",
+		"mensagem": "Special Hugs Delivery",
+		"numero": "CPP0035",
+		"cores": "Red",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Christmas"
+	},
+	{
+		"imagem": "dwbe1b6184/CPPSET4_4.jpg",
+		"nome": "Penguin",
+		"mensagem": "Wrapped in Joy",
+		"numero": "CPP0036",
+		"cores": "Green",
+		"descontinuado": false,
+		"edicao_limitada": true,
+		"ano": "2026 Christmas"
 	}
 ]
