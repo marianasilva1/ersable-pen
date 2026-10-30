@@ -37,6 +37,17 @@ const firebaseConfig = {
 
 const CHAVE_EMAIL = "emailParaLogin";
 
+// As Lovely Friends mudaram de número (VCPP0001 → CPP0001, CPP003334 → CPP0034).
+// Converte as marcações antigas para ninguém perder o que tinha marcado como "Owned".
+function migrarLista(chave, ids) {
+	if (chave !== "ownedLovelyFriendsPens") return ids;
+	const convertidos = ids.map((id) => {
+		if (id === "CPP003334") return "CPP0034";
+		return /^VCPP\d+$/.test(id) ? id.slice(1) : id;
+	});
+	return [...new Set(convertidos)];
+}
+
 function lerLocal(chave) {
 	try {
 		return JSON.parse(localStorage.getItem(chave)) || [];
@@ -100,10 +111,14 @@ if (firebaseConfig.apiKey) {
 		]);
 		const novos = {};
 		chaves.forEach((chave) => {
-			const naConta = Array.isArray(remoto[chave]) ? remoto[chave] : [];
-			const soNoBrowser = lerLocal(chave).filter((id) => !naConta.includes(id));
-			localStorage.setItem(chave, JSON.stringify([...naConta, ...soNoBrowser]));
-			if (soNoBrowser.length) novos[chave] = arrayUnion(...soNoBrowser);
+			const original = Array.isArray(remoto[chave]) ? remoto[chave] : [];
+			const naConta = migrarLista(chave, original);
+			const soNoBrowser = migrarLista(chave, lerLocal(chave)).filter((id) => !naConta.includes(id));
+			const lista = [...naConta, ...soNoBrowser];
+			localStorage.setItem(chave, JSON.stringify(lista));
+			// Se a conversão mudou a lista, grava-a inteira para os números antigos desaparecerem.
+			if (naConta.join() !== original.join()) novos[chave] = lista;
+			else if (soNoBrowser.length) novos[chave] = arrayUnion(...soNoBrowser);
 		});
 		if (Object.keys(novos).length) await setDoc(ref, novos, { merge: true });
 	}
