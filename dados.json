@@ -1100,55 +1100,55 @@
 		"ano": ""
 	},
 	{
-		"imagem": "dw44dc73e2/EP0090_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"imagem": "dw717a2e63/EPSET0018_3.jpg",
+		"nome": "Owl",
+		"mensagem": "Merry & Wise",
 		"numero": "EP0090",
-		"cores": "",
+		"cores": "Green",
 		"descontinuado": false,
-		"edicao_limitada": false,
-		"ano": ""
+		"edicao_limitada": true,
+		"ano": "2026 Christmas Edition"
 	},
 	
 	{
-		"imagem": "dw44dc73e2/EP0091_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"imagem": "dwd248a950/EPSET0018_4.jpg",
+		"nome": "Beaver",
+		"mensagem": "Handmade Joy",
 		"numero": "EP0091",
-		"cores": "",
+		"cores": "Red",
 		"descontinuado": false,
-		"edicao_limitada": false,
-		"ano": ""
+		"edicao_limitada": true,
+		"ano": "2026 Christmas Edition"
 	},
 	{
-		"imagem": "dw44dc73e2/EP0092_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"imagem": "dw6b6abe0a/EPSET0018_5.jpg",
+		"nome": "Walrus",
+		"mensagem": "Oh What Fun!",
 		"numero": "EP0092",
-		"cores": "",
+		"cores": "Blue",
 		"descontinuado": false,
-		"edicao_limitada": false,
-		"ano": ""
+		"edicao_limitada": true,
+		"ano": "2026 Christmas Edition"
 	},
 	{
-		"imagem": "dw44dc73e2/EP0093_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"imagem": "dw16cac20f/EPSET0018_6.jpg",
+		"nome": "Arctic Fox",
+		"mensagem": "Icy Chic",
 		"numero": "EP0093",
-		"cores": "",
+		"cores": "Pink",
 		"descontinuado": false,
-		"edicao_limitada": false,
-		"ano": ""
+		"edicao_limitada": true,
+		"ano": "2026 Christmas Edition"
 	},
 	{
-		"imagem": "dw44dc73e2/EP0094_2.jpg",
-		"nome": "",
-		"mensagem": "",
+		"imagem": "dw293b3b80/EPSET0018_7.jpg",
+		"nome": "Husky",
+		"mensagem": "Awooo-La-La",
 		"numero": "EP0094",
-		"cores": "",
+		"cores": "Black",
 		"descontinuado": false,
-		"edicao_limitada": false,
-		"ano": ""
+		"edicao_limitada": true,
+		"ano": "2026 Christmas Edition"
 	},
 	{
 		"imagem": "dw44dc73e2/EP0095_4.jpg",
