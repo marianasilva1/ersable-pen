@@ -22,6 +22,17 @@
 		"ano": ""
 	},
 	{
+		"imagem": "./images/panda-pinta.jpg",
+		"nome": "Panda",
+		"mensagem": "Hug Me",
+		"numero": "EP0001_pinta",
+		"display_num": "EP0001",
+		"cores": "Black",
+		"descontinuado": true,
+		"edicao_limitada": false,
+		"ano": ""
+	},
+	{
 		"imagem": "dw24997cdd/EP0001_2.jpg",
 		"nome": "Panda",
 		"mensagem": "Hug Me",
